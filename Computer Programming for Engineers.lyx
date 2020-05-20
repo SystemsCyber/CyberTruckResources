@@ -200,7 +200,11 @@ This chapter should serve to introduce the basics of computer programming
 \end_layout
 
 \begin_layout Section
-Introduction to Practical Computer Programming
+Introduction to Computer Programming
+\end_layout
+
+\begin_layout Subsection
+Programming languages
 \end_layout
 
 \begin_layout Standard
@@ -265,8 +269,28 @@ Pay attention to the spacing, punctuation, and print commands.
  This is a basic example, but the syntax differences between languages 
 \end_layout
 
+\begin_layout Subsection
+IDE
+\end_layout
+
+\begin_layout Subsection
+Exercises
+\end_layout
+
 \begin_layout Section
 Programming with Python
+\end_layout
+
+\begin_layout Subsection
+CodeAcademy
+\end_layout
+
+\begin_layout Section
+Programming with Arduino
+\end_layout
+
+\begin_layout Subsection
+Exercises
 \end_layout
 
 \begin_layout Chapter

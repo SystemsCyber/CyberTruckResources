@@ -184,7 +184,11 @@ literal "false"
 \end_inset
 
 ) meeting in Virginia.
- The resu
+ One of the results of the meeting was a recognition for the need to build
+ the human talent needed to address the challenges assoicated with cybersecurity
+ of heavy vehicles.
+ This initiative is how the Student CyberTruck Experience came into being.
+ 
 \end_layout
 
 \begin_layout Section*
@@ -295,6 +299,10 @@ What is a truck?
 
 \begin_layout Standard
 Who makes trucks?
+\end_layout
+
+\begin_layout Standard
+Cybersecurity for Trucking
 \end_layout
 
 \begin_layout Section
@@ -924,7 +932,6 @@ H
 \noun off
 \color none
 USB micro Cable, 6 inch			
-
 \end_layout
 
 \end_inset
@@ -1988,6 +1995,46 @@ Vehicle ECU Testing Kit
 
 \end_layout
 
+\begin_layout Section
+Build a Breadboad Arduino
+\end_layout
+
+\begin_layout Standard
+Challenge: using the pieces below, send a CAN message.
+\end_layout
+
+\begin_layout Standard
+Materials:
+\end_layout
+
+\begin_layout Standard
+Breadboard Prototyping Wire ATmega328P MCP2551/MCP2562/MCP2558 MCP2515/MCP25625
+ LED 120ohm (2) or 60 ohm (1) resistor a 16MHz crystal 6 pin straight header
+ a 10k resistor 18-22 pF capacitor (2)
+\end_layout
+
+\begin_layout Standard
+Resources:
+\end_layout
+
+\begin_layout Standard
+Use Datasheets to determine how to connect everything To find datasheets
+ use google, digikey, and mouser Learning how to push code to the arduino:
+ https://www.arduino.cc/en/Tutorial/ArduinoISP For help with SPI communication
+ to MCP2515: http://avrbeginners.net/architecture/spi/spi.html
+\end_layout
+
+\begin_layout Standard
+Challenge:
+\end_layout
+
+\begin_layout Standard
+Send a CAN Message (Verify with oscilloscope) Decode the message from the
+ oscilloscope to ensure that it is the mesage you told your arduino to send
+ This can be done with Python Create an Altium Schematic of the layout that
+ you created 
+\end_layout
+
 \begin_layout Chapter
 Networking Fundamentals
 \end_layout
@@ -2181,19 +2228,77 @@ Capture a CAN Frame using an oscilloscpope on a J1939 network and decode
  it according to SAE J1939.
 \end_layout
 
+\begin_layout Exercise
+Read Live Engine RPM Challenge
+\end_layout
+
+\begin_layout Standard
+Using a BeagleBone Black and a Truck Cape, connect to an engine contoller
+ that is broadcasting non-zero engine RPM.
+ Gather this data using candump.
+ Interpret the raw CAN frames and extract information for Engine RPM, or
+ J1939 SPN 190.
+ Plot 20 seconds of changing RPM with matplotlib.
+ Print the properly labeled plot to PDF and show it to your instructor.
+ Objectives
+\end_layout
+
+\begin_layout Standard
+Learn how to interface with Linux SocketCAN and can-utils Be able to look
+ up a signal definition in the J1939 Digital Annex (spreadsheet) Use grep
+ to search for specific strings from a candump Have a reliable CAN datalogger
+ for use in future projects Plot data using matplotlib in Python.
+\end_layout
+
+\begin_layout Standard
+Suggested Materials
+\end_layout
+
+\begin_layout Standard
+This exercise can be run with any Linux device with CAN hardware.
+ An example of a commercial product with these features is the DG Technologies'
+ Beacon device.
+ An example of a hand built project is the BeagleBone Black with a TU TruckCape.
+ Resources
+\end_layout
+
+\begin_layout Standard
+J1939DA Internet Access (you may want to share your PC's connection sharing)
+ 
+\end_layout
+
+\begin_layout Exercise
+Man in the Middle
+\end_layout
+
+\begin_layout Standard
+Build a man-in-the middle board and box that takes CAN signals into one
+ can channel and sends them out on another.
+ Start a diagnostics session with a PC and RP1210 device to perform maintenance.
+ Create a forwarding system that inspects and forwards network traffic in
+ both directions.
+ Attempt to hijack a a diagnostic session and affect a parameter change
+ started with the PC diagnostics software.
+\end_layout
+
+\begin_layout Standard
+Using DDEC Reports, try to prevent resetting the CPC clock during a data
+ extraction on a CPC.
+\end_layout
+
 \begin_layout Chapter
 Princples of Cybersecurity
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Introduction to Cryptography
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Message Authentication
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 Encryption on CAN
 \end_layout
 

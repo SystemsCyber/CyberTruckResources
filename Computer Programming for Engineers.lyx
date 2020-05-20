@@ -189,15 +189,14 @@ Computer Programming for Engineers
 \end_layout
 
 \begin_layout Standard
-Computer programming is a large and daunting field that can be intimidating
- for first time programmers.
+Computer programming may seem like a daunting field for beginner programmers.
  It does not need to be.
  At its core, computer programming is providing a set of instructions to
  a computer.
  Each line of code contains one or more instructions.
  Sometimes instructions interfere with each other and cause errors.
- Imagine you are telling someone who has never seen a sandwich before how
- to make a peanut butter and jelly sandwich.
+ Imagine telling someone who has never seen a sandwich before how to make
+ a peanut butter and jelly sandwich.
  The steps may be:
 \end_layout
 
@@ -257,8 +256,8 @@ Provided no external changes, this set of instructions will always lead
 y jelly, chunky or smooth peanut butter.
  Some people are adamant that you must put Jelly on Slice A, never peanut
  butter.
- Some argue that if you start with a loaf of bread instead of slices then
- you can get a better sandwich.
+ Some argue that if one starts with a loaf of bread instead of slices then
+ it produces a better sandwich.
  These options represent the different ways that people program.
  There are many different sets of instructions that produce peanut butter
  and jelly sandwiches.
@@ -273,12 +272,34 @@ However, there are ways which are more efficient than others, and there
  are ways to make code easier to understand.
  When writing code, it is important to write with a consistent programming
  style that allows others to understand your code.
- You may return to code later or need to provide it to others.
- If your code is messy and difficult to 
+ Code must be maintained over time, and may transition between programmers.
+ 
+\end_layout
+
+\begin_layout Standard
+This chapter should serve to introduce the basics of computer programming
+ as a platform for the Cyber Truck Experience program.
 \end_layout
 
 \begin_layout Section
 Introduction to Computer Programming with Python
+\end_layout
+
+\begin_layout Standard
+Python is a commonly used 
+\bar under
+programming language
+\bar default
+.
+ Programming languages are the dialects of computer instructions that are
+ written.
+ While many concepts carry over between languages, differences in syntax,
+ or how you write and format the instructions, mean that functionally equivalent
+ instructions may look different.
+\end_layout
+
+\begin_layout Standard
+For example, 
 \end_layout
 
 \begin_layout Chapter

@@ -413,20 +413,8 @@ Network Communications
 Overview
 \end_layout
 
-\begin_layout Standard
-Serial, USB, Ethernet, SPI, Wifi 
-\end_layout
-
 \begin_layout Subsection
 Vehicle Networking Protocols
-\end_layout
-
-\begin_layout Standard
-CAN, LIN, I
-\begin_inset Formula $^{2}$
-\end_inset
-
-C, J1708 and J1587, and J1939
 \end_layout
 
 \begin_layout Section
@@ -437,21 +425,6 @@ Heavy Duty Truck Bus Protocols
 CAN Basics
 \end_layout
 
-\begin_layout Standard
-A short overview of CAN is provided 
-\begin_inset CommandInset href
-LatexCommand href
-name "here"
-target "run:SocketCANDocumentation(Linux Kernel).txt"
-literal "false"
-
-\end_inset
-
-.
- If you attend the SAE CyberAuto Challenge you will be provided with more
- resources to learn about CAN.
-\end_layout
-
 \begin_layout Subsection
 Introduction to SAE J1939
 \end_layout
@@ -460,71 +433,8 @@ Introduction to SAE J1939
 Introduction to SAE J1708/1587
 \end_layout
 
-\begin_layout Standard
-SAE J1708 and J1587 are the legacy network protocols for heavy vehicles.
- Together they provide detailed specifications for the electronics, hardware,
- message structuring, decoding and more.
- Namely, J1708 deals with the physical layer (the wiring), and J1587 deals
- with the the message layer or data format.
-\end_layout
-
-\begin_layout Standard
-Often times engineers will refer to the two as simply 
-\begin_inset Quotes eld
-\end_inset
-
-J1708
-\begin_inset Quotes erd
-\end_inset
-
- but it is important to remember that they are usually referring to both.
- After its release in the '90s, the standards were revised intermittently
- and were widely adopted despite their issues.
- Most notably, the J1708 network speed of 9600 bits/second limited the amount
- of data and network capabilities that could be included in a vehicle.
-\end_layout
-
-\begin_layout Standard
-Today, J1708/1587 is now 
-\begin_inset Quotes eld
-\end_inset
-
-stabilized
-\begin_inset Quotes erd
-\end_inset
-
- (no more future updates) and has been mostly supplanted by the newer J1939
- protocol.
- However, it is not uncommon to run into the legacy protocol when working
- on older trucks and trailers.
- Some OEMs are still designing the older protocol out of their vehicles
- as well.
- Thus, it is important to be aware of J1708/1587.
- Plus, if you learn to send and decode J1587 messages, learning the newer
- protocols is much easier!
-\end_layout
-
-\begin_layout Standard
-For more info click 
-\begin_inset CommandInset href
-LatexCommand href
-name "here"
-target "https://www.omnitracs.com/blog/get-bus-j1708-and-j1939-vehicle-bus-standards"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Subsubsection
 J1708 - Physical Layer
-\end_layout
-
-\begin_layout Standard
-As stated earlier, SAE J1708 describes the physical layer of legacy truck
- networks.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -533,12 +443,6 @@ J1587 - Application Layer
 
 \begin_layout Subsection
 Introduction to PLC4trucks/J2497
-\end_layout
-
-\begin_layout Standard
-So far we have only discussed the communications on the truck network.
- But what if we also want data from trailer? The linkage between the tractor
- and trailer is poer 
 \end_layout
 
 \begin_layout Subsection
@@ -553,80 +457,12 @@ The UNIX/Linux Terminal
 Learn the Command Line
 \end_layout
 
-\begin_layout Standard
-Click the link to go to 
-\begin_inset CommandInset href
-LatexCommand href
-name "Codecademy"
-target "https://www.codecademy.com/learn/learn-the-command-line"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Subsection
 Learn Git
 \end_layout
 
-\begin_layout Standard
-Click the link to go to 
-\begin_inset CommandInset href
-LatexCommand href
-name "Codecademy"
-target "https://www.codecademy.com/learn/learn-git"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Subsection
 SocketCAN
-\end_layout
-
-\begin_layout Standard
-According to the official documentation, 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-"
-\end_layout
-
-\end_inset
-
-The SocketCAN package is an implementation of CAN protocols (Controller
- Area Network) for Linux.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-"
-\end_layout
-
-\end_inset
-
- Basically, it's a lightweight API that allows us to interact with CAN interface
-s on Linux based computers.
- With SocketCAN we can read messages in real-time on a network, send custom
- messages, parse, and even replay messages with relative ease and speed.
- The best part is that the package is free, open-source and is powerful
- enough to use in many non-commercial applications.
- Additional documentation can be found 
-\begin_inset CommandInset href
-LatexCommand href
-name "here?"
-target "run:./SCDoc.txt"
-literal "false"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -667,68 +503,8 @@ decryption
  This process is illustrated in Fig X.
 \end_layout
 
-\begin_layout Subsection
-Randomness
-\end_layout
-
-\begin_layout Subsection
-Hashes
-\end_layout
-
-\begin_layout Subsection
-Encryption
-\end_layout
-
-\begin_layout Subsection
-Diffie-Hellman Key Exchange
-\end_layout
-
-\begin_layout Subsection
-AES Encryption
-\end_layout
-
-\begin_layout Subsection
-RSA Asymmetric Encryption
-\end_layout
-
 \begin_layout Section
 Summer Challenges
-\end_layout
-
-\begin_layout Subsection
-Challenge X: Receive CAN Using Adapter
-\end_layout
-
-\begin_layout Subsection
-Challenge X: Send and Receive CAN messages using Arduino
-\end_layout
-
-\begin_layout Subsection
-Challenge X: Plot RPM and Wheel Based Vehicle Speed
-\end_layout
-
-\begin_layout Subsection
-Challenge X: Hand Decode CAN frame with Oscilloscope
-\end_layout
-
-\begin_layout Subsection
-Challenge X: Build an Arduino from Scratch
-\end_layout
-
-\begin_layout Subsection
-Challenge X: 
-\end_layout
-
-\begin_layout Subsection
-Challenge X:
-\end_layout
-
-\begin_layout Subsection
-Challenge X:
-\end_layout
-
-\begin_layout Subsection
-Challenge X:
 \end_layout
 
 \begin_layout Section
@@ -765,14 +541,6 @@ status collapsed
 
 \begin_layout Section
 Hardware Design
-\end_layout
-
-\begin_layout Subsection
-PCBs and Wiring Schematics with Altium Designer
-\end_layout
-
-\begin_layout Subsection
-3D Modeling and Printing with Solidworks
 \end_layout
 
 \begin_layout Standard

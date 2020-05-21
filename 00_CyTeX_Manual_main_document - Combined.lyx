@@ -2553,7 +2553,7 @@ Computer Programming Fundamentals (Computer Programming for Engineers)
 \end_layout
 
 \begin_layout Standard
-Computer programming may seem like a daunting field for beginner programmers.
+[Computer programming may seem like a daunting field for beginner programmers.
  It does not need to be.
  At its core, computer programming is providing a set of instructions to
  a computer.
@@ -2666,8 +2666,8 @@ Background
 
 \begin_layout Standard
 Python is a general-purpose, versatile and popular programming language.
- It's great as a first language because it is concise and easy to read.
- It is also a good language to have in any programmerâs stack as it can
+ It is great as a first language because it is concise and easy to read.
+ It is also a good language to have in any programmer is stack as it can
  be used for everything from web development to software development and
  data science applications.
 \end_layout
@@ -3239,6 +3239,18 @@ PCBs and Wiring Schematics with Altium Designer
 
 \begin_layout Chapter
 Heavy Vehicle Digital Forensics
+\end_layout
+
+\begin_layout Chapter
+Colorado State University Resources
+\end_layout
+
+\begin_layout Section
+Welcome to the Powerhouse
+\end_layout
+
+\begin_layout Section
+Parts and Ordering
 \end_layout
 
 \begin_layout Chapter

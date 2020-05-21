@@ -292,7 +292,126 @@ literal "false"
 \end_layout
 
 \begin_layout Section*
-Assessments and Exercises
+Exercises and Challenges
+\end_layout
+
+\begin_layout Standard
+David & Ben's Idea: Exercises pertain mainly to their home chapter and rarely
+ expand beyond chapter borders.
+ However, the challenges at the end are the classic 
+\begin_inset Quotes eld
+\end_inset
+
+challenges
+\begin_inset Quotes erd
+\end_inset
+
+ which build upon eachother.
+ For example a challenge might be: Graph the speed of a can dump using matplotli
+b.
+ This combines truck system knowledge (Wheel Based Vehicle Speed for Vehicle
+ Speed), CAN Protocol knowledge (PGN, Reverse Byte order, data field.
+ ID field), and python knowledge (parse & graph).
+ If you know all three concepts, the challenge is quite doable.
+ However, if you are missing any of the three, the challenge becomes much
+ more difficult.
+ The proposition:
+\end_layout
+
+\begin_layout Standard
+Truck System Knowledge Exercise: What sensors indicate vehicle speed to
+ the driver?
+\end_layout
+
+\begin_layout Standard
+CAN Protocol Knowledge Exercise: Given a single CAN message, how fast is
+ this vehicle going? (They have to go from the ID to the PGN)
+\end_layout
+
+\begin_layout Standard
+Python 3 Knowledge Exercise: Given this dataset of a string, csv, etc.
+ plot the ____ data versus time.
+\end_layout
+
+\begin_layout Standard
+After doing all these exercises, the challenge becomes much more doable.
+ The important thing is that these exercises have established those three
+ key skills that can be translated to research later on.
+ At the end of certain sections of the manual, the learner is told 
+\begin_inset Quotes eld
+\end_inset
+
+You now have the requisite skills to do Challenge X
+\begin_inset Quotes erd
+\end_inset
+
+.
+ So after learning CAN in chapter 7 of this iteration, the learner is told
+ that they can do the above exercise.
+ 
+\end_layout
+
+\begin_layout Standard
+The exercises are meant to be 
+\begin_inset Quotes eld
+\end_inset
+
+sub challenges
+\begin_inset Quotes erd
+\end_inset
+
+ that tie into the main summer challenges later on.
+ Given this is a crash course, and by mid summer the learner should be working
+ on actual projects, this manual is meant to be completed in 6 weeks.
+ With ~12 chapters, students should accomplish about 2-3 chapters per week.
+\end_layout
+
+\begin_layout Standard
+Potential Course Pace (super rough outline that I came up with in 15 minutes,
+ might be too fast, might be too slow)
+\end_layout
+
+\begin_layout Standard
+Week 1: Introduction to Trucking, Overview of Heavy Vehicles, possibly begin
+ Electronic Hardware
+\end_layout
+
+\begin_layout Standard
+Week 2: Arduino hardware (plugging in wires, making circuits, resistors,
+ leds, uploading firmware, flashing beaglebones), beginning programming
+ (Arduino code)
+\end_layout
+
+\begin_layout Standard
+Week 3: Arduino Code Continue, Python Code Basics
+\end_layout
+
+\begin_layout Standard
+Week 4: UNIX/Linux (BeagleBone operation), Networking Fundamentals
+\end_layout
+
+\begin_layout Standard
+Week 5: Vehicle Networking Protocols (&Basic Cybersecurity): By the end
+ of week 5, students should be able to competently work with truck data,
+ 
+\end_layout
+
+\begin_layout Standard
+Week 6: Cybersecurity: After week 6, students should know enough to use
+ encryption, CAN, arduino, and python.
+ or at least be exposed to it
+\end_layout
+
+\begin_layout Standard
+Week 7+: Specialization and reference chapters like Hardware Design using
+ altium, Heavy Vehicle Forensics, Resources like ordering parts for the
+ project CyberTruck happens around here (assuming starting 3rd week of May).
+\end_layout
+
+\begin_layout Standard
+Exercises are meant to reflect this pace, with challenges meant to take
+ a reasonable amount of time to complete.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -442,7 +561,7 @@ Terminology: 'The Truck Dictionary'
 Companies and Organizations: 'The Players'
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Description
 Academia
 \end_layout
 
@@ -450,39 +569,59 @@ Academia
 Ex: Colorado State University
 \end_layout
 
-\begin_layout Paragraph
-Motor Carriers
+\begin_layout Description
+Motor
+\begin_inset space \space{}
+\end_inset
+
+Carriers
 \end_layout
 
 \begin_layout Standard
 Ex: 
 \end_layout
 
-\begin_layout Paragraph
-Vehicle Manufacturing
+\begin_layout Description
+Vehicle
+\begin_inset space \space{}
+\end_inset
+
+Manufacturing
 \end_layout
 
 \begin_layout Standard
 Ex: Peterbilt, Volvo, Thermo King 
 \end_layout
 
-\begin_layout Paragraph
-Freight and Shipping
+\begin_layout Description
+Freight
+\begin_inset space \space{}
+\end_inset
+
+and
+\begin_inset space \space{}
+\end_inset
+
+Shipping
 \end_layout
 
 \begin_layout Standard
 Ex: Old Dominion Freight Line 
 \end_layout
 
-\begin_layout Paragraph
-Diagnostic Companies
+\begin_layout Description
+Diagnostic
+\begin_inset space \space{}
+\end_inset
+
+Companies
 \end_layout
 
 \begin_layout Standard
 Ex: DG technologies, Intrepid Control Systems, NEXIQ 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Description
 Cybersecurity
 \end_layout
 
@@ -490,7 +629,7 @@ Cybersecurity
 Ex: Karamba 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Description
 Government
 \end_layout
 
@@ -498,16 +637,28 @@ Government
 Ex: NMFTA, DOT, 
 \end_layout
 
-\begin_layout Paragraph
-Telematics Companies
+\begin_layout Description
+Telematics
+\begin_inset space \space{}
+\end_inset
+
+Companies
 \end_layout
 
 \begin_layout Standard
 Ex: Omnitracs, Geotab, Samsara, CalAmp 
 \end_layout
 
-\begin_layout Paragraph
-Electronics and Hardware
+\begin_layout Description
+Electronics
+\begin_inset space \space{}
+\end_inset
+
+and
+\begin_inset space \space{}
+\end_inset
+
+Hardware
 \end_layout
 
 \begin_layout Standard
@@ -523,8 +674,16 @@ Other industry players include digital forensic companies, law enforcement,
 Regulators
 \end_layout
 
-\begin_layout Paragraph
-Department of Transportation (DOT)
+\begin_layout Description
+Department
+\begin_inset space \space{}
+\end_inset
+
+of
+\begin_inset space \space{}
+\end_inset
+
+Transportation (DOT)
 \end_layout
 
 \begin_layout Standard
@@ -536,8 +695,32 @@ A federal Cabinet founded in 1966 to ensure the safest, most efficient,
  the FTA.
 \end_layout
 
-\begin_layout Paragraph
-The Federal Motor Carrier Safety Administration (FMCSA)
+\begin_layout Description
+The
+\begin_inset space \space{}
+\end_inset
+
+Federal
+\begin_inset space \space{}
+\end_inset
+
+Motor
+\begin_inset space \space{}
+\end_inset
+
+Carrier
+\begin_inset space \space{}
+\end_inset
+
+Safety
+\begin_inset space \space{}
+\end_inset
+
+Administration
+\begin_inset space \space{}
+\end_inset
+
+(FMCSA)
 \end_layout
 
 \begin_layout Standard
@@ -546,9 +729,36 @@ A DOT administration that regulates commercial drivers' licenses', oversees
  collection of motor carrier statistics.
 \end_layout
 
-\begin_layout Paragraph
-National Motor Freight and Traffic Association, Inc.
- (NMFTA)
+\begin_layout Description
+National
+\begin_inset space \space{}
+\end_inset
+
+Motor
+\begin_inset space \space{}
+\end_inset
+
+Freight
+\begin_inset space \space{}
+\end_inset
+
+and
+\begin_inset space \space{}
+\end_inset
+
+Traffic
+\begin_inset space \space{}
+\end_inset
+
+Association,
+\begin_inset space \space{}
+\end_inset
+
+Inc.
+\begin_inset space \space{}
+\end_inset
+
+(NMFTA)
 \end_layout
 
 \begin_layout Standard
@@ -566,8 +776,24 @@ In addition to publishing the NMFC standards, NMFTA also hosts industry
 , cyber security firms, and other industry groups or associations.
 \end_layout
 
-\begin_layout Paragraph
-Society of Automotive Engineers (SAE)
+\begin_layout Description
+Society
+\begin_inset space \space{}
+\end_inset
+
+of
+\begin_inset space \space{}
+\end_inset
+
+Automotive
+\begin_inset space \space{}
+\end_inset
+
+Engineers
+\begin_inset space \space{}
+\end_inset
+
+(SAE)
 \end_layout
 
 \begin_layout Standard
@@ -578,8 +804,32 @@ l vehicles as well as other forms of transportation.
  (i.e J1939 and J1708) to follow and is based the U.S.
 \end_layout
 
-\begin_layout Paragraph
-Institute of Electrical and Electronics Engineers (IEEE)
+\begin_layout Description
+Institute
+\begin_inset space \space{}
+\end_inset
+
+of
+\begin_inset space \space{}
+\end_inset
+
+Electrical
+\begin_inset space \space{}
+\end_inset
+
+and
+\begin_inset space \space{}
+\end_inset
+
+Electronics
+\begin_inset space \space{}
+\end_inset
+
+Engineers
+\begin_inset space \space{}
+\end_inset
+
+(IEEE)
 \end_layout
 
 \begin_layout Standard
@@ -593,7 +843,7 @@ n possible.
 \end_layout
 
 \begin_layout Section
-Exercises
+Introduction to Trucking Exercises
 \end_layout
 
 \begin_layout Chapter
@@ -624,6 +874,10 @@ An ECU is any embedded system in automotive electronics that controls one
  power locks and more.
  When connected together these ECUs form an intricate data exchange system
  called the vehicle network.
+\end_layout
+
+\begin_layout Section
+Heavy Vehicle Exercises
 \end_layout
 
 \begin_layout Chapter
@@ -687,6 +941,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
 	filename graphics/uno_teensy.png
 	width 80mm
@@ -1961,11 +2217,23 @@ Strippers
 \end_layout
 
 \begin_layout Description
-Carrying_Tote
+Carrying
+\begin_inset space \space{}
+\end_inset
+
+Tote
 \end_layout
 
 \begin_layout Description
-30gauge Wire
+30
+\begin_inset space \space{}
+\end_inset
+
+gauge
+\begin_inset space \space{}
+\end_inset
+
+Wire
 \end_layout
 
 \begin_layout Subsection
@@ -2459,7 +2727,7 @@ Vehicle ECU Testing Kit
 \end_layout
 
 \begin_layout Section
-Exercises
+Electronic Hardware Exercises
 \end_layout
 
 \begin_layout Standard
@@ -2553,7 +2821,7 @@ Computer Programming Fundamentals (Computer Programming for Engineers)
 \end_layout
 
 \begin_layout Standard
-[Computer programming may seem like a daunting field for beginner programmers.
+Computer programming may seem like a daunting field for beginner programmers.
  It does not need to be.
  At its core, computer programming is providing a set of instructions to
  a computer.
@@ -2736,11 +3004,15 @@ C++ Programming Language
 Codecademy
 \end_layout
 
+\begin_layout Section
+Computer Programming Fundamentals Exercises
+\end_layout
+
 \begin_layout Chapter
 The UNIX/Linux Terminal
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Learn the Command Line
 \end_layout
 
@@ -2757,7 +3029,7 @@ literal "false"
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Learn Git
 \end_layout
 
@@ -2774,7 +3046,7 @@ literal "false"
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 SocketCAN
 \end_layout
 
@@ -2797,6 +3069,10 @@ literal "false"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Terminal Exercises
 \end_layout
 
 \begin_layout Chapter
@@ -2929,7 +3205,7 @@ Other Communications
 \end_layout
 
 \begin_layout Section
-In-vehicle Networking Protocols
+Networking Fundamentals Exercises
 \end_layout
 
 \begin_layout Chapter
@@ -3031,6 +3307,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align center
 \begin_inset Graphics
 	filename graphics/SysEng-EN-csu-C357.eps
 
@@ -3085,7 +3363,7 @@ RP1210
 \end_layout
 
 \begin_layout Section
-Vehicle Networking Protocols
+Vehicle Networking Protocols Exercises
 \end_layout
 
 \begin_layout Exercise
@@ -3225,6 +3503,10 @@ Message Authentication
 Encryption on CAN
 \end_layout
 
+\begin_layout Section
+Principles of Cybersecurity Exercises
+\end_layout
+
 \begin_layout Chapter
 Hardware Design
 \end_layout
@@ -3237,8 +3519,16 @@ PCBs and Wiring Schematics with Altium Designer
 3D Modeling and Printing with Solidworks
 \end_layout
 
+\begin_layout Section
+Hardware Design Exercises
+\end_layout
+
 \begin_layout Chapter
 Heavy Vehicle Digital Forensics
+\end_layout
+
+\begin_layout Section
+Heavy Vehicle Digital Forensics Exercises
 \end_layout
 
 \begin_layout Chapter
@@ -3251,6 +3541,10 @@ Welcome to the Powerhouse
 
 \begin_layout Section
 Parts and Ordering
+\end_layout
+
+\begin_layout Section
+Colorado State University Exercises
 \end_layout
 
 \begin_layout Chapter

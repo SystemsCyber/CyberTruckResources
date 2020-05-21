@@ -1,0 +1,2800 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\use_default_options true
+\begin_modules
+algorithm2e
+changebars
+figs-within-sections
+tabs-within-sections
+rsphrase
+theorems-std
+theorems-chap
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Times New Roman"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Consolas"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 3
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\headheight 0.6in
+\headsep 0.4in
+\footskip 0.6in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Student CyberTruck Experience Manual
+\end_layout
+
+\begin_layout Author
+Jeremy Daily
+\end_layout
+
+\begin_layout Subject
+\begin_inset Graphics
+	filename graphics/SysEng-EN-csu-C357.eps
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Dedication
+A special thank you goes out to Urban Jonson at the National Motor Freight
+ Traffic Association, Inc.
+ (NMFTA) for being a champion of the program.
+ His passion for cybersecurity and education was insiprational in creating
+ the content and program called the Student CyberTruck Experience.
+ The Executive Director the NMFTA, Paul Levine, deserves special thanks
+ as he provided resources and guidance on bringing the Student CyberTruck
+ Experience to life.
+ Our initial sponsors at the University of Tulsa include the NMFTA, Geotab,
+ and PeopleNet.
+ The continued support from Geotab through Ryan Brander and Glenn Atkinson
+ are gratefully appreciated.
+ 
+\end_layout
+
+\begin_layout Uppertitleback
+The students who significantly contributed to this manual, both in writing
+ and participating in the Student CyberTruck Experience include: Hayden
+ Allen, Duy Van, John Maag, Ryan Corley.
+\end_layout
+
+\begin_layout Chapter*
+Introduction to the Student CyberTruck Experience
+\end_layout
+
+\begin_layout Standard
+In 2016, Urban Jonson of the National Motor Freight Traffic Association,
+ Inc.
+ (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NMFTA"
+description "National Motor Freight Traffic Association, Inc. "
+literal "false"
+
+\end_inset
+
+) reached out to Dr.
+ Jeremy Daily while he was teaching mechanical engineering at the Univeristy
+ of Tulsa (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TU"
+description "The University of Tulsa"
+literal "false"
+
+\end_inset
+
+) to disuss some research findings related to heavy vehicle cybersecurity.
+ In this conversation, Dr.
+ Daily confirmed many of the hypotheses in the NNFTA whitepaper on the state
+ of heavy vehicle cybersecurity.
+ This converstation led to an invitation for Dr.
+ Daily to attend the firs NMFTA Heavy Vehicle Cyber Security (
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HVCS"
+description "Heavy Vehicle Cyber Security"
+literal "false"
+
+\end_inset
+
+) meeting in Virginia.
+ One of the results of the meeting was a recognition for the need to build
+ the human talent needed to address the challenges assoicated with cybersecurity
+ of heavy vehicles.
+ This initiative is how the Student CyberTruck Experience came into being.
+ 
+\end_layout
+
+\begin_layout Standard
+The student Cyber Truck Experience (CyTeX) is a crash course in heavy vehicle
+ networks and cybersecurity with a hands-on approach.
+ It is intended to help a new engineering student with little experience
+ with vehicle systems or cybersecurity develop the skills necessary to work
+ effectively in heavy vehicle cybersecurity.
+ This student handbook provides some reference material to broaden ones
+ understanding of the electrical, computer, and mechanical engineering involved
+ in making and securing these vehicles.
+ It also aims at providing students with the industry background to jumpstart
+ a successful career.
+\end_layout
+
+\begin_layout Standard
+Throughout the handbook there will be several instances which you will be
+ asked to download software.
+ The ideal OS for completion of this lab will be Windows; however, at times,
+ a Linux operating system may be required.
+ In this case, you will be walked through how to install an Ubuntu VM onto
+ your machine before proceeding.
+\end_layout
+
+\begin_layout Standard
+Thank you for taking taking an interest in HV and for utilizing this handbook.
+ This content has been created by students for students at the University
+ of Tulsa to follow during the Student CyberTruck Experience Program and
+ other heavy vehicle cybersecurity programs.
+\end_layout
+
+\begin_layout Section*
+Learning Outcomes and Program Mission
+\end_layout
+
+\begin_layout Standard
+To develop the talent necessary to improve the cybersecurity posture of
+ the heavy vehicle.
+\end_layout
+
+\begin_layout Section*
+Program Objectives
+\end_layout
+
+\begin_layout Standard
+The Taxonomy of Educational Objectives (Bloom's Taxonomy)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename graphics/blooms_taxonomy.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bloom's Taxonomy from 
+\begin_inset CommandInset href
+LatexCommand href
+name "Jessica Shabatura"
+target "https://tips.uark.edu/using-blooms-taxonomy/"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Assessments and Exercises
+\end_layout
+
+\begin_layout Standard
+Formative
+\end_layout
+
+\begin_layout Standard
+Learning
+\end_layout
+
+\begin_layout Standard
+Assessments are formative hands-on exercises where students 
+\end_layout
+
+\begin_layout Standard
+Summative
+\end_layout
+
+\begin_layout Section*
+Cyber Challenges
+\end_layout
+
+\begin_layout Standard
+Students are 
+\series bold
+strongly
+\series default
+ encouraged to participate in the following practicum-based events related
+ to vehicle cybersecurity that take place during the summer.
+\end_layout
+
+\begin_layout Subsection*
+SAE CyberAuto Challenge
+\end_layout
+
+\begin_layout Standard
+SAE CyberAuto Challenge is an event sponsored by the Society of Automotive
+ Engineers that brings together students and engineers from various backgrounds
+ to collaborate and seek new information on automotive cybersecurity.
+ Registration is typically open until May.
+ To register and for more information visit the website 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.sae.org/attend/cyberauto"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+CyberTruck Challenge
+\end_layout
+
+\begin_layout Standard
+The CyberTruck Challenge is an annual event held in June.
+ It is open to students and engineers and is focused on developing the next
+ generation of heavy vehicle cyber professionals.
+ To register and for more information visit the website 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.cybertruckchallenge.org/"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+Research
+\end_layout
+
+\begin_layout Standard
+Research is the top of the pyramid.
+\end_layout
+
+\begin_layout Chapter
+Introduction to Trucking
+\end_layout
+
+\begin_layout Section
+Objectives
+\end_layout
+
+\begin_layout Standard
+What is the trucking industry?
+\end_layout
+
+\begin_layout Standard
+What is a truck?
+\end_layout
+
+\begin_layout Standard
+Who makes trucks?
+\end_layout
+
+\begin_layout Standard
+Cybersecurity for Trucking
+\end_layout
+
+\begin_layout Section
+Welcome to the Trucking Industry
+\end_layout
+
+\begin_layout Standard
+Your phone charger, favorite t-shirts and college textbooks all have one
+ thing in common: they all took a trip at some point on one of the 2 million
+ trucks in operation in the US today.
+ In fact, it's difficult to image anything that won't take a ride on a commercia
+l semi-trailer, construction vehicle, or city-service vehicle at some point
+ in its lifespan.
+\end_layout
+
+\begin_layout Standard
+In the absence of these vehicles, the ease of online ordering, walk-in shopping,
+ local gas-stations and numerous other convenient aspects of our lives would
+ not exist.
+\end_layout
+
+\begin_layout Standard
+While a large scale threat to heavy-vehicle infrastructure may not be a
+ present danger, the risk to small fleets is a growing topic within the
+ industry.
+ The threat? A cyber attack carried out as a result of insecure physical
+ or digital systems used to disable one or a fleet of vehicles.
+\end_layout
+
+\begin_layout Standard
+Throughout CyTeX, you will learn how clever engineers have hacked trucks
+ as a means to better understand and hopefully mitigate vulnerabilities.
+ Some techniques include hardware reverse engineering, radio frequency hacking,
+ bus flooding, network data logging and much more.
+ Of course, an understanding of most of the basics is needed before you
+ can reach this point.
+\end_layout
+
+\begin_layout Subsection
+Terminology: 'The Truck Dictionary'
+\end_layout
+
+\begin_layout Subsection
+Companies and Organizations: 'The Players'
+\end_layout
+
+\begin_layout Paragraph
+Academia
+\end_layout
+
+\begin_layout Standard
+Ex: Colorado State University
+\end_layout
+
+\begin_layout Paragraph
+Motor Carriers
+\end_layout
+
+\begin_layout Standard
+Ex: 
+\end_layout
+
+\begin_layout Paragraph
+Vehicle Manufacturing
+\end_layout
+
+\begin_layout Standard
+Ex: Peterbilt, Volvo, Thermo King 
+\end_layout
+
+\begin_layout Paragraph
+Freight and Shipping
+\end_layout
+
+\begin_layout Standard
+Ex: Old Dominion Freight Line 
+\end_layout
+
+\begin_layout Paragraph
+Diagnostic Companies
+\end_layout
+
+\begin_layout Standard
+Ex: DG technologies, Intrepid Control Systems, NEXIQ 
+\end_layout
+
+\begin_layout Paragraph
+Cybersecurity
+\end_layout
+
+\begin_layout Standard
+Ex: Karamba 
+\end_layout
+
+\begin_layout Paragraph
+Government
+\end_layout
+
+\begin_layout Standard
+Ex: NMFTA, DOT, 
+\end_layout
+
+\begin_layout Paragraph
+Telematics Companies
+\end_layout
+
+\begin_layout Standard
+Ex: Omnitracs, Geotab, Samsara, CalAmp 
+\end_layout
+
+\begin_layout Paragraph
+Electronics and Hardware
+\end_layout
+
+\begin_layout Standard
+: Bendix, Deutch
+\end_layout
+
+\begin_layout Standard
+Other industry players include digital forensic companies, law enforcement,
+ small fleets, secondary manufactures.
+\end_layout
+
+\begin_layout Subsection
+Regulators
+\end_layout
+
+\begin_layout Paragraph
+Department of Transportation (DOT)
+\end_layout
+
+\begin_layout Standard
+A federal Cabinet founded in 1966 to ensure the safest, most efficient,
+ and modern transportation system for American workers and businesses.
+ It is the highest governing body relating to transportation in the country
+ and is based in Washington D.C.
+ Notable administrations within the DOT related to HV are the FMCSA and
+ the FTA.
+\end_layout
+
+\begin_layout Paragraph
+The Federal Motor Carrier Safety Administration (FMCSA)
+\end_layout
+
+\begin_layout Standard
+A DOT administration that regulates commercial drivers' licenses', oversees
+ regulatory compliance and enforcement, provides safety assistance, and
+ collection of motor carrier statistics.
+\end_layout
+
+\begin_layout Paragraph
+National Motor Freight and Traffic Association, Inc.
+ (NMFTA)
+\end_layout
+
+\begin_layout Standard
+A nonprofit membership organization headquartered in Alexandria, Virginia.
+ Its membership is comprised of motor carriers operating in interstate,
+ intrastate and foreign commerce.
+\end_layout
+
+\begin_layout Standard
+In addition to publishing the NMFC standards, NMFTA also hosts industry
+ workshops exploring cyber security issues such as incident response, risk
+ mitigation, data anomaly detection, and many others.
+ These forums are attended by representatives from motor carriers, academic
+ experts, government agencies, heavy vehicle manufacturers, telematics providers
+, cyber security firms, and other industry groups or associations.
+\end_layout
+
+\begin_layout Paragraph
+Society of Automotive Engineers (SAE)
+\end_layout
+
+\begin_layout Standard
+The global professional association for engineers and scientists working
+ in various industries related to consumer automobiles, aerospace, and commercia
+l vehicles as well as other forms of transportation.
+ SAE produces many of the codes and standards for the heavy vehicle industry
+ (i.e J1939 and J1708) to follow and is based the U.S.
+\end_layout
+
+\begin_layout Paragraph
+Institute of Electrical and Electronics Engineers (IEEE)
+\end_layout
+
+\begin_layout Standard
+The global professional association for educational and technical advancement
+ of electrical and electronic engineering, telecommunications, computer
+ engineering and other related disciplines.
+ It is the world's largest association of technical professionals.
+ In regards to the heavy vehicle industry, IEEE produces many of the standards
+ and codes that make ECUs, sensors, bus communication, and wireless communicatio
+n possible.
+\end_layout
+
+\begin_layout Section
+Exercises
+\end_layout
+
+\begin_layout Chapter
+Overview of Heavy Vehicles
+\end_layout
+
+\begin_layout Standard
+Weight Classes
+\end_layout
+
+\begin_layout Section
+Electronic Control Units
+\end_layout
+
+\begin_layout Standard
+An ECU is any embedded system in automotive electronics that controls one
+ or more of the electrical systems or subsystems in a vehicle.
+ For example, all commercial trucks have an Engine Control Module (ECM)
+ that manages the everything from the ignition timing, air-fuel ratio, and
+ emissions control.
+ Other modules also exist such as the Transmission Control Module (TCM),
+ Brake Control Module (BCM or EBCM), and Suspension Control Module (SCM).
+ Other ECUs without common acronyms control the airbags, the dash board,
+ power locks and more.
+ When connected together these ECUs form an intricate data exchange system
+ called the vehicle network.
+\end_layout
+
+\begin_layout Chapter
+Electronic Hardware and Programming
+\end_layout
+
+\begin_layout Standard
+The purpose of this chapter is to give students skills necessary to work
+ with modern electronics and build their own hardware tools.
+\end_layout
+
+\begin_layout Section
+Intro to Microcontrollers
+\end_layout
+
+\begin_layout Standard
+A 
+\series bold
+microcontroller (MCU)
+\series default
+ is a tiny computer that can run one program at a time, over and over again.
+ More often than not, they are connected to sensors and actuators allowing
+ them to listen and interact with the physical world.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sensors
+\series default
+ convert physical phenomena such as wheel speed, fuel level, and oil temperature
+ into electrical signals.
+ 
+\series bold
+Actuators
+\series default
+ convert electrical energy back into physical energy such as linear motion,
+ light, heat, and motor torque.
+\end_layout
+
+\begin_layout Standard
+MCUs listen to sensors and talk to actuators.
+ They decide what to do based on the instructions you have written and stored
+ to its memory.
+ MCUs and the devices connected to them form the basis of the 
+\series bold
+Electronic Control Unit (ECU)
+\series default
+.
+\end_layout
+
+\begin_layout Section
+Arduino and Teensy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename graphics/uno_teensy.png
+	width 80mm
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Arduino Uno (left) and Teensy 3.6 (right)
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img_uno_and_teensy"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Arduino offers some of the most recognizable open-source microcontroller
+ boards today.
+ This includes the Arduino Uno.
+ When it comes to prototyping, these boards have many advantages including:
+ widespread availability, low cost, thorough documentation, and a global
+ community of users and forums.
+ The Arduino Uno uses the ATMEGA328P, has 32 KB of flash memory and runs
+ at 16 MHz which are acceptable hardware specifications for simple projects.
+\end_layout
+
+\begin_layout Standard
+Programs are written and compiled in the Arduino IDE program, a special
+ text-editor, and uploaded via USB.
+ When the Arduino is connected to an external power source it will run the
+ instructions you uploaded.
+\end_layout
+
+\begin_layout Standard
+The Teensy is another USB-based microcontroller development system.
+ Although it is slightly more expensive than the Arduino, the 3.2 and 3.6
+ versions are preferred within CyTeX for their additional capabilities and
+ features.
+ Most notably, they support more communication protocols such as CAN, I2C,
+ SPI, and Ethernet.
+ The Teensy 3.6 footprint is roughly a third the size of the UNO, the MK66
+ Processor, has 1024 kB of flash memory, and runs at 180 MHz.
+\end_layout
+
+\begin_layout Standard
+All programming is done via the USB port and the Teensy Loader Application.
+ It is run automatically when using Verify or Upload within the Arduino
+ software.
+ Teensy Loader is available for Windows, Mac, and Linux.
+\end_layout
+
+\begin_layout Standard
+Full documentation for the 
+\begin_inset CommandInset href
+LatexCommand href
+name "Teensy"
+target "https://www.pjrc.com/teensy/techspecs.html"
+literal "false"
+
+\end_inset
+
+and 
+\begin_inset CommandInset href
+LatexCommand href
+name "Arduino UNO"
+target "https://store.arduino.cc/usa/arduino-uno-rev3"
+literal "false"
+
+\end_inset
+
+can be found on their respective websites.
+\end_layout
+
+\begin_layout Section
+Intro to Microcomputers
+\end_layout
+
+\begin_layout Standard
+A single-board computer (SBC) is a complete computer built on a single circuit
+ board, with microprocessor(s), memory, input/output (I/O) and other features
+ required of a functional computer.
+ You 
+\shape italic
+could
+\shape default
+ call it a 
+\begin_inset Quotes eld
+\end_inset
+
+micro-computer.
+\begin_inset Quotes erd
+\end_inset
+
+ SBCs have the ability to run multiple programs, run an operating system,
+ and can often support a simplified version of a typical desktop GUI.
+\end_layout
+
+\begin_layout Standard
+The Raspberry Pi by the Raspberry Pi Foundation in the UK is by far the
+ most common prototyping SCB.
+ For automotive applications, the Beaglebone Black by Texas Instruments
+ and the NXP S32K have been used within CyTeX.
+ Both of these devices are capable of more advanced functionality.
+\end_layout
+
+\begin_layout Section
+Recommended Hardware Kit
+\end_layout
+
+\begin_layout Standard
+Each student should have access to the parts in the basic kit.
+ These items are minimum to successfully accomplish the programming and
+ learning exercises.
+\end_layout
+
+\begin_layout Subsection
+Basic Kit
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="17" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Qty
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Label
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supplier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supplier Part Number
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Teensy 4.0 Development Board
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PJRC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TEENSY40_PINS
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.pjrc.com/store/teensy40_pins.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MPC2562 CAN Transceiver
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digi-Key
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MCP2562FD-E/P-ND
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.digikey.com/product-detail/en/microchip-technology/MCP2562FD-E-P/MCP2562FD-E-P-ND/4842807"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solderless Breadboard
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digi-Key
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BKGS-830-ND
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.digikey.com/products/en?keywords=BKGS-830-ND"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120 Ohm Axial Resistors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digi-Key
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wiz850IO Ethernet Expansion Board
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digi-Key
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1278-1043-ND
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.digikey.com/products/en?keywords=Wiz%20850"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30 Pack of Male-Male Breadboard Wires
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PRT-14284
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/14284"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20 Pack of Male-Female Breadboard Wires
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PRT-12794
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/12795"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ethernet Cat6 Cable, 3 ft.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CAB-08915
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/8915"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+USB micro Cable, 6 inch			
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CAB-13244
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/13244"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ATECC608A Crypto Authentication Module
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digi-Key
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ATECC608A-SSHDA-TCT-ND
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.digikey.com/products/en?keywords=ATECC608A-SSHDA-TCT-ND"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ATECC608 Crypto Co-Processor Breakout
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SPX-15838
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/15838"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trimpot 10K Ohm with Knob
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+COM-09806
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/9806"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SOIC8 to DIP Converter Board
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOB-13655
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/13655"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Break Away Headers - Straight
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PRT-00116
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/116"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ambient Temperature Sensor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SEN-14049
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/14049"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Conductive 18 Compartment Organizer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flambeau
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C618
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.flambeaucases.com/18-compartment-box-1095.aspx"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Basic Hardware Kit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Newer laptop computers may not have a physical Ethernet port, so a USB to
+ Ethernet adapter may be necessary.
+\end_layout
+
+\begin_layout Exercise
+[]
+\end_layout
+
+\begin_layout Subsection
+Basic Tools
+\end_layout
+
+\begin_layout Description
+Multimeter Any modern digital multimeter is acceptable to get started.
+ There are many on Amazon that are suitable.
+\end_layout
+
+\begin_layout Description
+Soldering
+\begin_inset space ~
+\end_inset
+
+Iron A
+\end_layout
+
+\begin_layout Description
+Tweezers
+\end_layout
+
+\begin_layout Description
+Wire
+\begin_inset space ~
+\end_inset
+
+Cutters
+\end_layout
+
+\begin_layout Description
+Wire
+\begin_inset space ~
+\end_inset
+
+Strippers
+\end_layout
+
+\begin_layout Description
+Carrying_Tote
+\end_layout
+
+\begin_layout Description
+30gauge Wire
+\end_layout
+
+\begin_layout Exercise
+Write a program to send CAN messages from one node to another.
+\end_layout
+
+\begin_layout Exercise
+Hints:
+\end_layout
+
+\begin_layout Enumerate
+Check the continuity of each hookup wire before using it.
+ They can be fragile and break easily.
+ 
+\end_layout
+
+\begin_layout Subsection
+Advanced Hardware Kits
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Qty
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supplier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supplier Part Number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+URL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Teensy 4.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PJRC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TEENSY41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.pjrc.com/store/teensy41.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Beagle Bone Black
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quadrature Encoder with breakout board.
+ Bournes PEC09
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Advanced Hardware Kit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Qty
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supplier
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Supplier Part Number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+URL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Smart Sensor Simulator 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DG Technologies
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TEENSY41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.pjrc.com/store/teensy41.html"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Beagle Bone Black
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quadrature Encoder with breakout board.
+ Bournes PEC09
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vehicle ECU Testing Kit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Exercises
+\end_layout
+
+\begin_layout Subsection
+Build a Breadboad Arduino (Move Challenge to Challenges Section)
+\end_layout
+
+\begin_layout Standard
+Challenge: using the pieces below, send a CAN message.
+\end_layout
+
+\begin_layout Standard
+Materials:
+\end_layout
+
+\begin_layout Standard
+Breadboard Prototyping Wire ATmega328P MCP2551/MCP2562/MCP2558 MCP2515/MCP25625
+ LED 120ohm (2) or 60 ohm (1) resistor a 16MHz crystal 6 pin straight header
+ a 10k resistor 18-22 pF capacitor (2)
+\end_layout
+
+\begin_layout Standard
+Resources:
+\end_layout
+
+\begin_layout Standard
+Use Datasheets to determine how to connect everything To find datasheets
+ use google, digikey, and mouser Learning how to push code to the arduino:
+ https://www.arduino.cc/en/Tutorial/ArduinoISP For help with SPI communication
+ to MCP2515: http://avrbeginners.net/architecture/spi/spi.html
+\end_layout
+
+\begin_layout Standard
+Challenge:
+\end_layout
+
+\begin_layout Standard
+Send a CAN Message (Verify with oscilloscope) Decode the message from the
+ oscilloscope to ensure that it is the mesage you told your arduino to send
+ This can be done with Python Create an Altium Schematic of the layout that
+ you created 
+\end_layout
+
+\begin_layout Chapter
+Networking Fundamentals
+\end_layout
+
+\begin_layout Section
+Problems of Networking
+\end_layout
+
+\begin_layout Subsection
+Encoding
+\end_layout
+
+\begin_layout Subsection
+Framing
+\end_layout
+
+\begin_layout Subsection
+Data Transmission
+\end_layout
+
+\begin_layout Standard
+Link Access
+\end_layout
+
+\begin_layout Standard
+Media Access Control
+\end_layout
+
+\begin_layout Standard
+Collision Avoidance
+\end_layout
+
+\begin_layout Subsection
+Flow Control
+\end_layout
+
+\begin_layout Subsection
+Routing
+\end_layout
+
+\begin_layout Standard
+switching
+\end_layout
+
+\begin_layout Subsection
+Reliable Delivery
+\end_layout
+
+\begin_layout Subsection
+Fault Tolerance
+\end_layout
+
+\begin_layout Standard
+error detection
+\end_layout
+
+\begin_layout Standard
+error correction - Hamming Codes
+\end_layout
+
+\begin_layout Section
+OSI Layered Model
+\end_layout
+
+\begin_layout Section
+Ethernet
+\end_layout
+
+\begin_layout Subsection
+TCP/IP
+\end_layout
+
+\begin_layout Subsection
+UDP
+\end_layout
+
+\begin_layout Subsection
+Automotive Ethernet
+\end_layout
+
+\begin_layout Section
+Wireless Protocols
+\end_layout
+
+\begin_layout Subsection
+Wifi
+\end_layout
+
+\begin_layout Standard
+Krack
+\end_layout
+
+\begin_layout Subsection
+Cellular
+\end_layout
+
+\begin_layout Subsection
+Bluetooth
+\end_layout
+
+\begin_layout Standard
+Blueman
+\end_layout
+
+\begin_layout Standard
+Blueborne
+\end_layout
+
+\begin_layout Subsection
+Zigbee
+\end_layout
+
+\begin_layout Subsection
+Iridium Satelite
+\end_layout
+
+\begin_layout Subsection
+Other Communications
+\end_layout
+
+\begin_layout Section
+In-vehicle Networking
+\end_layout
+
+\begin_layout Subsection
+Contoller Area Networks
+\end_layout
+
+\begin_layout Subsection
+J1708 Serial Communications
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/SysEng-EN-csu-C357.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Title
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Truck Systems for Computer Scientists
+\end_layout
+
+\begin_layout Chapter
+Computer Programming for Engineers
+\end_layout
+
+\begin_layout Chapter
+Initial Heavy Vehicle Serial Protocols
+\end_layout
+
+\begin_layout Chapter
+High speed communication with SAE J1939 and CAN Bus
+\end_layout
+
+\begin_layout Exercise
+CAN Frame Decoding
+\end_layout
+
+\begin_layout Standard
+Capture a CAN Frame using an oscilloscpope on a J1939 network and decode
+ it according to SAE J1939.
+\end_layout
+
+\begin_layout Exercise
+Read Live Engine RPM Challenge
+\end_layout
+
+\begin_layout Standard
+Using a BeagleBone Black and a Truck Cape, connect to an engine contoller
+ that is broadcasting non-zero engine RPM.
+ Gather this data using candump.
+ Interpret the raw CAN frames and extract information for Engine RPM, or
+ J1939 SPN 190.
+ Plot 20 seconds of changing RPM with matplotlib.
+ Print the properly labeled plot to PDF and show it to your instructor.
+ Objectives
+\end_layout
+
+\begin_layout Standard
+Learn how to interface with Linux SocketCAN and can-utils Be able to look
+ up a signal definition in the J1939 Digital Annex (spreadsheet) Use grep
+ to search for specific strings from a candump Have a reliable CAN datalogger
+ for use in future projects Plot data using matplotlib in Python.
+\end_layout
+
+\begin_layout Standard
+Suggested Materials
+\end_layout
+
+\begin_layout Standard
+This exercise can be run with any Linux device with CAN hardware.
+ An example of a commercial product with these features is the DG Technologies'
+ Beacon device.
+ An example of a hand built project is the BeagleBone Black with a TU TruckCape.
+ Resources
+\end_layout
+
+\begin_layout Standard
+J1939DA Internet Access (you may want to share your PC's connection sharing)
+ 
+\end_layout
+
+\begin_layout Exercise
+Man in the Middle
+\end_layout
+
+\begin_layout Standard
+Build a man-in-the middle board and box that takes CAN signals into one
+ can channel and sends them out on another.
+ Start a diagnostics session with a PC and RP1210 device to perform maintenance.
+ Create a forwarding system that inspects and forwards network traffic in
+ both directions.
+ Attempt to hijack a a diagnostic session and affect a parameter change
+ started with the PC diagnostics software.
+\end_layout
+
+\begin_layout Standard
+Using DDEC Reports, try to prevent resetting the CPC clock during a data
+ extraction on a CPC.
+\end_layout
+
+\begin_layout Chapter
+Princples of Cybersecurity
+\end_layout
+
+\begin_layout Section
+Introduction to Cryptography
+\end_layout
+
+\begin_layout Section
+Message Authentication
+\end_layout
+
+\begin_layout Section
+Encryption on CAN
+\end_layout
+
+\begin_layout Chapter
+Heavy Vehicle Digital Forensics
+\end_layout
+
+\begin_layout Chapter
+\start_of_appendix
+Data Sheet Snippets
+\end_layout
+
+\end_body
+\end_document

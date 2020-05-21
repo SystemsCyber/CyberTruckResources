@@ -302,7 +302,7 @@ strongly
 \end_layout
 
 \begin_layout Subsection
-SAE CyberAuto Challengeâ¢
+SAE CyberAuto Challenge
 \end_layout
 
 \begin_layout Standard
@@ -396,7 +396,7 @@ Academia
 \end_layout
 
 \begin_layout Standard
-Ex: The University of Tulsa 
+Ex: Colorado State University
 \end_layout
 
 \begin_layout Paragraph
@@ -926,25 +926,11 @@ SAE J1708 and J1587 are the legacy network protocols for heavy vehicles.
 
 \begin_layout Standard
 Often times engineers will refer to the two as simply 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-"
-\end_layout
-
+\begin_inset Quotes eld
 \end_inset
 
 J1708
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-"
-\end_layout
-
+\begin_inset Quotes erd
 \end_inset
 
  but it is important to remember that they are usually referring to both.
@@ -956,25 +942,11 @@ status collapsed
 
 \begin_layout Standard
 Today, J1708/1587 is now 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-"
-\end_layout
-
+\begin_inset Quotes eld
 \end_inset
 
 stabilized
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-"
-\end_layout
-
+\begin_inset Quotes erd
 \end_inset
 
  (no more future updates) and has been mostly supplanted by the newer J1939

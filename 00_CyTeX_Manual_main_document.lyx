@@ -2932,11 +2932,15 @@ Other Communications
 In-vehicle Networking Protocols
 \end_layout
 
+\begin_layout Chapter
+Vehicle Networking Protocols
+\end_layout
+
 \begin_layout Standard
 CAN, LIN, I2C, J1708 and J1587, and J1939
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Contoller Area Networks
 \end_layout
 
@@ -2955,11 +2959,11 @@ literal "false"
  resources to learn about CAN.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 J1939
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 J1708/1587 Serial Communications
 \end_layout
 
@@ -3047,16 +3051,12 @@ Title
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Physical Layer
 \end_layout
 
@@ -3066,11 +3066,11 @@ As stated earlier, SAE J1708 describes the physical layer of legacy truck
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Application layer
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 PLC4Trucks/J2497
 \end_layout
 
@@ -3084,8 +3084,8 @@ So far we have only discussed the communications on the truck network.
 RP1210
 \end_layout
 
-\begin_layout Chapter
-High speed communication with SAE J1939 and CAN Bus
+\begin_layout Section
+Vehicle Networking Protocols
 \end_layout
 
 \begin_layout Exercise

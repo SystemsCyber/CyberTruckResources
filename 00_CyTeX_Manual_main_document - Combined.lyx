@@ -614,7 +614,7 @@ An ECU is any embedded system in automotive electronics that controls one
 \end_layout
 
 \begin_layout Chapter
-Electronic Hardware and Programming
+Electronic Hardware
 \end_layout
 
 \begin_layout Standard
@@ -2480,6 +2480,38 @@ Vehicle ECU Testing Kit
 Exercises
 \end_layout
 
+\begin_layout Standard
+These exercises shouls serve to get you 
+\begin_inset Quotes eld
+\end_inset
+
+up to speed
+\begin_inset Quotes erd
+\end_inset
+
+ on Arduino hardware.
+ Little to no computer programming experience is needed for this section,
+ that comes later.
+ However, you should know how to upload software in Arduino and view the
+ console.
+\end_layout
+
+\begin_layout Subsection
+Getting Started on Teensy Arduino (Stock Code that 
+\begin_inset Quotes eld
+\end_inset
+
+should work
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+Intro to CAN with Arduino (Move after CAN Section?)
+\end_layout
+
 \begin_layout Subsection
 Build a Breadboad Arduino (Move Challenge to Challenges Section)
 \end_layout
@@ -2518,6 +2550,10 @@ Send a CAN Message (Verify with oscilloscope) Decode the message from the
  oscilloscope to ensure that it is the mesage you told your arduino to send
  This can be done with Python Create an Altium Schematic of the layout that
  you created 
+\end_layout
+
+\begin_layout Chapter
+Computer Programming Fundamentals 
 \end_layout
 
 \begin_layout Chapter

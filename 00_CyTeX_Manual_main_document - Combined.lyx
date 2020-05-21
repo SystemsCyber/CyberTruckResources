@@ -142,6 +142,15 @@ The students who significantly contributed to this manual, both in writing
  Allen, Duy Van, John Maag, Ryan Corley.
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter*
 Introduction to the Student CyberTruck Experience
 \end_layout
@@ -596,6 +605,10 @@ Weight Classes
 \end_layout
 
 \begin_layout Section
+Truck System Fundamentals (Truck Systems for Computer Scientists)
+\end_layout
+
+\begin_layout Section
 Electronic Control Units
 \end_layout
 
@@ -674,19 +687,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
-
-\end_inset
-
- 
 \begin_inset Graphics
 	filename graphics/uno_teensy.png
 	width 80mm
@@ -1923,10 +1923,6 @@ Newer laptop computers may not have a physical Ethernet port, so a USB to
  Ethernet adapter may be necessary.
 \end_layout
 
-\begin_layout Exercise
-[]
-\end_layout
-
 \begin_layout Subsection
 Basic Tools
 \end_layout
@@ -1970,20 +1966,6 @@ Carrying_Tote
 
 \begin_layout Description
 30gauge Wire
-\end_layout
-
-\begin_layout Exercise
-Write a program to send CAN messages from one node to another.
-\end_layout
-
-\begin_layout Exercise
-Hints:
-\end_layout
-
-\begin_layout Enumerate
-Check the continuity of each hookup wire before using it.
- They can be fragile and break easily.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -2496,6 +2478,20 @@ up to speed
  console.
 \end_layout
 
+\begin_layout Exercise
+Write a program to send CAN messages from one node to another.
+\end_layout
+
+\begin_layout Exercise
+Hints:
+\end_layout
+
+\begin_layout Enumerate
+Check the continuity of each hookup wire before using it.
+ They can be fragile and break easily.
+ 
+\end_layout
+
 \begin_layout Subsection
 Getting Started on Teensy Arduino (Stock Code that 
 \begin_inset Quotes eld
@@ -2553,11 +2549,267 @@ Send a CAN Message (Verify with oscilloscope) Decode the message from the
 \end_layout
 
 \begin_layout Chapter
-Computer Programming Fundamentals 
+Computer Programming Fundamentals (Computer Programming for Engineers)
+\end_layout
+
+\begin_layout Standard
+Computer programming may seem like a daunting field for beginner programmers.
+ It does not need to be.
+ At its core, computer programming is providing a set of instructions to
+ a computer.
+ Each line of code contains one or more instructions.
+ Sometimes instructions interfere with each other and cause errors.
+ Imagine telling someone who has never seen a sandwich before how to make
+ a peanut butter and jelly sandwich.
+ The steps may be:
+\end_layout
+
+\begin_layout Enumerate
+Get Bread, Peanut Butter, Jelly, Knife, and Plate.
+\end_layout
+
+\begin_layout Enumerate
+Place plate.
+\end_layout
+
+\begin_layout Enumerate
+Place two pieces of bread side by side on plate.
+ Call them Slice A and Slice B.
+\end_layout
+
+\begin_layout Enumerate
+Put peanut butter on knife.
+\end_layout
+
+\begin_layout Enumerate
+Use knife to spread peanut butter on Slice A.
+\end_layout
+
+\begin_layout Enumerate
+Clean knife.
+\end_layout
+
+\begin_layout Enumerate
+Put jelly on knife.
+\end_layout
+
+\begin_layout Enumerate
+Use knife to spread jelly on Slice B.
+\end_layout
+
+\begin_layout Enumerate
+Combine Slice A with Slice B by placing Slice B on Slice A.
+\end_layout
+
+\begin_layout Enumerate
+Eat Sandwich.
+\end_layout
+
+\begin_layout Enumerate
+Clean Knife
+\end_layout
+
+\begin_layout Enumerate
+Clean Plate
+\end_layout
+
+\begin_layout Standard
+Provided no external changes, this set of instructions will always lead
+ to a proper peanut butter and jelly sandwich.
+ However, some people may argue about if you should use grape jelly or strawberr
+y jelly, chunky or smooth peanut butter.
+ Some people are adamant that you must put Jelly on Slice A, never peanut
+ butter.
+ Some argue that if one starts with a loaf of bread instead of slices then
+ it produces a better sandwich.
+ These options represent the different ways that people program.
+ There are many different sets of instructions that produce peanut butter
+ and jelly sandwiches.
+ Programming is very smiliar.
+ There are many different ways to code a program that will lead to the same
+ result.
+ 
+\end_layout
+
+\begin_layout Standard
+However, there are ways which are more efficient than others, and there
+ are ways to make code easier to understand.
+ When writing code, it is important to write with a consistent programming
+ style that allows others to understand your code.
+ Code must be maintained over time, and may transition between programmers.
+ 
+\end_layout
+
+\begin_layout Standard
+This chapter should serve to introduce the basics of computer programming
+ as a platform for the Cyber Truck Experience program.
+\end_layout
+
+\begin_layout Section
+Arduino Programming Language
+\end_layout
+
+\begin_layout Section
+Python 3 Programming Language
+\end_layout
+
+\begin_layout Standard
+An important tool in any hackers toolkit is the ability to interact with
+ collected data.
+ In this section, we will be using a programming language called Python
+ to help with this.
+\end_layout
+
+\begin_layout Subsection
+Background
+\end_layout
+
+\begin_layout Standard
+Python is a general-purpose, versatile and popular programming language.
+ It's great as a first language because it is concise and easy to read.
+ It is also a good language to have in any programmerâs stack as it can
+ be used for everything from web development to software development and
+ data science applications.
+\end_layout
+
+\begin_layout Standard
+This is different than what we have done to this point in Arduino.
+ We will generally use the Arduino devices to directly interface with systems.
+ These devices will then send data back to a computer or other device running
+ a python script.
+\end_layout
+
+\begin_layout Subsection
+Codecademy
+\end_layout
+
+\begin_layout Standard
+We will begin by having you learn the basics of python.
+ We will be using an external system to aid in this.
+ Navigate over to 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.codecademy.com/learn/learn-python"
+literal "false"
+
+\end_inset
+
+and create an account using your email and fill out any information they
+ require.
+ Please ensure that you do not pay for this service at this time.
+ We will only need the services that the free version offers.
+\end_layout
+
+\begin_layout Standard
+Please complete this course.
+ Take notes throughout the course over functions that may be useful (importing
+ and exporting files, searching through lists, data structures, etc.) Periodicall
+y, there will be additional trial material to supplement your learning.
+\end_layout
+
+\begin_layout Subsection
+Editors and IDE
+\end_layout
+
+\begin_layout Subsection
+Threading
+\end_layout
+
+\begin_layout Subsection
+PySerial
+\end_layout
+
+\begin_layout Subsection
+matplotlib
+\end_layout
+
+\begin_layout Subsection
+Making GUIs with PyQt5
+\end_layout
+
+\begin_layout Section
+C++ Programming Language
+\end_layout
+
+\begin_layout Subsection
+Codecademy
+\end_layout
+
+\begin_layout Chapter
+The UNIX/Linux Terminal
+\end_layout
+
+\begin_layout Subsection
+Learn the Command Line
+\end_layout
+
+\begin_layout Standard
+Click the link to go to 
+\begin_inset CommandInset href
+LatexCommand href
+name "Codecademy"
+target "https://www.codecademy.com/learn/learn-the-command-line"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Learn Git
+\end_layout
+
+\begin_layout Standard
+Click the link to go to 
+\begin_inset CommandInset href
+LatexCommand href
+name "Codecademy"
+target "https://www.codecademy.com/learn/learn-git"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+SocketCAN
+\end_layout
+
+\begin_layout Standard
+According to the official documentation, The SocketCAN package is an implementat
+ion of CAN protocols (Controller Area Network) for Linux.
+ Basically, it's a lightweight API that allows us to interact with CAN interface
+s on Linux based computers.
+ With SocketCAN we can read messages in real-time on a network, send custom
+ messages, parse, and even replay messages with relative ease and speed.
+ The best part is that the package is free, open-source and is powerful
+ enough to use in many non-commercial applications.
+ Additional documentation can be found 
+\begin_inset CommandInset href
+LatexCommand href
+name "here?"
+target "run:./SCDoc.txt"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
 Networking Fundamentals
+\end_layout
+
+\begin_layout Section
+Overview
+\end_layout
+
+\begin_layout Standard
+Serial, USB, Ethernet, SPI, Wifi, What these are, what they do, most popular,
+ basic intro
 \end_layout
 
 \begin_layout Section
@@ -2677,15 +2929,95 @@ Other Communications
 \end_layout
 
 \begin_layout Section
-In-vehicle Networking
+In-vehicle Networking Protocols
+\end_layout
+
+\begin_layout Standard
+CAN, LIN, I2C, J1708 and J1587, and J1939
 \end_layout
 
 \begin_layout Subsection
 Contoller Area Networks
 \end_layout
 
+\begin_layout Standard
+A short overview of CAN is provided 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "run:SocketCANDocumentation(Linux Kernel).txt"
+literal "false"
+
+\end_inset
+
+.
+ If you attend the SAE CyberAuto Challenge you will be provided with more
+ resources to learn about CAN.
+\end_layout
+
 \begin_layout Subsection
-J1708 Serial Communications
+J1939
+\end_layout
+
+\begin_layout Subsection
+J1708/1587 Serial Communications
+\end_layout
+
+\begin_layout Standard
+SAE J1708 and J1587 are the legacy network protocols for heavy vehicles.
+ Together they provide detailed specifications for the electronics, hardware,
+ message structuring, decoding and more.
+ Namely, J1708 deals with the physical layer (the wiring), and J1587 deals
+ with the the message layer or data format.
+\end_layout
+
+\begin_layout Standard
+Often times engineers will refer to the two as simply 
+\begin_inset Quotes eld
+\end_inset
+
+J1708
+\begin_inset Quotes erd
+\end_inset
+
+ but it is important to remember that they are usually referring to both.
+ After its release in the '90s, the standards were revised intermittently
+ and were widely adopted despite their issues.
+ Most notably, the J1708 network speed of 9600 bits/second limited the amount
+ of data and network capabilities that could be included in a vehicle.
+\end_layout
+
+\begin_layout Standard
+Today, J1708/1587 is now 
+\begin_inset Quotes eld
+\end_inset
+
+stabilized
+\begin_inset Quotes erd
+\end_inset
+
+ (no more future updates) and has been mostly supplanted by the newer J1939
+ protocol.
+ However, it is not uncommon to run into the legacy protocol when working
+ on older trucks and trailers.
+ Some OEMs are still designing the older protocol out of their vehicles
+ as well.
+ Thus, it is important to be aware of J1708/1587.
+ Plus, if you learn to send and decode J1587 messages, learning the newer
+ protocols is much easier!
+\end_layout
+
+\begin_layout Standard
+For more info click 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.omnitracs.com/blog/get-bus-j1708-and-j1939-vehicle-bus-standards"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2724,16 +3056,32 @@ Title
 
 \end_layout
 
-\begin_layout Chapter
-Truck Systems for Computer Scientists
+\begin_layout Subsubsection
+Physical Layer
 \end_layout
 
-\begin_layout Chapter
-Computer Programming for Engineers
+\begin_layout Standard
+As stated earlier, SAE J1708 describes the physical layer of legacy truck
+ networks.
+ 
 \end_layout
 
-\begin_layout Chapter
-Initial Heavy Vehicle Serial Protocols
+\begin_layout Subsubsection
+Application layer
+\end_layout
+
+\begin_layout Subsection
+PLC4Trucks/J2497
+\end_layout
+
+\begin_layout Standard
+So far we have only discussed the communications on the truck network.
+ But what if we also want data from trailer? The linkage between the tractor
+ and trailer is poer 
+\end_layout
+
+\begin_layout Section
+RP1210
 \end_layout
 
 \begin_layout Chapter
@@ -2815,6 +3163,60 @@ Princples of Cybersecurity
 Introduction to Cryptography
 \end_layout
 
+\begin_layout Subsection
+Terminology
+\end_layout
+
+\begin_layout Standard
+At it's simplest, cryptography is packing and unpacking a secret message.
+ The message you are attempting to send is known as the 
+\series bold
+plaintext
+\series default
+, P.
+ The transformation of the plaintext into non-readable form is called 
+\series bold
+encryption
+\series default
+, E.
+ The resulting obscured message is called 
+\series bold
+ciphertext
+\series default
+, C.
+ The transformation of the cipher text back to the original plaintext is
+ called 
+\series bold
+decryption
+\series default
+, D.
+ This process is illustrated in Fig X.
+\end_layout
+
+\begin_layout Subsection
+Randomness
+\end_layout
+
+\begin_layout Subsection
+Hashes
+\end_layout
+
+\begin_layout Subsection
+Encryption
+\end_layout
+
+\begin_layout Subsection
+Diffie-Hellman Key Exchange
+\end_layout
+
+\begin_layout Subsection
+AES Encryption
+\end_layout
+
+\begin_layout Subsection
+RSA Asymmetric Encryption
+\end_layout
+
 \begin_layout Section
 Message Authentication
 \end_layout
@@ -2824,7 +3226,59 @@ Encryption on CAN
 \end_layout
 
 \begin_layout Chapter
+Hardware Design
+\end_layout
+
+\begin_layout Section
+PCBs and Wiring Schematics with Altium Designer
+\end_layout
+
+\begin_layout Section
+3D Modeling and Printing with Solidworks
+\end_layout
+
+\begin_layout Chapter
 Heavy Vehicle Digital Forensics
+\end_layout
+
+\begin_layout Chapter
+Challenges
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Receive CAN Using Adapter
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Send and Receive CAN messages using Arduino
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Plot RPM and Wheel Based Vehicle Speed
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Hand Decode CAN frame with Oscilloscope
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Build an Arduino from Scratch
+\end_layout
+
+\begin_layout Subsection
+Challenge X: 
+\end_layout
+
+\begin_layout Subsection
+Challenge X:
+\end_layout
+
+\begin_layout Subsection
+Challenge X:
+\end_layout
+
+\begin_layout Subsection
+Challenge X:
 \end_layout
 
 \begin_layout Chapter

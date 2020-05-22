@@ -3076,139 +3076,6 @@ Terminal Exercises
 \end_layout
 
 \begin_layout Chapter
-Networking Fundamentals
-\end_layout
-
-\begin_layout Section
-Overview
-\end_layout
-
-\begin_layout Standard
-Serial, USB, Ethernet, SPI, Wifi, What these are, what they do, most popular,
- basic intro
-\end_layout
-
-\begin_layout Section
-Problems of Networking
-\end_layout
-
-\begin_layout Subsection
-Encoding
-\end_layout
-
-\begin_layout Subsection
-Framing
-\end_layout
-
-\begin_layout Subsection
-Data Transmission
-\end_layout
-
-\begin_layout Standard
-Link Access
-\end_layout
-
-\begin_layout Standard
-Media Access Control
-\end_layout
-
-\begin_layout Standard
-Collision Avoidance
-\end_layout
-
-\begin_layout Subsection
-Flow Control
-\end_layout
-
-\begin_layout Subsection
-Routing
-\end_layout
-
-\begin_layout Standard
-switching
-\end_layout
-
-\begin_layout Subsection
-Reliable Delivery
-\end_layout
-
-\begin_layout Subsection
-Fault Tolerance
-\end_layout
-
-\begin_layout Standard
-error detection
-\end_layout
-
-\begin_layout Standard
-error correction - Hamming Codes
-\end_layout
-
-\begin_layout Section
-OSI Layered Model
-\end_layout
-
-\begin_layout Section
-Ethernet
-\end_layout
-
-\begin_layout Subsection
-TCP/IP
-\end_layout
-
-\begin_layout Subsection
-UDP
-\end_layout
-
-\begin_layout Subsection
-Automotive Ethernet
-\end_layout
-
-\begin_layout Section
-Wireless Protocols
-\end_layout
-
-\begin_layout Subsection
-Wifi
-\end_layout
-
-\begin_layout Standard
-Krack
-\end_layout
-
-\begin_layout Subsection
-Cellular
-\end_layout
-
-\begin_layout Subsection
-Bluetooth
-\end_layout
-
-\begin_layout Standard
-Blueman
-\end_layout
-
-\begin_layout Standard
-Blueborne
-\end_layout
-
-\begin_layout Subsection
-Zigbee
-\end_layout
-
-\begin_layout Subsection
-Iridium Satelite
-\end_layout
-
-\begin_layout Subsection
-Other Communications
-\end_layout
-
-\begin_layout Section
-Networking Fundamentals Exercises
-\end_layout
-
-\begin_layout Chapter
 Vehicle Networking Protocols
 \end_layout
 
@@ -3431,6 +3298,139 @@ Build a man-in-the middle board and box that takes CAN signals into one
 \begin_layout Standard
 Using DDEC Reports, try to prevent resetting the CPC clock during a data
  extraction on a CPC.
+\end_layout
+
+\begin_layout Chapter
+Networking Fundamentals
+\end_layout
+
+\begin_layout Section
+Overview
+\end_layout
+
+\begin_layout Standard
+Serial, USB, Ethernet, SPI, Wifi, What these are, what they do, most popular,
+ basic intro
+\end_layout
+
+\begin_layout Section
+Problems of Networking
+\end_layout
+
+\begin_layout Subsection
+Encoding
+\end_layout
+
+\begin_layout Subsection
+Framing
+\end_layout
+
+\begin_layout Subsection
+Data Transmission
+\end_layout
+
+\begin_layout Standard
+Link Access
+\end_layout
+
+\begin_layout Standard
+Media Access Control
+\end_layout
+
+\begin_layout Standard
+Collision Avoidance
+\end_layout
+
+\begin_layout Subsection
+Flow Control
+\end_layout
+
+\begin_layout Subsection
+Routing
+\end_layout
+
+\begin_layout Standard
+switching
+\end_layout
+
+\begin_layout Subsection
+Reliable Delivery
+\end_layout
+
+\begin_layout Subsection
+Fault Tolerance
+\end_layout
+
+\begin_layout Standard
+error detection
+\end_layout
+
+\begin_layout Standard
+error correction - Hamming Codes
+\end_layout
+
+\begin_layout Section
+OSI Layered Model
+\end_layout
+
+\begin_layout Section
+Ethernet
+\end_layout
+
+\begin_layout Subsection
+TCP/IP
+\end_layout
+
+\begin_layout Subsection
+UDP
+\end_layout
+
+\begin_layout Subsection
+Automotive Ethernet
+\end_layout
+
+\begin_layout Section
+Wireless Protocols
+\end_layout
+
+\begin_layout Subsection
+Wifi
+\end_layout
+
+\begin_layout Standard
+Krack
+\end_layout
+
+\begin_layout Subsection
+Cellular
+\end_layout
+
+\begin_layout Subsection
+Bluetooth
+\end_layout
+
+\begin_layout Standard
+Blueman
+\end_layout
+
+\begin_layout Standard
+Blueborne
+\end_layout
+
+\begin_layout Subsection
+Zigbee
+\end_layout
+
+\begin_layout Subsection
+Iridium Satelite
+\end_layout
+
+\begin_layout Subsection
+Other Communications
+\end_layout
+
+\begin_layout Section
+Networking Fundamentals Exercises
 \end_layout
 
 \begin_layout Chapter

@@ -634,6 +634,22 @@ Digi-Key
 \begin_inset Text
 
 \begin_layout Plain Layout
+S120CACT-ND
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RNMF14FTC120R/S120CACT-ND/2617441"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -782,7 +798,7 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+G
 \end_layout
 
 \end_inset
@@ -846,7 +862,7 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-G
+H
 \end_layout
 
 \end_inset
@@ -909,7 +925,7 @@ target "https://www.sparkfun.com/products/8915"
 \begin_inset Text
 
 \begin_layout Plain Layout
-H
+J
 \end_layout
 
 \end_inset
@@ -990,6 +1006,69 @@ K
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SOIC8 to DIP Converter Board
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOB-13655
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/13655"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1048,7 +1127,7 @@ target "https://www.digikey.com/products/en?keywords=ATECC608A-SSHDA-TCT-ND"
 \begin_inset Text
 
 \begin_layout Plain Layout
-L
+M
 \end_layout
 
 \end_inset
@@ -1111,7 +1190,7 @@ target "https://www.sparkfun.com/products/15838"
 \begin_inset Text
 
 \begin_layout Plain Layout
-M
+N
 \end_layout
 
 \end_inset
@@ -1147,69 +1226,6 @@ status open
 LatexCommand href
 target "https://www.sparkfun.com/products/9806"
 literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-N
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SOIC8 to DIP Converter Board
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Sparkfun
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-BOB-13655
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-target "https://www.sparkfun.com/products/13655"
 
 \end_inset
 
@@ -1424,11 +1440,38 @@ target "https://www.flambeaucases.com/18-compartment-box-1095.aspx"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Basic Hardware Kit
+Basic Hardware Kit (Either use M or a the combination of K and L.)
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Photograph Example Parts Kit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1443,7 +1486,41 @@ Newer laptop computers may not have a physical Ethernet port, so a USB to
 \end_layout
 
 \begin_layout Exercise
-[]
+[Knowledge] Download the Datasheet for the Teensy 4.0 processor.
+ Answer the following questions:
+\end_layout
+
+\begin_layout Enumerate
+What is the name of the processor?
+\end_layout
+
+\begin_layout Enumerate
+What technology is the processor core built on?
+\end_layout
+
+\begin_layout Enumerate
+How many bits does the processor use when executing instructions?
+\end_layout
+
+\begin_layout Enumerate
+How fast does the processor run?
+\end_layout
+
+\begin_layout Enumerate
+How many CAN channels does the micoprocessor have?
+\end_layout
+
+\begin_layout Enumerate
+What are the register number bases for the CAN Channels?
+\end_layout
+
+\begin_layout Exercise
+[Comprehension] After reviewing the datasheet for the MCP2562, address the
+ following questions:
+\end_layout
+
+\begin_layout Enumerate
+Why do we need to connect the 
 \end_layout
 
 \begin_layout Subsection

@@ -1,0 +1,302 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\use_default_options true
+\begin_modules
+algorithm2e
+changebars
+figs-within-sections
+tabs-within-sections
+rsphrase
+theorems-std
+theorems-chap
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Times New Roman"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Consolas"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 3
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\headheight 0.6in
+\headsep 0.4in
+\footskip 0.6in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Computer Programming for Engineers
+\end_layout
+
+\begin_layout Standard
+Computer programming may seem like a daunting field for beginner programmers.
+ It does not need to be.
+ At its core, computer programming is providing a set of instructions to
+ a computer.
+ Each line of code contains one or more instructions.
+ Sometimes instructions interfere with each other and cause errors.
+ Imagine telling someone who has never seen a sandwich before how to make
+ a peanut butter and jelly sandwich.
+ The steps may be:
+\end_layout
+
+\begin_layout Enumerate
+Get Bread, Peanut Butter, Jelly, Knife, and Plate.
+\end_layout
+
+\begin_layout Enumerate
+Place plate.
+\end_layout
+
+\begin_layout Enumerate
+Place two pieces of bread side by side on plate.
+ Call them Slice A and Slice B.
+\end_layout
+
+\begin_layout Enumerate
+Put peanut butter on knife.
+\end_layout
+
+\begin_layout Enumerate
+Use knife to spread peanut butter on Slice A.
+\end_layout
+
+\begin_layout Enumerate
+Clean knife.
+\end_layout
+
+\begin_layout Enumerate
+Put jelly on knife.
+\end_layout
+
+\begin_layout Enumerate
+Use knife to spread jelly on Slice B.
+\end_layout
+
+\begin_layout Enumerate
+Combine Slice A with Slice B by placing Slice B on Slice A.
+\end_layout
+
+\begin_layout Enumerate
+Eat Sandwich.
+\end_layout
+
+\begin_layout Enumerate
+Clean Knife
+\end_layout
+
+\begin_layout Enumerate
+Clean Plate
+\end_layout
+
+\begin_layout Standard
+Provided no external changes, this set of instructions will always lead
+ to a proper peanut butter and jelly sandwich.
+ However, some people may argue about if you should use grape jelly or strawberr
+y jelly, chunky or smooth peanut butter.
+ Some people are adamant that you must put Jelly on Slice A, never peanut
+ butter.
+ Some argue that if one starts with a loaf of bread instead of slices then
+ it produces a better sandwich.
+ These options represent the different ways that people program.
+ There are many different sets of instructions that produce peanut butter
+ and jelly sandwiches.
+ Programming is very smiliar.
+ There are many different ways to code a program that will lead to the same
+ result.
+ 
+\end_layout
+
+\begin_layout Standard
+However, there are ways which are more efficient than others, and there
+ are ways to make code easier to understand.
+ When writing code, it is important to write with a consistent programming
+ style that allows others to understand your code.
+ Code must be maintained over time, and may transition between programmers.
+ 
+\end_layout
+
+\begin_layout Standard
+This chapter should serve to introduce the basics of computer programming
+ as a platform for the Cyber Truck Experience program.
+\end_layout
+
+\begin_layout Section
+Introduction to Computer Programming
+\end_layout
+
+\begin_layout Subsection
+Programming languages
+\end_layout
+
+\begin_layout Standard
+Python is a commonly used 
+\bar under
+programming language
+\bar default
+.
+ Programming languages are the dialects of computer instructions that are
+ written.
+ While many concepts carry over between languages, differences in syntax,
+ or how you write and format the instructions, mean that functionally equivalent
+ instructions may look different.
+\end_layout
+
+\begin_layout Standard
+For example, to get the program to 
+\begin_inset Quotes eld
+\end_inset
+
+say
+\begin_inset Quotes erd
+\end_inset
+
+ something or show a string of text in:
+\end_layout
+
+\begin_layout Itemize
+Python version 3: print(Hello World)
+\end_layout
+
+\begin_layout Itemize
+Python version 2: print 
+\begin_inset Quotes eld
+\end_inset
+
+Hello World
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Java: println(Hello World)
+\end_layout
+
+\begin_layout Itemize
+Arduino: Serial.print(
+\begin_inset Quotes eld
+\end_inset
+
+Hello World
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Pay attention to the spacing, punctuation, and print commands.
+ This is a basic example, but the syntax differences between languages 
+\end_layout
+
+\begin_layout Subsection
+IDE
+\end_layout
+
+\begin_layout Subsection
+Exercises
+\end_layout
+
+\begin_layout Section
+Programming with Python
+\end_layout
+
+\begin_layout Subsection
+CodeAcademy
+\end_layout
+
+\begin_layout Section
+Programming with Arduino
+\end_layout
+
+\begin_layout Subsection
+Exercises
+\end_layout
+
+\begin_layout Chapter
+\start_of_appendix
+Data Sheet Snippets
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,328 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\use_default_options true
+\master 00_CyTeX_Manual_main_document.lyx
+\begin_modules
+theorems-std
+theorems-chap
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Computer Programming Fundamentals (Computer Programming for Engineers)
+\end_layout
+
+\begin_layout Standard
+Computer programming may seem like a daunting field for beginner programmers.
+ It does not need to be.
+ At its core, computer programming is providing a set of instructions to
+ a computer.
+ Each line of code contains one or more instructions.
+ Sometimes instructions interfere with each other and cause errors.
+ Imagine telling someone who has never seen a sandwich before how to make
+ a peanut butter and jelly sandwich.
+ The steps may be:
+\end_layout
+
+\begin_layout Enumerate
+Get Bread, Peanut Butter, Jelly, Knife, and Plate.
+\end_layout
+
+\begin_layout Enumerate
+Place plate.
+\end_layout
+
+\begin_layout Enumerate
+Place two pieces of bread side by side on plate.
+ Call them Slice A and Slice B.
+\end_layout
+
+\begin_layout Enumerate
+Put peanut butter on knife.
+\end_layout
+
+\begin_layout Enumerate
+Use knife to spread peanut butter on Slice A.
+\end_layout
+
+\begin_layout Enumerate
+Clean knife.
+\end_layout
+
+\begin_layout Enumerate
+Put jelly on knife.
+\end_layout
+
+\begin_layout Enumerate
+Use knife to spread jelly on Slice B.
+\end_layout
+
+\begin_layout Enumerate
+Combine Slice A with Slice B by placing Slice B on Slice A.
+\end_layout
+
+\begin_layout Enumerate
+Eat Sandwich.
+\end_layout
+
+\begin_layout Enumerate
+Clean Knife
+\end_layout
+
+\begin_layout Enumerate
+Clean Plate
+\end_layout
+
+\begin_layout Standard
+Provided no external changes, this set of instructions will always lead
+ to a proper peanut butter and jelly sandwich.
+ However, some people may argue about if you should use grape jelly or strawberr
+y jelly, chunky or smooth peanut butter.
+ Some people are adamant that you must put Jelly on Slice A, never peanut
+ butter.
+ Some argue that if one starts with a loaf of bread instead of slices then
+ it produces a better sandwich.
+ These options represent the different ways that people program.
+ There are many different sets of instructions that produce peanut butter
+ and jelly sandwiches.
+ Programming is very smiliar.
+ There are many different ways to code a program that will lead to the same
+ result.
+ 
+\end_layout
+
+\begin_layout Standard
+However, there are ways which are more efficient than others, and there
+ are ways to make code easier to understand.
+ When writing code, it is important to write with a consistent programming
+ style that allows others to understand your code.
+ Code must be maintained over time, and may transition between programmers.
+ 
+\end_layout
+
+\begin_layout Standard
+This chapter should serve to introduce the basics of computer programming
+ as a platform for the Cyber Truck Experience program.
+\end_layout
+
+\begin_layout Section
+Programming Best Practices
+\end_layout
+
+\begin_layout Itemize
+Do not repeat yourself
+\end_layout
+
+\begin_layout Itemize
+Make small functions that do one thing really well
+\end_layout
+
+\begin_layout Itemize
+Ensure functions and algorithms are composable
+\end_layout
+
+\begin_layout Itemize
+Document your code to describe what's going on to other people
+\end_layout
+
+\begin_layout Section
+Python 3 Programming Language
+\end_layout
+
+\begin_layout Standard
+An important tool in any hackers toolkit is the ability to interact with
+ collected data.
+ In this section, we will be using a programming language called Python
+ to help with this.
+\end_layout
+
+\begin_layout Subsection
+Background
+\end_layout
+
+\begin_layout Standard
+Python is a general purpose, versatile, and popular programming language.
+ It is great as a first language because it is concise and easy to read.
+ It is also a good language to have in any programmer's stack as it can
+ be used for everything from web development to software development and
+ data science applications.
+\end_layout
+
+\begin_layout Standard
+This is different than what we have done to this point in Arduino.
+ We will generally use the Arduino devices to directly interface with systems.
+ These devices will then send data back to a computer or other device running
+ a Python script.
+\end_layout
+
+\begin_layout Subsection
+Codecademy
+\end_layout
+
+\begin_layout Standard
+We will begin by having you learn the basics of Python.
+ We will be using an external system to aid in this.
+ Navigate over to 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.codecademy.com/learn/learn-python"
+literal "false"
+
+\end_inset
+
+ and create an account using your email and fill out any information they
+ require.
+ Please ensure that you do not pay for this service at this time.
+ We will only need the services that the free version offers.
+\end_layout
+
+\begin_layout Standard
+Please complete this course.
+ Take notes throughout the course over functions that may be useful (importing
+ and exporting files, searching through lists, data structures, etc.) Periodicall
+y, there will be additional trial material to supplement your learning.
+\end_layout
+
+\begin_layout Subsection
+Editors and IDE
+\end_layout
+
+\begin_layout Subsection
+Threading
+\end_layout
+
+\begin_layout Subsection
+PySerial
+\end_layout
+
+\begin_layout Subsection
+matplotlib
+\end_layout
+
+\begin_layout Subsection
+Making GUIs with PyQt5
+\end_layout
+
+\begin_layout Section
+Arduino Programming with C and C++
+\end_layout
+
+\begin_layout Subsection
+Codecademy
+\end_layout
+
+\begin_layout Section
+Python Command Framework
+\end_layout
+
+\begin_layout Standard
+Data logging and data visualization are very common programming tasks for
+ engineers working with industrial and vehicle data.
+ To efficeiently work on larger projects in collaboration, we need to have
+ different layers and operations abstracted into a framework.
+ This section works on designing a software framework to satisfy the design
+ criteria.
+ This framework will be built incrementally with some basic constructs to
+ start with.
+ The concepts will be introduced as needed, which will inherently guide
+ students to understand maintainable, professional code bases.
+ 
+\end_layout
+
+\begin_layout Subsection
+Customer Needs
+\end_layout
+
+\begin_layout Subsection
+Engineering Requirements
+\end_layout
+
+\begin_layout Subsection
+Concept Sketch
+\end_layout
+
+\begin_layout Subsection
+Python Modules
+\end_layout
+
+\begin_layout Section
+Computer Programming Fundamentals Exercises
+\end_layout
+
+\end_body
+\end_document

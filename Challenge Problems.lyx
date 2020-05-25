@@ -86,5 +86,10 @@ theorems-chap
 Challenge Problems
 \end_layout
 
+\begin_layout Problem
+Transfer a JPEG image of the CSU logo over CAN and display it.
+ 
+\end_layout
+
 \end_body
 \end_document

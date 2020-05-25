@@ -23,7 +23,7 @@ theorems-chap
 \font_roman "default" "Times New Roman"
 \font_sans "default" "Arial"
 \font_typewriter "default" "Consolas"
-\font_math "auto" "auto"
+\font_math "auto" "default"
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false

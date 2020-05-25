@@ -197,6 +197,7 @@ Ensure functions and algorithms are composable
 
 \begin_layout Itemize
 Document your code to describe what's going on to other people
+
 \end_layout
 
 \begin_layout Section
@@ -287,6 +288,7 @@ Codecademy
 \end_layout
 
 \begin_layout Section
+
 Python Command Framework
 \end_layout
 

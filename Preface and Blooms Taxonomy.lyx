@@ -1,0 +1,1265 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\use_default_options true
+\master 00_CyTeX_Manual_main_document.lyx
+\begin_modules
+theorems-std
+theorems-chap
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introduction to the Student CyberTruck Experience
+\end_layout
+
+\begin_layout Section
+Trucking as a Critical Infrastructure
+\end_layout
+
+\begin_layout Standard
+Transporting material by truck is a critical aspect of modern life.
+ The Transportation Systems Sector has been declared a critical infrastructure
+ sector by the Department of Homeland Security (DHS) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cisa_gov"
+literal "false"
+
+\end_inset
+
+.
+ Therefore, protecting trucks, trailers, vans, buses and the logistic engines
+ supporting these vehicles is of the utmost importance for our way of life.
+ 
+\end_layout
+
+\begin_layout Standard
+In the mid 1990s, the technology used on heavy vehicle transitioned from
+ mechanical controls to digital controls.
+ For many years, these digital controls and embedded systems were isolated
+ from the rest of the world unless accessed by a technician.
+ This is known as an air gap
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "air gap"
+description "A physically disconnected network with no access to the outside world."
+literal "false"
+
+\end_inset
+
+.
+ However, the trucking industry realized process improvements through remote
+ monitoring of the vehicles and their status.
+ Technologies like over-the-air updates have become part of the truck and
+ its supporting systems.
+ This broke down the air gap defense and trucks may be connected to the
+ Internet by way of a cellular modem.
+ With the truck network connected to an outside network, there is a possibility
+ for a vulnerability to be exploited and an attacker to remotely execute
+ code on the truck.
+ This is problematic, because the truck systems are trusting of the internal
+ network and will react without regard the authenticity of a message.
+ This means a well crafted message on the internal network can wreak havoc
+ on the truck and potentially shut it down...
+ or worse.
+ Keep in mind, a truck traveling at 70 miles per hour carrying 80,000 lb
+ has an large amount of energy.
+ Here is a quick example of the kinetic energy calculation for moving truck:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+KE=\frac{1}{2}mv^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+KE=\frac{1}{2}\frac{W}{g}(1.466S)^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+KE=\frac{80,000}{2(32.2)}[1.466(70)]^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+KE=13,081,819\,\textrm{ft-lb}
+\]
+
+\end_inset
+
+For comparison, a .30-06 rifle can propel a 0.308 inch diameter bullet at
+ 3000 ft/second, which is around 3000 ft-lbs of energy.
+ In other words, a truck has as much energy as 4360 rifles being fired at
+ once! 
+\end_layout
+
+\begin_layout Standard
+The ability for a truck to cause serious damage in a crash is significant.
+ Crashes are perhaps the most spectacular outcome of a cyber attack, but
+ other subversive results can be achieved, like theft, logistics disruption,
+ a traffic congestion.
+ One particularly scary scenario is if a cyber attack affects many trucks
+ at the same time.
+ The tow and recovery services can easily respond to a couple broken-down
+ trucks, but if thousands of truck came to a halt at the same time, the
+ highway system would be broken.
+ This means medical supplies, food, and fuel are no longer distributed.
+ Its only a few days before serious civil unrest would start if trucking
+ gets shut down.
+ Brainstorming terrible scenarios is somewhat trivial, but our goal is to
+ develop solutions.
+ A compelling industry report from the NMFTA provides much of the rational
+ to address the problem of heavy vehicle cybersecurity 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NMFTA_Whitepaper"
+literal "false"
+
+\end_inset
+
+.
+ The reason for this book and the accompanying Student CyberTruck Experience
+ is to teach the engineers and scientists the necessary elements needed
+ to improve the cybersecurity posture of the transportation industry.
+\end_layout
+
+\begin_layout Subsection*
+How the Student CyberTruck Experience Started
+\end_layout
+
+\begin_layout Standard
+In 2016, Urban Jonson of the National Motor Freight Traffic Association,
+ Inc.
+ (NMFTA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NMFTA"
+description "National Motor Freight Traffic Association, Inc. "
+literal "false"
+
+\end_inset
+
+) reached out to Dr.
+ Jeremy Daily while he was teaching mechanical engineering at the University
+ of Tulsa (TU
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TU"
+description "The University of Tulsa"
+literal "false"
+
+\end_inset
+
+) to discuss some research findings related to heavy vehicle cybersecurity.
+ In this conversation, Dr.
+ Daily confirmed many of the hypotheses in the NMFTA whitepaper on the state
+ of heavy vehicle cybersecurity.
+ This conversation led to an invitation for Dr.
+ Daily to attend the first NMFTA Heavy Vehicle Cyber Security (HVCS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HVCS"
+description "Heavy Vehicle Cyber Security"
+literal "false"
+
+\end_inset
+
+) meeting in Virginia.
+ One of the results of the meeting was a recognition for the need to build
+ the human talent needed to address the challenges associated with cybersecurity
+ of heavy vehicles.
+ This initiative is how the Student CyberTruck Experience came into being.
+ A detailed account of the lessons learned in developing heavy vehicle cybersecu
+rity talent was presented at the ESCAR USA 2017 conference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Daily_Jonson_2017"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Program Mission
+\end_layout
+
+\begin_layout Standard
+The mission of the Student CyberTruck Experience is to 
+\emph on
+develop the talent necessary to improve the cybersecurity posture of heavy
+ vehicles
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+This mission is intended to be high level and focused on the big picture.
+ However, it is too general and hard to measure the actual achievement of
+ the mission.
+ There are a few indicators that the program is succeeding in its mission:
+\end_layout
+
+\begin_layout Enumerate
+Graduates of the program have been hired into the industry in a cybersecurity
+ capacity.
+\end_layout
+
+\begin_layout Enumerate
+Graduates have gone onto graduate school and created scholarly works contributin
+g to the body of science around heavy vehicle cybersecurity.
+\end_layout
+
+\begin_layout Enumerate
+Student participants have attended and participated in the CyberTruck Challenge,
+ thus building the overall awareness around heavy vehicle cybersecurity.
+\end_layout
+
+\begin_layout Enumerate
+External sponsors continue to sponsor the research project, which enables
+ undergraduates to focus summer research efforts towards heavy vehicle cybersecu
+rity.
+\end_layout
+
+\begin_layout Enumerate
+The ideas and projects from the Student CyberTruck Experience have been
+ used as ideas for other funded research projects at the federal level.
+\end_layout
+
+\begin_layout Enumerate
+Students consistently receive positive feedback at the HVCS bi-annual meetings.
+ 
+\end_layout
+
+\begin_layout Standard
+While this is great feedback as to the success of the program, we need a
+ more measured approach to help students and researchers progress through
+ the program and maximize their potential.
+ There is a famous saying:
+\end_layout
+
+\begin_layout Quote
+You can only improve what you measure.
+\end_layout
+
+\begin_layout Standard
+This calls for some measurable program learning objectives.
+ 
+\end_layout
+
+\begin_layout Section
+Program Learning Objectives
+\end_layout
+
+\begin_layout Standard
+As suggested by Sara Rathburn from Colorado State University's The Institute
+ for Teaching and Learning, learning objectives are written statements organizin
+g and defining the specific knowledge, skill-sets, and/or abilities students
+ should acquire 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TILT_objectives"
+literal "false"
+
+\end_inset
+
+.
+ These learning objectives help students assess their skills and provide
+ specifics for the learning journey to become a productive cybersecurity
+ practitioner.
+ An effective learning objective has three parts:
+\end_layout
+
+\begin_layout Enumerate
+A description of what is expected.
+\end_layout
+
+\begin_layout Enumerate
+The conditions necessary to demonstrate proficiency.
+\end_layout
+
+\begin_layout Enumerate
+The criteria for evaluating performance.
+\end_layout
+
+\begin_layout Standard
+For example, a Program Learning Example could be
+\end_layout
+
+\begin_layout Itemize
+Create a program to reassemble messages that arrive out of order from a
+ J1939 Transport Protocol - Data Transfer to properly receive the data in
+ the same order in which it was sent.
+\end_layout
+
+\begin_layout Standard
+Looking at this objective, there is a clear output of what output is expected.
+ Specifically, the output is the computer program.
+ However, the language writing the code is not specified, so any language
+ would be acceptable.
+ The conditions for the exercise is an out of order message stream from
+ J1939 network.
+ Success will be achieved when the original byte stream matches the reassembled
+ message.
+ The primary action verb in this objective is the word create.
+ Different action verbs suggest different levels of learning, which has
+ been popularized as Bloom's Taxonomy.
+\end_layout
+
+\begin_layout Subsection
+The Taxonomy of Educational Objectives (Bloom's Taxonomy)
+\end_layout
+
+\begin_layout Standard
+When developing new course for university, we have to generate a set of
+ course objectives.
+ A well reasoned approach is to create objectives that start with the phrase
+ 
+\begin_inset Quotes eld
+\end_inset
+
+By the end of this course, students should be able to...
+\begin_inset Quotes erd
+\end_inset
+
+ and the rest of the sentence is the learning objective.
+ To create the learning objective, an action verb is used followed by the
+ object of knowledge they are expected to acquire or construct.
+ There are multiple dimensions of knowledge as well as different levels
+ of thinking about things.
+ A succinct info-graphic was produced at Iowa State University under a Creative
+ Commons License and displayed in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Revised-Bloom's-Taxonomy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The examples and breakdown of the learning objective space shown in the
+ figure will be used to span the basis for talent generation for the Student
+ CyberTruck Experience.
+ 
+\end_layout
+
+\begin_layout Standard
+The learning objectives should focus on accomplishing the program mission.
+ Since the topic of cybersecurity is rapidly changing in the modern era,
+ the learning objectives may need to change to accommodate advances in technolog
+y, knowledge, and application.
+ For example, the advent of quantum computing promises to create a paradigm
+ shift in modern cryptography as many 
+\begin_inset Quotes eld
+\end_inset
+
+hard
+\begin_inset Quotes erd
+\end_inset
+
+ problems that are used as the basis for modern cryptography can be calculated
+ quickly, thus nullifying the underlying algorithms.
+ As of this writing, there have been no practical exploits based on quantum
+ computing.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphics/Blooms Handout.eps
+	width 100text%
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Revised-Bloom's-Taxonomy"
+
+\end_inset
+
+Revised Bloom's Taxonomy used in creating learning objectives 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BloomsRose"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Often Bloom's Taxonomy is constructed as a pyramid or cake as shown in Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Bloom's-Taxonomy-from"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This is a simpler graphic to digest and use as a model for your own level
+ of knowledge.
+ Often the base layers are necessary to accomplish a mastery of a higher
+ layer.
+ For example, to apply a cryptographic algorithm on a heavy truck network,
+ you would need to understand the limitations of J1939 and have knowledge
+ of the truck system.
+ The larger foundations are needed to achieve the higher order thinking.
+ This means learning objectives that are focused on the top of the pyramid,
+ like evaluate and create, require a mastery of the layers below.
+ Thus students should strive to achieve the highest level of contemplation
+ in an effort to have the broadest experience.
+\end_layout
+
+\begin_layout Standard
+However, when a new student is introduced to a field, like heavy vehicle
+ cybersecurity, they cannot immediately go to the top layer.
+ Moreover, the process of building the knowledge foundation is critical
+ to success.
+ As such, the learning objectives in the program will vary across the cognitive
+ process dimension.
+ This enables a student to enter the program at their level and still have
+ a objectives to challenge them.
+ For example, a computer science student may have training and experience
+ using data structures in C and an engineering student may have practical
+ experience fixing air brake systems.
+ These students would each bring their own level of expertise to the program
+ and enter the quest for knowledge at different levels.
+ The CS student may be able to quickly declare a structure for a CAN data
+ frame in a C header file, but the ME student may need to learn about C
+ data structures and data types, then understand how to create a struct.
+ In other words, the level of effort in achieving mastery of the learning
+ objectives may be different for each student.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename graphics/blooms_taxonomy.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bloom's-Taxonomy-from"
+
+\end_inset
+
+Bloom's Taxonomy from 
+\begin_inset CommandInset href
+LatexCommand href
+name "Jessica Shabatura"
+target "https://tips.uark.edu/using-blooms-taxonomy/"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Program-Learning-Objectives"
+
+\end_inset
+
+Program Learning Objectives
+\end_layout
+
+\begin_layout Standard
+To achieve the program mission, students who go through the Student CyberTruck
+ Experience (CyTeX)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CyTeX"
+description "Student CyberTruck Experience"
+literal "false"
+
+\end_inset
+
+ should be able to...
+\end_layout
+
+\begin_layout Enumerate
+List the major Original Equipment Manufacturers (OEM)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OEM"
+description "Orignial Equipment Manufacturer"
+literal "false"
+
+\end_inset
+
+ and Tier 1 Suppliers for on-highway heavy vehicles.
+\end_layout
+
+\begin_layout Enumerate
+Recognize a unified diagnostic service (UDS)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "UDS"
+description "Unified Diagnostic Services"
+literal "false"
+
+\end_inset
+
+ message in SAE J1939 communication.
+\end_layout
+
+\begin_layout Enumerate
+Recall the different layers of the Open Systems Interconnection (OSI)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OSI"
+description "Open Systems Interconnection"
+literal "false"
+
+\end_inset
+
+ networking model.
+\end_layout
+
+\begin_layout Enumerate
+Identify the different electronic control units (ECUs)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ECU"
+description "Electronic Control Unit"
+literal "false"
+
+\end_inset
+
+ used on heavy vehicles.
+\end_layout
+
+\begin_layout Enumerate
+Summarize the strengths and weaknesses of the controller area network.
+\end_layout
+
+\begin_layout Enumerate
+Classify trucks and trailers by weight class and use.
+\end_layout
+
+\begin_layout Enumerate
+Clarify the way CAN bus data is used for the freight carriers, OEMs, tier
+ 1 suppliers and telematics providers.
+\end_layout
+
+\begin_layout Enumerate
+Predict potential cybersecurity attacks through an electronic logging device
+ (ELD)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ELD"
+description "Electronic Logging Device"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Respond to J1939 request messages for VIN
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "VIN"
+description "Vehicle Identification Number"
+literal "false"
+
+\end_inset
+
+, Component Identification, and other J1939 on request messages.
+\end_layout
+
+\begin_layout Enumerate
+Provide a secure API
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "API"
+description "Application Programming Interface"
+literal "false"
+
+\end_inset
+
+ for a CAN to Ethernet electronic device to network log data on a computer.
+\end_layout
+
+\begin_layout Enumerate
+Carry out cryptographic message authentication for intra-vehicle communications.
+\end_layout
+
+\begin_layout Enumerate
+Use certificates and public key infrastructure (PKI)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PKI"
+description "Public Key Infrastructure"
+literal "false"
+
+\end_inset
+
+ to securely update a vehicle connected device.
+\end_layout
+
+\begin_layout Enumerate
+Select the fastest cryptographic approach to secure diagnostic communication
+ between a gateway and a diagnostic application.
+\end_layout
+
+\begin_layout Enumerate
+Differentiate between best practices for IT
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IT"
+description "Information Technology"
+literal "false"
+
+\end_inset
+
+ security and heavy vehicle network security.
+\end_layout
+
+\begin_layout Enumerate
+Integrate X.509 Certificates and PKI into embedded hardware security modules
+ connected to vehicles.
+\end_layout
+
+\begin_layout Enumerate
+Deconstruct heavy vehicle event data recorder (HVEDR
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HVEDR"
+description "Heavy Vehicle Event Data Recorder"
+literal "false"
+
+\end_inset
+
+) data sets from raw binary to time history graphs.
+\end_layout
+
+\begin_layout Enumerate
+Check and verify digitally signed data from a CAN Logger
+\end_layout
+
+\begin_layout Enumerate
+Determine the contents of a CAN frame based on an oscilloscope trace of
+ the signals on the CAN bus wires.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Judge the real-time performance of HMAC
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HMAC"
+description "Hash based message authentication"
+literal "false"
+
+\end_inset
+
+ and CMAC
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CMAC"
+description "Cryptographic Message Authentication"
+literal "false"
+
+\end_inset
+
+ approaches to verifying the integrity and authenticity of CAN messages.
+\end_layout
+
+\begin_layout Enumerate
+Reflect on the challenges for implementing secure solutions to legacy vehicles
+ already on the road.
+\end_layout
+
+\begin_layout Enumerate
+Generate a solution to stream maximum bit rate CAN data over an IP network.
+\end_layout
+
+\begin_layout Enumerate
+Assemble a system to detect and defend against intrusions on the CAN bus.
+\end_layout
+
+\begin_layout Enumerate
+Design a printed circuit board to bridge multiple networks while securely
+ storing cryptographic key material.
+\end_layout
+
+\begin_layout Enumerate
+Create an original research poster advancing the cybersecurity posture of
+ heavy vehicles.
+\end_layout
+
+\begin_layout Standard
+Notice these objective make use of every verb in the graphic shown in Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Revised-Bloom's-Taxonomy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Additional objectives will be enumerated within each chapter of the manual
+ as the specifics of the content and exercises are matured.
+ 
+\end_layout
+
+\begin_layout Section
+Exercises
+\end_layout
+
+\begin_layout Standard
+While the learning objectives are fantastic for what we want to achieve,
+ the specific activities to accomplish those goals need to be defined.
+ Through the manual, we will present exercises that focus on helping students
+ to achieve a learning objective.
+ These exercises are created at different levels of the taxonomy, which
+ enables a learner to start at a level appropriate to their skills.
+ Successful completion of all the exercises should lead to the accomplishment
+ of all learning objectives.
+ The idea of successful completion means we have to have a measurement for
+ success.
+ 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset CommandInset label
+LatexCommand label
+name "exer:[Evaluate]-create-objective"
+
+\end_inset
+
+[Evaluate] Reflect on on the program learning objectives in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Program-Learning-Objectives"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and determine what is missing.
+ Write a new learning objective using a verb that is not already in the
+ list.
+ Justify the reason for the new objective and submit it to your cohort for
+ discussion.
+ 
+\end_layout
+
+\begin_layout Exercise
+For each exercise, the 
+\end_layout
+
+\begin_layout Section
+Assessments
+\end_layout
+
+\begin_layout Standard
+In school, formal assessments typically come in the form of quizzes, exams,
+ and essays.
+ These tools are part of a traditional pedagogy where students learn to
+ achieve the grade and the rewards associated with the good grades.
+ In this model, the teacher is primarily responsible for the assessment
+ tools.
+ However, the teacher feedback and assessment needs to transition to self
+ or peer assessment when schooling ends and graduates enter the work force.
+ Since the Student CyberTruck Experience mission is workforce centric, these
+ self assessment skills are necessary to develop.
+ 
+\end_layout
+
+\begin_layout Standard
+The exercises used throughout the program should have measurable outputs.
+ Many times the outputs are binary (e.g.
+ the approach worked or it didn't), but some outputs are qualitative or
+ quantitative.
+ For quantitative outputs, there are typically thresholds of performance
+ to measure success.
+ For example, if an exercise is to build a CAN to Ethernet translator device,
+ the quantitative measure of success could be the message rate through puts
+ of the device.
+ The exercise should include the testing functions required to perform the
+ assessments; and the outputs of the tests should be compared to a threshold
+ or standard of performance.
+ For qualitative results, the arguments and analysis need to be presented
+ clearly to peers, mentors, and instructors to ensure the concept is effectively
+ communicated.
+ Feedback is the primary form of assessing qualitative outputs.
+\end_layout
+
+\begin_layout Subsection
+Formative Assessments
+\end_layout
+
+\begin_layout Standard
+Formative assessments are frequent small tests of ideas and concepts with
+ low-stakes.
+ They are meant to have little to no pressure and provide quick feedback
+ on the progress towards achieving mastery of the learning objectives.
+ Some types of formative assessments include:
+\end_layout
+
+\begin_layout Itemize
+Conversations to determine levels of knowledge, like trivia questions
+\end_layout
+
+\begin_layout Itemize
+What-if scenarios
+\end_layout
+
+\begin_layout Itemize
+Bouncing ideas off peers
+\end_layout
+
+\begin_layout Itemize
+Confirming concepts with mentors
+\end_layout
+
+\begin_layout Itemize
+Sketching diagrams and flow charts
+\end_layout
+
+\begin_layout Standard
+Formative assessments are frequently used in writing code and are synonymous
+ with debug statements.
+ Simply put, a debug statement is a small test to ensure the code is working
+ according to your idea and design.
+ 
+\end_layout
+
+\begin_layout Standard
+Students should develop their own set of self-critiquing skills and frequently
+ perform their own formative assessments.
+ The more of these frequent assessments that take place, the more likely
+ for success.
+ Furthermore, the documentation and communication of these formative assessment
+ results are important to 
+\begin_inset Quotes eld
+\end_inset
+
+managing your boss,
+\begin_inset Quotes erd
+\end_inset
+
+ which is an important workplace behavior where a subordinate will frequently
+ update the manager on progress and challenges.
+ Articulating what you've done, how you tested it, and explaining the results
+ are welcome communications for any good manager.
+ 
+\end_layout
+
+\begin_layout Standard
+An example of the formative assessment for Exercise 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:[Evaluate]-create-objective"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is the discussion with your peers and instructor.
+ There are no grades associated with the exercise and the questions and
+ discussion around your proposed objective will give you feedback on if
+ it is clear and measurable.
+\end_layout
+
+\begin_layout Subsection
+Summative Assessments
+\end_layout
+
+\begin_layout Standard
+In school, summative assessments are less frequent, high stakes exercises
+ like examinations and term papers.
+ Since the focus of the Student CyberTruck Experience is project based,
+ the summative assessment is the successful completion of the project.
+ This begs the question of what success means.
+ In an engineering design, a customer will voice a need or desire.
+ One of the first jobs of the design engineer is to restate the problem
+ into a set of measurable requirements.
+ Since a good requirement is measurable, the project essentially assesses
+ itself.
+ The project is completed once all the requirements are demonstrated to
+ be satisfied.
+ This means it is possible to perform a summative assessment completely
+ by yourself.
+ However, an external review of the project is highly recommended.
+\end_layout
+
+\begin_layout Standard
+For the CyTeX program, the realization of the summative assessment is the
+ research poster presented at the NMFTA's fall HVCS meeting.
+ These posters are viewed by all the attendees, which range from motor carriers,
+ to government researchers, military scientists, and cybersecurity professionals.
+ Students are expected to explain their poster contents and address questions
+ from the attendees.
+ 
+\end_layout
+
+\begin_layout Standard
+An example of the summative assessment for Exercise 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exer:[Evaluate]-create-objective"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is the acceptance of the proposed learning objective into the program.
+ Perhaps it will be included in the next version of this manual!
+\end_layout
+
+\begin_layout Section
+Research
+\end_layout
+
+\begin_layout Standard
+Every year we continue to research topics that can be relevant and helpful
+ to improving the cybersecurity posture of the trucking industry.
+ These projects are curated from the needs of the trucking companies, current
+ technologies, topics of interest, and achievability.
+ The list of projects is curated in the fall of each year and proposed to
+ the sponsors.
+ Once agreed upon, the projects are presented to the students.
+ Student select the projects based on interest, but often they don't have
+ enough background to know where to go.
+ In those cases, the exercises herein can lay the foundation of knowledge
+ and experience to take steps towards accomplishing the research.
+ 
+\end_layout
+
+\begin_layout Standard
+Research can lead new discoveries and novel methods, but the likely output
+ of the research for this program is a well thought out engineering design
+ project.
+ The engineering design process is as follows:
+\end_layout
+
+\begin_layout Description
+Ask Understand the needs of the customer, which means you have to know who
+ the customer and their use cases.
+ Restate and define the problem with a series of measurable engineering
+ specifications, criteria, and constraints.
+\end_layout
+
+\begin_layout Description
+Imagine Brainstorm and explore different possible solutions to the problem.
+\end_layout
+
+\begin_layout Description
+Plan Select the most promising solution and draw/sketch out a solution.
+ Determine the resources needed
+\end_layout
+
+\begin_layout Description
+Create Implement a prototype the solution.
+ Acquire the parts and materials needed and build the solution
+\end_layout
+
+\begin_layout Description
+Test Evaluate the prototype to determine if it works and satisfies the design
+ constraints
+\end_layout
+
+\begin_layout Description
+Iterate the process and improve the implementation and refine the requirements.
+\end_layout
+
+\begin_layout Description
+Share Communicate your design and solution to the appropriate audience.
+ 
+\end_layout
+
+\begin_layout Standard
+There are many info-graphics on the Internet to visualize this process.
+ The final poster presentation is the final step in sharing your results.
+ The poster should capture the engineering design process and the things
+ you've learned along the way, even if you learned that something doesn't
+ work.
+ 
+\end_layout
+
+\begin_layout Section
+Systems Engineering Approach
+\end_layout
+
+\begin_layout Standard
+The engineering design process is often visualized in an iterative loop.
+ Another visualization, popular among systems engineers, is the systems
+ V (
+\begin_inset Quotes eld
+\end_inset
+
+vee
+\begin_inset Quotes erd
+\end_inset
+
+) diagram.
+ The V-diagram is used by in SAE J3061: Cybersecurity Guidebook for Cyber-Physic
+al Vehicle Systems to describe the process taken to design and develop more
+ secure cyber-physical systems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "J3061"
+literal "false"
+
+\end_inset
+
+.
+ The graphic for this process is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Systems-engineering-processVdiagram"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphics/Secure CPS Process V Diagram.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Systems-engineering-processVdiagram"
+
+\end_inset
+
+Systems engineering process diagram for designing more secure cyber-physical
+ systems.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The V diagram is setup so the design phases are on the left and the testing
+ phases are on the right.
+ The top of the diagram contains the systems level approach, while the bottom
+ V is separated into hardware and software designs.
+ Many processes are iterative and follow the engineering design process
+ within their own blocks.
+ Often the hardware and software teams need to work closely together.
+ For example, a systems level requirement may be to securely store cryptographic
+ keys.
+ Often this is done with a dedicated hardware security module (HSM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HSM"
+description "Hardware Security Module"
+literal "false"
+
+\end_inset
+
+).
+ The hardware team needs to build the circuit to support the HSM and the
+ software team needs to use the key material stored on the HSM.
+ The software team may have to use evaluation hardware prototypes to implement
+ the communication protocols and product algorithms.
+\end_layout
+
+\begin_layout Standard
+During your work in the Student CyberTruck Experience, take some time to
+ reflect where you are working in the diagram of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Systems-engineering-processVdiagram"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This reflection should help you understand the different levels of effort
+ and teamwork needed to bring secure solutions into fruition.
+ 
+\end_layout
+
+\end_body
+\end_document

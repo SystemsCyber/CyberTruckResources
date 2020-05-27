@@ -1,0 +1,1251 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%Document Parent class
+
+
+%Package Control
+\usepackage[dvipsnames]{xcolor}
+\definecolor{custom1}{RGB}{0,0,0}
+
+%for images
+\usepackage{float}%also for images
+
+%Heading Setup
+\title{CyTeX Learning Program Student Handbook}
+\author{University of Tulsa}
+\date{Revised: July 2019}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref section
+\pdf_pdfusetitle false
+\pdf_quoted_options "linkcolor=black,filecolor=yellow,urlcolor=cyan,"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%PREAMBLE~~~~~~~~~~~~~~~~~~~~~~
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "../CyTeX-Learning-Program-Student-Handbook/preamble.lyx"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Beginning of the Document
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{document}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../CyTeX-Learning-Program-Student-Handbook/CyTEx18.jpg
+	width 100text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CyTeX 2018 at Peterbilt Motors Co.
+ Manufacturing
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img_cover"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The student Cyber Truck Experience (CyTeX) is a crash course in heavy vehicle
+ networks and cybersecurity with a hands-on approach.
+ It is intended to help a new engineering student with little experience
+ with vehicle systems or cybersecurity develop the skills necessary to work
+ effectively in heavy vehicle cybersecurity.
+ This student handbook provides some reference material to broaden ones
+ understanding of the electrical, computer, and mechanical engineering involved
+ in making and securing these vehicles.
+ It also aims at providing students with the industry background to jumpstart
+ a successful career.
+\end_layout
+
+\begin_layout Standard
+Throughout the handbook there will be several instances which you will be
+ asked to download software.
+ The ideal OS for completion of this lab will be Windows; however, at times,
+ a Linux operating system may be required.
+ In this case, you will be walked through how to install an Ubuntu VM onto
+ your machine before proceeding.
+\end_layout
+
+\begin_layout Standard
+Thank you for taking taking an interest in HV and for utilizing this handbook.
+ This content has been created by students for students at the University
+ of Tulsa to follow during the Student CyberTruck Experience Program and
+ other heavy vehicle cybersecurity programs.
+\end_layout
+
+\begin_layout Section
+Cyber Challenges
+\end_layout
+
+\begin_layout Standard
+Students are 
+\series bold
+strongly
+\series default
+ encouraged to participate in the following practicum-based events related
+ to vehicle cybersecurity that take place during the summer.
+\end_layout
+
+\begin_layout Subsection
+SAE CyberAuto Challenge
+\end_layout
+
+\begin_layout Standard
+SAE CyberAutoâ¢ is an event sponsored by the Society of Automotive Engineers
+ that brings together students and engineers from various backgrounds to
+ collaborate and seek new information on automotive cybersecurity.
+ Registration is typically open until May.
+ To register and for more information visit the website 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.sae.org/attend/cyberauto"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+CyberTruck Challenge
+\end_layout
+
+\begin_layout Standard
+The CyberTruck Challenge is an annual event held in June.
+ It is open to students and engineers and is focused on developing the next
+ generation of heavy vehicle cyber professionals.
+ To register and for more information visit the website 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.cybertruckchallenge.org/"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Welcome to the Industry
+\end_layout
+
+\begin_layout Standard
+Your phone charger, favorite t-shirts and college textbooks all have one
+ thing in common: they all took a trip at some point on one of the 2 million
+ trucks in operation in the US today.
+ In fact, it's difficult to image anything that won't take a ride on a commercia
+l semi-trailer, construction vehicle, or city-service vehicle at some point
+ in its lifespan.
+\end_layout
+
+\begin_layout Standard
+In the absence of these vehicles, the ease of online ordering, walk-in shopping,
+ local gas-stations and numerous other convenient aspects of our lives would
+ not exist.
+\end_layout
+
+\begin_layout Standard
+While a large scale threat to heavy-vehicle infrastructure may not be a
+ present danger, the risk to small fleets is a growing topic within the
+ industry.
+ The threat? A cyber attack carried out as a result of insecure physical
+ or digital systems used to disable one or a fleet of vehicles.
+\end_layout
+
+\begin_layout Standard
+Throughout CyTeX, you will learn how clever engineers have hacked trucks
+ as a means to better understand and hopefully mitigate vulnerabilities.
+ Some techniques include hardware reverse engineering, radio frequency hacking,
+ bus flooding, network data logging and much more.
+ Of course, an understanding of most of the basics is needed before you
+ can reach this point.
+\end_layout
+
+\begin_layout Subsection
+Terminology: 'The Truck Dictionary'
+\end_layout
+
+\begin_layout Subsection
+Companies and Organizations: 'The Players'
+\end_layout
+
+\begin_layout Paragraph
+Academia
+\end_layout
+
+\begin_layout Standard
+Ex: Colorado State University
+\end_layout
+
+\begin_layout Paragraph
+Motor Carriers
+\end_layout
+
+\begin_layout Standard
+Ex: 
+\end_layout
+
+\begin_layout Paragraph
+Vehicle Manufacturing
+\end_layout
+
+\begin_layout Standard
+Ex: Peterbilt, Volvo, Thermo King 
+\end_layout
+
+\begin_layout Paragraph
+Freight and Shipping
+\end_layout
+
+\begin_layout Standard
+Ex: Old Dominion Freight Line 
+\end_layout
+
+\begin_layout Paragraph
+Diagnostic Companies
+\end_layout
+
+\begin_layout Standard
+Ex: DG technologies, Intrepid Control Systems, NEXIQ 
+\end_layout
+
+\begin_layout Paragraph
+Cybersecurity
+\end_layout
+
+\begin_layout Standard
+Ex: Karamba 
+\end_layout
+
+\begin_layout Paragraph
+Government
+\end_layout
+
+\begin_layout Standard
+Ex: NMFTA, DOT, 
+\end_layout
+
+\begin_layout Paragraph
+Telematics Companies
+\end_layout
+
+\begin_layout Standard
+Ex: Omnitracs, Geotab, Samsara, CalAmp 
+\end_layout
+
+\begin_layout Paragraph
+Electronics and Hardware
+\end_layout
+
+\begin_layout Standard
+: Bendix, Deutch
+\end_layout
+
+\begin_layout Standard
+Other industry players include digital forensic companies, law enforcement,
+ small fleets, secondary manufactures.
+\end_layout
+
+\begin_layout Subsection
+Regulators: âThe Rulesâ
+\end_layout
+
+\begin_layout Paragraph
+Department of Transportation (DOT)
+\end_layout
+
+\begin_layout Standard
+A federal Cabinet founded in 1966 to ensure the safest, most efficient,
+ and modern transportation system for American workers and businesses.
+ It is the highest governing body relating to transportation in the country
+ and is based in Washington D.C.
+ Notable administrations within the DOT related to HV are the FMCSA and
+ the FTA.
+\end_layout
+
+\begin_layout Paragraph
+The Federal Motor Carrier Safety Administration (FMCSA)
+\end_layout
+
+\begin_layout Standard
+A DOT administration that regulates commercial drivers' licenses', oversees
+ regulatory compliance and enforcement, provides safety assistance, and
+ collection of motor carrier statistics.
+\end_layout
+
+\begin_layout Paragraph
+National Motor Freight and Traffic Association, Inc.
+ (NMFTA)
+\end_layout
+
+\begin_layout Standard
+A nonprofit membership organization headquartered in Alexandria, Virginia.
+ Its membership is comprised of motor carriers operating in interstate,
+ intrastate and foreign commerce.
+\end_layout
+
+\begin_layout Standard
+In addition to publishing the NMFC standards, NMFTA also hosts industry
+ workshops exploring cyber security issues such as incident response, risk
+ mitigation, data anomaly detection, and many others.
+ These forums are attended by representatives from motor carriers, academic
+ experts, government agencies, heavy vehicle manufacturers, telematics providers
+, cyber security firms, and other industry groups or associations.
+\end_layout
+
+\begin_layout Paragraph
+Society of Automotive Engineers (SAE)
+\end_layout
+
+\begin_layout Standard
+The global professional association for engineers and scientists working
+ in various industries related to consumer automobiles, aerospace, and commercia
+l vehicles as well as other forms of transportation.
+ SAE produces many of the codes and standards for the heavy vehicle industry
+ (i.e J1939 and J1708) to follow and is based the U.S.
+\end_layout
+
+\begin_layout Paragraph
+Institute of Electrical and Electronics Engineers (IEEE)
+\end_layout
+
+\begin_layout Standard
+The global professional association for educational and technical advancement
+ of electrical and electronic engineering, telecommunications, computer
+ engineering and other related disciplines.
+ It is the world's largest association of technical professionals.
+ In regards to the heavy vehicle industry, IEEE produces many of the standards
+ and codes that make ECUs, sensors, bus communication, and wireless communicatio
+n possible.
+\end_layout
+
+\begin_layout Section
+Electronics and Programming
+\end_layout
+
+\begin_layout Subsection
+Microcontrollers
+\end_layout
+
+\begin_layout Standard
+A 
+\series bold
+microcontroller (MCU)
+\series default
+ is a tiny computer that can run one program at a time, over and over again.
+ More often than not, they are connected to sensors and actuators allowing
+ them to listen and interact with the physical world.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Sensors
+\series default
+ convert physical phenomena such as wheel speed, fuel level, and oil temperature
+ into electrical signals.
+ 
+\series bold
+Actuators
+\series default
+ convert electrical energy back into physical energy such as linear motion,
+ light, heat, and motor torque.
+\end_layout
+
+\begin_layout Standard
+MCUs listen to sensors and talk to actuators.
+ They decide what to do based on the instructions you have written and stored
+ to its memory.
+ MCUs and the devices connected to them form the basis of the 
+\series bold
+Electronic Control Unit (ECU)
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Electronic Control Units
+\end_layout
+
+\begin_layout Standard
+An ECU is any embedded system in automotive electronics that controls one
+ or more of the electrical systems or subsystems in a vehicle.
+ For example, all commercial trucks have an Engine Control Module (ECM)
+ that manages the everything from the ignition timing, air-fuel ratio, and
+ emissions control.
+ Other modules also exist such as the Transmission Control Module (TCM),
+ Brake Control Module (BCM or EBCM), and Suspension Control Module (SCM).
+ Other ECUs without common acronyms control the airbags, the dash board,
+ power locks and more.
+ When connected together these ECUs form an intricate data exchange system
+ called the vehicle network.
+\end_layout
+
+\begin_layout Subsection
+Arduino and Teensy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename ../CyTeX-Learning-Program-Student-Handbook/uno_teensy.png
+	width 80mm
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Arduino Uno (left) and Teensy 3.6 (right)
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img_uno_and_teensy"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Arduino offers some of the most recognizable open-source microcontroller
+ boards today.
+ This includes the Arduino Uno.
+ When it comes to prototyping, these boards have many advantages including:
+ widespread availability, low cost, thorough documentation, and a global
+ community of users and forums.
+ The Arduino Uno uses the ATMEGA328P, has 32 KB of flash memory and runs
+ at 16 MHz which are acceptable hardware specifications for simple projects.
+\end_layout
+
+\begin_layout Standard
+Programs are written and compiled in the Arduino IDE program, a special
+ text-editor, and uploaded via USB.
+ When the Arduino is connected to an external power source it will run the
+ instructions you uploaded.
+\end_layout
+
+\begin_layout Standard
+The Teensy is another USB-based microcontroller development system.
+ Although it is slightly more expensive than the Arduino, the 3.2 and 3.6
+ versions are preferred within CyTeX for their additional capabilities and
+ features.
+ Most notably, they support more communication protocols such as CAN, I2C,
+ SPI, and Ethernet.
+ The Teensy 3.6 footprint is roughly a third the size of the UNO, the MK66
+ Processor, has 1024 kB of flash memory, and runs at 180 MHz.
+\end_layout
+
+\begin_layout Standard
+All programming is done via the USB port and the Teensy Loader Application.
+ It is run automatically when using Verify or Upload within the Arduino
+ software.
+ Teensy Loader is available for Windows, Mac, and Linux.
+\end_layout
+
+\begin_layout Standard
+Full documentation for the 
+\begin_inset CommandInset href
+LatexCommand href
+name "Teensy"
+target "https://www.pjrc.com/teensy/techspecs.html"
+literal "false"
+
+\end_inset
+
+and 
+\begin_inset CommandInset href
+LatexCommand href
+name "Arduino UNO"
+target "https://store.arduino.cc/usa/arduino-uno-rev3"
+literal "false"
+
+\end_inset
+
+can be found on their respective websites.
+\end_layout
+
+\begin_layout Subsubsection
+Getting Started
+\end_layout
+
+\begin_layout Standard
+World cup
+\end_layout
+
+\begin_layout Subsubsection
+Intro to CAN with Arduino
+\end_layout
+
+\begin_layout Standard
+World cup
+\end_layout
+
+\begin_layout Subsection
+'Micro-computers'
+\end_layout
+
+\begin_layout Standard
+A single-board computer (SBC) is a complete computer built on a single circuit
+ board, with microprocessor(s), memory, input/output (I/O) and other features
+ required of a functional computer.
+ You 
+\shape italic
+could
+\shape default
+ call it a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+microcomputer.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ SBCs have the ability to run multiple programs, run an operating system,
+ and can often support a simplified version of a typical desktop GUI.
+\end_layout
+
+\begin_layout Standard
+The Raspberry Pi by the Raspberry Pi Foundation in the UK is by far the
+ most common prototyping SCB.
+ For automotive applications, the Beaglebone Black by Texas Instruments
+ and the NXP S32K have been used within CyTeX.
+ Both of these devices are capable of more advanced functionality.
+\end_layout
+
+\begin_layout Subsection
+Python 3
+\end_layout
+
+\begin_layout Standard
+An important tool in any hackers toolkit is the ability to interact with
+ collected data.
+ In this section, we will be using a programming language called Python
+ to help with this.
+\end_layout
+
+\begin_layout Subsubsection
+Background
+\end_layout
+
+\begin_layout Standard
+Python is a general-purpose, versatile and popular programming language.
+ Itâs great as a first language because it is concise and easy to read.
+ It is also a good language to have in any programmerâs stack as it can
+ be used for everything from web development to software development and
+ data science applications.
+\end_layout
+
+\begin_layout Standard
+This is different than what we have done to this point in Arduino.
+ We will generally use the Arduino devices to directly interface with systems.
+ These devices will then send data back to a computer or other device running
+ a python script.
+\end_layout
+
+\begin_layout Subsubsection
+Codecademy
+\end_layout
+
+\begin_layout Standard
+We will begin by having you learn the basics of python.
+ We will be using an external system to aid in this.
+ Navigate over to 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.codecademy.com/learn/learn-python"
+literal "false"
+
+\end_inset
+
+and create an account using your email and fill out any information they
+ require.
+ Please ensure that you do not pay for this service at this time.
+ We will only need the services that the free version offers.
+\end_layout
+
+\begin_layout Standard
+Please complete this course.
+ Take notes throughout the course over functions that may be useful (importing
+ and exporting files, searching through lists, data structures, etc.) Periodicall
+y, there will be additional trial material to supplement your learning.
+\end_layout
+
+\begin_layout Subsubsection
+Threading
+\end_layout
+
+\begin_layout Subsubsection
+PySerial
+\end_layout
+
+\begin_layout Subsubsection
+matplotlib
+\end_layout
+
+\begin_layout Subsection
+Making GUIs with PyQt5
+\end_layout
+
+\begin_layout Subsection
+C++
+\end_layout
+
+\begin_layout Subsubsection
+Codecademy
+\end_layout
+
+\begin_layout Section
+Network Communications
+\end_layout
+
+\begin_layout Subsection
+Overview
+\end_layout
+
+\begin_layout Standard
+Serial, USB, Ethernet, SPI, Wifi 
+\end_layout
+
+\begin_layout Subsection
+Vehicle Networking Protocols
+\end_layout
+
+\begin_layout Standard
+CAN, LIN, I
+\begin_inset Formula $^{2}$
+\end_inset
+
+C, J1708 and J1587, and J1939
+\end_layout
+
+\begin_layout Section
+Heavy Duty Truck Bus Protocols
+\end_layout
+
+\begin_layout Subsection
+CAN Basics
+\end_layout
+
+\begin_layout Standard
+A short overview of CAN is provided 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "run:SocketCANDocumentation(Linux Kernel).txt"
+literal "false"
+
+\end_inset
+
+.
+ If you attend the SAE CyberAuto Challenge you will be provided with more
+ resources to learn about CAN.
+\end_layout
+
+\begin_layout Subsection
+Introduction to SAE J1939
+\end_layout
+
+\begin_layout Subsection
+Introduction to SAE J1708/1587
+\end_layout
+
+\begin_layout Standard
+SAE J1708 and J1587 are the legacy network protocols for heavy vehicles.
+ Together they provide detailed specifications for the electronics, hardware,
+ message structuring, decoding and more.
+ Namely, J1708 deals with the physical layer (the wiring), and J1587 deals
+ with the the message layer or data format.
+\end_layout
+
+\begin_layout Standard
+Often times engineers will refer to the two as simply 
+\begin_inset Quotes eld
+\end_inset
+
+J1708
+\begin_inset Quotes erd
+\end_inset
+
+ but it is important to remember that they are usually referring to both.
+ After its release in the '90s, the standards were revised intermittently
+ and were widely adopted despite their issues.
+ Most notably, the J1708 network speed of 9600 bits/second limited the amount
+ of data and network capabilities that could be included in a vehicle.
+\end_layout
+
+\begin_layout Standard
+Today, J1708/1587 is now 
+\begin_inset Quotes eld
+\end_inset
+
+stabilized
+\begin_inset Quotes erd
+\end_inset
+
+ (no more future updates) and has been mostly supplanted by the newer J1939
+ protocol.
+ However, it is not uncommon to run into the legacy protocol when working
+ on older trucks and trailers.
+ Some OEMs are still designing the older protocol out of their vehicles
+ as well.
+ Thus, it is important to be aware of J1708/1587.
+ Plus, if you learn to send and decode J1587 messages, learning the newer
+ protocols is much easier!
+\end_layout
+
+\begin_layout Standard
+For more info click 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.omnitracs.com/blog/get-bus-j1708-and-j1939-vehicle-bus-standards"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+J1708 - Physical Layer
+\end_layout
+
+\begin_layout Standard
+As stated earlier, SAE J1708 describes the physical layer of legacy truck
+ networks.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+J1587 - Application Layer
+\end_layout
+
+\begin_layout Subsection
+Introduction to PLC4trucks/J2497
+\end_layout
+
+\begin_layout Standard
+So far we have only discussed the communications on the truck network.
+ But what if we also want data from trailer? The linkage between the tractor
+ and trailer is poer 
+\end_layout
+
+\begin_layout Subsection
+Introduction to TMC RP1210
+\end_layout
+
+\begin_layout Section
+The UNIX/Linux Terminal
+\end_layout
+
+\begin_layout Subsection
+Learn the Command Line
+\end_layout
+
+\begin_layout Standard
+Click the link to go to 
+\begin_inset CommandInset href
+LatexCommand href
+name "Codecademy"
+target "https://www.codecademy.com/learn/learn-the-command-line"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Learn Git
+\end_layout
+
+\begin_layout Standard
+Click the link to go to 
+\begin_inset CommandInset href
+LatexCommand href
+name "Codecademy"
+target "https://www.codecademy.com/learn/learn-git"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+SocketCAN
+\end_layout
+
+\begin_layout Standard
+According to the official documentation, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+The SocketCAN package is an implementation of CAN protocols (Controller
+ Area Network) for Linux.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ Basically, it's a lightweight API that allows us to interact with CAN interface
+s on Linux based computers.
+ With SocketCAN we can read messages in real-time on a network, send custom
+ messages, parse, and even replay messages with relative ease and speed.
+ The best part is that the package is free, open-source and is powerful
+ enough to use in many non-commercial applications.
+ Additional documentation can be found 
+\begin_inset CommandInset href
+LatexCommand href
+name "here?"
+target "run:./SCDoc.txt"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cybersecurity
+\end_layout
+
+\begin_layout Subsection
+Crytography Foundations
+\end_layout
+
+\begin_layout Subsubsection
+Terminology
+\end_layout
+
+\begin_layout Standard
+At it's simplest, cryptography is packing and unpacking a secret message.
+ The message you are attempting to send is known as the 
+\series bold
+plaintext
+\series default
+, P.
+ The transformation of the plaintext into non-readable form is called 
+\series bold
+encryption
+\series default
+, E.
+ The resulting obscured message is called 
+\series bold
+ciphertext
+\series default
+, C.
+ The transformation of the cipher text back to the original plaintext is
+ called 
+\series bold
+decryption
+\series default
+, D.
+ This process is illustrated in Fig X.
+\end_layout
+
+\begin_layout Subsection
+Randomness
+\end_layout
+
+\begin_layout Subsection
+Hashes
+\end_layout
+
+\begin_layout Subsection
+Encryption
+\end_layout
+
+\begin_layout Subsection
+Diffie-Hellman Key Exchange
+\end_layout
+
+\begin_layout Subsection
+AES Encryption
+\end_layout
+
+\begin_layout Subsection
+RSA Asymmetric Encryption
+\end_layout
+
+\begin_layout Section
+Summer Challenges
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Receive CAN Using Adapter
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Send and Receive CAN messages using Arduino
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Plot RPM and Wheel Based Vehicle Speed
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Hand Decode CAN frame with Oscilloscope
+\end_layout
+
+\begin_layout Subsection
+Challenge X: Build an Arduino from Scratch
+\end_layout
+
+\begin_layout Subsection
+Challenge X: 
+\end_layout
+
+\begin_layout Subsection
+Challenge X:
+\end_layout
+
+\begin_layout Subsection
+Challenge X:
+\end_layout
+
+\begin_layout Subsection
+Challenge X:
+\end_layout
+
+\begin_layout Section
+Welcome to Joe's Garage
+\end_layout
+
+\begin_layout Standard
+bummer 
+\end_layout
+
+\begin_layout Section
+Parts and Ordering
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Hardware Design
+\end_layout
+
+\begin_layout Subsection
+PCBs and Wiring Schematics with Altium Designer
+\end_layout
+
+\begin_layout Subsection
+3D Modeling and Printing with Solidworks
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{document}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

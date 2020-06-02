@@ -280,15 +280,21 @@ Basic Kit
 \end_layout
 
 \begin_layout Standard
+The Basic Kit comes in a plastic conductive container and all the parts
+ needed to accomplish many of the code and prototyping projects.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="17" columns="5">
+<lyxtabular version="3" rows="20" columns="5">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
@@ -446,7 +452,7 @@ Digi-Key
 \begin_inset Text
 
 \begin_layout Plain Layout
-MCP2562FD-E/P-ND
+MCP2562FD-E/P
 \begin_inset Foot
 status open
 
@@ -1030,7 +1036,7 @@ Digi-Key
 \begin_inset Text
 
 \begin_layout Plain Layout
-ATECC608A-SSHDA-TCT-ND
+ATECC608A-SSHDA
 \begin_inset Foot
 status open
 
@@ -1306,6 +1312,195 @@ target "https://www.sparkfun.com/products/14049"
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.7k ohm axial resistors
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digi-Key
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CF14JT4K70
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.digikey.com/products/en?keywords=CF14Jt4k70CT-ND"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LEDs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Digi-Key
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LTL-4223
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.digikey.com/product-detail/en/lite-on-inc/LTL-4223/160-1127-ND/200395"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SerLCD 16x2 Character Display
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sparkfun
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LCD-14072
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.sparkfun.com/products/14072"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1319,7 +1514,7 @@ target "https://www.sparkfun.com/products/14049"
 \begin_inset Text
 
 \begin_layout Plain Layout
-R
+U
 \end_layout
 
 \end_inset
@@ -1399,10 +1594,22 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/BasicHardwareKit.jpg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Photograph Example Parts Kit
+Photograph of Example Parts Kit using M in place of K and L.
+ 
 \end_layout
 
 \end_inset
@@ -1421,7 +1628,7 @@ Newer laptop computers may not have a physical Ethernet port, so a USB to
 \end_layout
 
 \begin_layout Exercise
-[Knowledge] Download the Datasheet for the Teensy 4.0 processor.
+[Remember] Download the Datasheet for the Teensy 4.0 processor.
  Answer the following questions:
 \end_layout
 
@@ -1450,12 +1657,54 @@ What are the register number bases for the CAN Channels?
 \end_layout
 
 \begin_layout Exercise
-[Comprehension] After reviewing the datasheet for the MCP2562, address the
+[Understand] After reviewing the datasheet for the MCP2562, address the
  following questions:
 \end_layout
 
 \begin_layout Enumerate
-Why do we need to connect the 
+Why do we need to connect pin 5 on the MCP2562 to 3.3V?
+\end_layout
+
+\begin_layout Exercise
+[Apply] Build the circuit in 
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/CAN2EthernetSchematic.pdf
+	width 100text%
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CAN to LAN Evaluation Schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

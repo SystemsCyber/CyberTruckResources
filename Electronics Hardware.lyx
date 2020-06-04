@@ -1666,7 +1666,20 @@ Why do we need to connect pin 5 on the MCP2562 to 3.3V?
 \end_layout
 
 \begin_layout Exercise
-[Apply] Build the circuit in 
+[Apply] Build the circuit in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:CAN-to-LANSchematic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ using a solderless breadboard.
+ For the inital build, ignore the PWM op amp and the power conditioning.
+ Testing the circuit will use USB for power.
+ 
 \end_layout
 
 \begin_layout Exercise
@@ -1690,6 +1703,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CAN-to-LANSchematic"
+
+\end_inset
+
 CAN to LAN Evaluation Schematic
 \end_layout
 
@@ -1711,48 +1730,95 @@ CAN to LAN Evaluation Schematic
 Basic Tools
 \end_layout
 
-\begin_layout Description
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
 Multimeter Any modern digital multimeter is acceptable to get started.
  There are many on Amazon that are suitable.
 \end_layout
 
-\begin_layout Description
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
 Soldering
 \begin_inset space ~
 \end_inset
 
-Iron A
+Iron A Weller WES51 or a Hakko FX888 with fine tips are good.
 \end_layout
 
-\begin_layout Description
-Tweezers
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Solder Lead based solder with a flux core is much easier to work with as
+ opposed ot lead free solder.
+ Be sure to use proper protective equiment (gloves and safety glasses) and
+ work in a well ventilated area.
+ Sn63Pb37 0.020
+\begin_inset Quotes erd
+\end_inset
+
+ (0.50mm) wire is about right for many electronic assemblies.
+ Flux cored wire helps.
 \end_layout
 
-\begin_layout Description
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Solder
+\begin_inset space ~
+\end_inset
+
+flux A flux pen is helpful for surface mount parts to get good solder flow
+ and adhesion.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Solder
+\begin_inset space ~
+\end_inset
+
+braid Solder wick or braid helps remove excess solder.
+ This is really helpful when hand soldering surface mount parts and the
+ legs of the component become bridged with excess solder.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Tweezers A necessary tool to help place surface mount parts.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
 Wire
 \begin_inset space ~
 \end_inset
 
-Cutters
+Cutters Flush cutting diagonal cutters, like the Hakko CHP-170, are nice.
 \end_layout
 
-\begin_layout Description
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
 Wire
 \begin_inset space ~
 \end_inset
 
-Strippers
+Strippers When working with electronics, smaller gauge strippers are helpful.
+ The Hakko CSP-30-1 can strip 20 to 30 gauge wire.
 \end_layout
 
-\begin_layout Description
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
 Carrying
 \begin_inset space \space{}
 \end_inset
 
-Tote
+Tote The Flambeau Utility Tote is helpful for carrying around the small
+ parts in the base of the tote and an open top to hold bulkier project items.
+ 
 \end_layout
 
-\begin_layout Description
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
 30
 \begin_inset space \space{}
 \end_inset
@@ -1761,7 +1827,9 @@ gauge
 \begin_inset space \space{}
 \end_inset
 
-Wire
+Wire Thin wire is necessary to connect to the small legs of integrated circuits
+ and making circuit board repairs.
+ It's also used to connect the internal USB of a Teensy to an external jack.
 \end_layout
 
 \begin_layout Subsection
@@ -2105,7 +2173,7 @@ DG Technologies
 \begin_inset Text
 
 \begin_layout Plain Layout
-TEENSY41
+SSS2
 \end_layout
 
 \end_inset
@@ -2149,7 +2217,7 @@ target "https://www.pjrc.com/store/teensy41.html"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Beagle Bone Black
+Vehicle Diagnostics Adapter
 \end_layout
 
 \end_inset
@@ -2158,7 +2226,7 @@ Beagle Bone Black
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+DG Technologies
 \end_layout
 
 \end_inset
@@ -2167,7 +2235,7 @@ Beagle Bone Black
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+DPA5 Pro
 \end_layout
 
 \end_inset
@@ -2196,8 +2264,7 @@ Beagle Bone Black
 \begin_inset Text
 
 \begin_layout Plain Layout
-Quadrature Encoder with breakout board.
- Bournes PEC09
+ECU
 \end_layout
 
 \end_inset
@@ -2206,7 +2273,7 @@ Quadrature Encoder with breakout board.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+??
 \end_layout
 
 \end_inset
@@ -2259,7 +2326,79 @@ Electronic Hardware Exercises
 \end_layout
 
 \begin_layout Standard
-These exercises shouls serve to get you 
+The first thing to do once the hardware is put together is to test the circuit.
+ These tests are designed to ensure proper connectivity, sufficient power,
+ and completeness.
+ Building the testing skills is critically important in understanding and
+ troubleshooting new designs.
+ These tests help create an idea of what to expect and lay the foundation
+ for more advanced harware reverse engineering skills.
+ When examining and testing a piece of hardware for a truck, there are some
+ basic assumptions.
+ Inevitably there will be a time when something doesn't work as expected.
+ A sound strategy is to always examine and test your assumptions.
+ These basics are necesary to perform advanced troubleshooting or functional
+ testing.
+ The following is a list of common assumptions and how to test them:
+\end_layout
+
+\begin_layout Enumerate
+Power is applied to the circuit.
+ This power is often measured on designate testpoints or pins known in the
+ schematic.
+ Use a multi-meter to measure the 5 volt and 3.3 volt circuits.
+ Voltage measurements are always relative, so the ground (black) probe is
+ connected to ground and the red probe is connected to the voltage to be
+ measured.
+\end_layout
+
+\begin_layout Enumerate
+Key is on.
+ The ignition signal is often required on heavy vehicle ECUs to enable the
+ regulator.
+ The key switch signal is often a +12 v signal that can be measured with
+ a multimeter.
+ Also, CAN traffic is present when the ignition signal is present.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Each chip has power and ground connected.
+ This can be tested with the multimeter.
+\end_layout
+
+\begin_layout Enumerate
+The CAN network is terminated properly.
+ There should be two 120 ohm resistors on each end of the network.
+ However, the CAN is fairly tolerant of deviations from this when working
+ on a desktop system.
+ However, there must be a resistor between CAN Hand CAN L.
+ This can be measured with an ohm meter when power to the circuit is off.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The CAN Transceivers are powered and connected.
+ This can be tested with a volt meter as the CAN H and CAN L are both around
+ 2.5V to ground when there is no CAN traffic.
+ When CAN traffic is present, the CAN H line will go above 2.5 V average
+ and CAN L will drop below 2.5 V DC.
+\end_layout
+
+\begin_layout Enumerate
+Check the continuity of each hookup wire before using it.
+ They can be fragile and break easily.
+ Even though it looks like the wires are connected, if there is a bad hookup
+ wire, the assumption of continuity is violated.
+ 
+\end_layout
+
+\begin_layout Subsection
+Getting Started in the Ardunio IDE with Teensy
+\end_layout
+
+\begin_layout Standard
+These exercises should serve to get you 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2268,80 +2407,412 @@ up to speed
 \end_inset
 
  on Arduino hardware.
- Little to no computer programming experience is needed for this section,
- that comes later.
- However, you should know how to upload software in Arduino and view the
- console.
+ Little to no computer programming experience is needed for this section.
+ Most of the code is based on examples or lightly modifying the examples.
+ You should be able download and install Arduino and Teensyduino (in that
+ order) before starting this section.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphics/BlinkWithoutDelay.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Opening-the-Blink"
+
+\end_inset
+
+Opening the Blink Without Delay example in Arduino
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graphics/SelectTeensy4.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SelectingTeensy4.0"
+
+\end_inset
+
+The Arduino environment must know the type of board it is connected to.
+ In this case, select the Teensy 4.0.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise
-Write a program to send CAN messages from one node to another.
+[Remember] Blink Without Delay 
 \end_layout
 
 \begin_layout Exercise
-Hints:
+This sketch should be able to turn on and off an LED without using any delay
+ functions.
+ This enables you to keep a schedule for events based on time.
+ Since this may be one of your first sketches, we will show some screenshots
+ to ensure you have the correct example and configuration.
+ The screenshot in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Opening-the-Blink"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows how to select the example.
+ The screenshot in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:SelectingTeensy4.0"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows how to select the board that matches your hardware.
+ Once the sketch is open, the board is selected, and the USB is plugged
+ in, select Sketch, then Upload to compile and upload the program.
+ The LED built into the Teensy 4.0 should blink on 1 second itervals.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+[Understand] Read the documentation on the elapsedMillis function and convert
+ the Blink Without Delay to use elapsedMillis.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/TeensyPotLEDsonBreadboard.jpg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Example-breadboard-connections"
+
+\end_inset
+
+Example breadboard connections with a Teensy 4.0, LEDs with 120-ohm resistors,
+ and a potentiometer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/TeensyPWMExamplepasted1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Finding-the-Teensy"
+
+\end_inset
+
+Finding the Teensy PWM tutorial.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Add the external discrete LEDs in series with a 120-ohm resistor and ensure
+ you can blink them without using a delay function.
+ Connect your LEDs to pins D5, D6, and D7 as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Example-breadboard-connections"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In this exercise, you will have declare pinModes and set new pins to outputs.
+ Use the PWM tutorial in Arduino shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Finding-the-Teensy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ as a basis to get started.
 \end_layout
 
 \begin_layout Enumerate
-Check the continuity of each hookup wire before using it.
- They can be fragile and break easily.
+[Understand] Explain why a resistor is needed in series with the LED.
+ What would happen if the 
+\end_layout
+
+\begin_layout Enumerate
+[Understand] Draw a sketch of the waveform being generated from the redPin
+ in you circuit.
+ Confirm your sketch with an oscilloscope trace (if available).
+\end_layout
+
+\begin_layout Enumerate
+[Analyze] Determine the default frequency of the pulse width modulated (PWM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PWM"
+description "pulse width modulated"
+literal "false"
+
+\end_inset
+
+) signals.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Apply] Change the analogWriteFrequency to 2, 20, 200, 2000, and 20,000
+ cycles per second (Hz).
+ Observe the visual effect on the LEDs.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+Connect the center of the trim potentiometer to Pin A0 (D14), one side to
+ 3.3V, and the other side to ground as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Example-breadboard-connections"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Note, the pins on the Teensy 4.0 are not 5V tolerant, so you cannot use
+ the +5V supply as suggested by the Arduino example.
+\end_layout
+
+\begin_layout Enumerate
+[Understand] Run the AnalogInOutSerial example sketch in the Analog Built-in
+ Example.
+ Explain how and why the map() function is used.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Analyze] What would happen if the map function was not used?
+\end_layout
+
+\begin_layout Enumerate
+[Apply] Convert the example sketch to update the serial output 50 times
+ per second using the elapsedMillis function.
+\end_layout
+
+\begin_layout Enumerate
+[Apply] Control brightness of the LEDs with the potentiometer.
+\end_layout
+
+\begin_layout Enumerate
+[Create] Convert your potentiometer-based circuit into a PWM-based truck
+ accelerator pedal.
  
 \end_layout
 
 \begin_layout Subsection
-Getting Started on Teensy Arduino (Stock Code that 
-\begin_inset Quotes eld
-\end_inset
-
-should work
-\begin_inset Quotes erd
-\end_inset
-
-)
+Intro to CAN with Teensy and Arduino
 \end_layout
 
-\begin_layout Subsection
-Intro to CAN with Arduino (Move after CAN Section?)
+\begin_layout Exercise
+Connect two MCP2562 CAN Transcievers to the Teensy board.
+ Connect the two transceivers together so they can communicate.
+ Be sure to add terminating resistors.
+ 
 \end_layout
 
-\begin_layout Subsection
-Build a Breadboad Arduino (Move Challenge to Challenges Section)
+\begin_layout Enumerate
+[Apply] Using the FlexCAN_T4 library, write a program to send CAN messages
+ from one node to another and display the result.
+ Confirm it works by changing your code to see the output in the serial
+ monitor change.
 \end_layout
 
-\begin_layout Standard
-Challenge: using the pieces below, send a CAN message.
+\begin_layout Enumerate
+[Apply] Encapsulate the output value for the LEDs in a CAN message.
+ For example, if you have 3 LEDs, we can define a 3 byte CAN message that
+ broadcasts the LED status every 100 milliseconds.
+ You can choose and CAN ID you want for the output value.
+ 
 \end_layout
 
-\begin_layout Standard
-Materials:
+\begin_layout Exercise
+Send the potentiometer value from one CAN channel to another.
+ 
 \end_layout
 
-\begin_layout Standard
-Breadboard Prototyping Wire ATmega328P MCP2551/MCP2562/MCP2558 MCP2515/MCP25625
- LED 120ohm (2) or 60 ohm (1) resistor a 16MHz crystal 6 pin straight header
- a 10k resistor 18-22 pF capacitor (2)
+\begin_layout Enumerate
+[Apply] On the receiving channel, act on that potentiometer value by changing
+ the brightness of the LEDs.
 \end_layout
 
-\begin_layout Standard
-Resources:
+\begin_layout Enumerate
+[Analyze] How fast can you update the LED brighness based on the potentiometer
+ using CAN? 
 \end_layout
 
-\begin_layout Standard
-Use Datasheets to determine how to connect everything To find datasheets
- use google, digikey, and mouser Learning how to push code to the arduino:
- https://www.arduino.cc/en/Tutorial/ArduinoISP For help with SPI communication
- to MCP2515: http://avrbeginners.net/architecture/spi/spi.html
+\begin_layout Enumerate
+[Evaluate] How fast do you need to update the brightness of the LED?
 \end_layout
 
-\begin_layout Standard
-Challenge:
+\begin_layout Exercise
+Connect your breadboard Teensy CAN to a truck or truck testbed and read
+ J1939 messages.
 \end_layout
 
-\begin_layout Standard
-Send a CAN Message (Verify with oscilloscope) Decode the message from the
- oscilloscope to ensure that it is the mesage you told your arduino to send
- This can be done with Python Create an Altium Schematic of the layout that
- you created 
+\begin_layout Enumerate
+[Remember] What is the J1939 bit rate for your setup?
+\end_layout
+
+\begin_layout Enumerate
+[Remember] How many bits are used for the J1939 Arbitration ID?
+\end_layout
+
+\begin_layout Enumerate
+[Analyze] How many different CAN IDs are used?
+\end_layout
+
+\begin_layout Enumerate
+[Apply] Convert the output of your serial monitor to match the Linux SocketCAN
+ and the can-utils candump format.
+ Hint: use the Serial.printf function for formatting.
+ The candump format has the channel designator followed by the can ID follwoed
+ by the hash symbol and then the bytes of data.
+ All CAN bytes are in hex format.
+ 
 \end_layout
 
 \end_body

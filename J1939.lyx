@@ -112,6 +112,20 @@ Plot data using matplotlib in Python.
 \end_layout
 
 \begin_layout Subsection
+Online Learning Resources
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+target "https://www.kvaser.com/about-can/higher-layer-protocols/j1939-introduction/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Suggested Hardware Materials
 \end_layout
 
@@ -224,8 +238,18 @@ noprefix "false"
 \end_layout
 
 \begin_layout Exercise
-[Evaluate] Determine the number of PGNs available in J1939 based on the
- two different PDUs.
+[Evaluate] Show that the number of PGNs available in J1939 based on the
+ two different PDUs is 17,344.
+ (Hint: if the Data Page and Extended Data Page bits are omitted, then there
+ are only 4336 PGNs.)
+\begin_inset Formula 
+\[
+(16*256+240)*4=
+\]
+
+\end_inset
+
+1630
 \end_layout
 
 \begin_layout Standard
@@ -4319,7 +4343,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-AND Result Binary
+AND Result 
 \end_layout
 
 \end_inset
@@ -4591,7 +4615,7 @@ AND Result Binary
 \begin_inset Text
 
 \begin_layout Plain Layout
-AND Result Hex
+AND Result 
 \end_layout
 
 \end_inset
@@ -4953,29 +4977,9 @@ Implementing a mask followed by a bit shift in a Python computer program
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{basicstyle=
-\backslash
-ttfamily
-\backslash
-footnotesize,breaklines=true,numbers=left,xleftmargin=2em,frame=single,framexlef
-tmargin=1.5em}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset listings
-inline false
+lstparams "language=Python,numbers=left,basicstyle={\small\ttfamily},showstringspaces=false,tabsize=4"
+inline true
 status open
 
 \begin_layout Plain Layout
@@ -5015,12 +5019,13 @@ Implementing the same process in a complete Arduino sketch would be the
 
 \begin_layout Standard
 \begin_inset listings
-inline false
+lstparams "language={C++},numbers=left,showstringspaces=false,tabsize=4"
+inline true
 status open
 
 \begin_layout Plain Layout
 
-// Arduino Example Sketch to mask and bit-shift
+// Arduino (Teensy) example sketch to mask and bit-shift
 \end_layout
 
 \begin_layout Plain Layout
@@ -5030,22 +5035,16 @@ status open
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 void setup(){
 \end_layout
 
 \begin_layout Plain Layout
 
-  uint32_t id = 0x18FEF131;
-\end_layout
-
-\begin_layout Plain Layout
-
-  uint8_t priority = (id & PRIORITY_MASK) >> 26;
-\end_layout
-
-\begin_layout Plain Layout
-
-  Serial.println(priority);
+  // This is empty for this example
 \end_layout
 
 \begin_layout Plain Layout
@@ -5055,7 +5054,41 @@ void setup(){
 
 \begin_layout Plain Layout
 
-void loop(){}
+\end_layout
+
+\begin_layout Plain Layout
+
+void loop(){
+\end_layout
+
+\begin_layout Plain Layout
+
+  uint32_t id = 0x18FEF131; // Normally this would be from CAN
+\end_layout
+
+\begin_layout Plain Layout
+
+  // Mask and bit shift
+\end_layout
+
+\begin_layout Plain Layout
+
+  uint8_t priority = (id & PRIORITY_MASK) >> 26; 
+\end_layout
+
+\begin_layout Plain Layout
+
+  Serial.println(priority);
+\end_layout
+
+\begin_layout Plain Layout
+
+  delay(1000); // Wait 1 second
+\end_layout
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -5138,54 +5171,114 @@ Source Address
 \begin_layout Standard
 To find these, we need to pull out the necessary elements using bitshifting
  and masking while determining if the message is a PDU1 or PDU2.
- A complete Arduino Sketch to perform this operation is as follows:
+\end_layout
+
+\begin_layout Subsubsection
+Using Arduino or C++
+\end_layout
+
+\begin_layout Standard
+A complete Arduino Sketch to perform this operation is listed in Listing
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "lis:Arduino-C++-codeparsePDU"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This listing starts as many programs do with defined constants.
+ The #define tag simply replaces everywhere the name on the left is found
+ with the value on the right.
+ This way, there are no uses of the so-called magic numbers in your code.
+ Every constant is defined and has a name.
+ This makes code much more readable.
+ Notice the #defines do not need a semicolon, whereas the other lines in
+ C/C++ do need them.
+\end_layout
+
+\begin_layout Standard
 \begin_inset listings
+lstparams "language={[ANSI]C++},float"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-// Arduino Example Sketch to Parse J1939 IDs
+// Arduino (Teensy) Example Sketch to Parse J1939 IDs
 \end_layout
 
 \begin_layout Plain Layout
 
-#define PRIORITY_MASK       0x1C000000
+#define PRIORITY_MASK        0x1C000000
 \end_layout
 
 \begin_layout Plain Layout
 
-#define PDU_FORMAT_MASK     0x00FF0000
+#define PDU_FORMAT_MASK      0x00FF0000
 \end_layout
 
 \begin_layout Plain Layout
 
-#define PDU_SPECIFIC_MASK   0x0000FF00
+#define PDU_SPECIFIC_MASK    0x0000FF00
 \end_layout
 
 \begin_layout Plain Layout
 
-#define SOURCE_ADDRESS_MASK 0x000000FF
+#define SOURCE_ADDRESS_MASK  0x000000FF
 \end_layout
 
 \begin_layout Plain Layout
 
-#define DATA_PAGE_MASK	  0x01000000	
+#define DATA_PAGE_MASK	   0x01000000	
 \end_layout
 
 \begin_layout Plain Layout
 
-#define EXT_DATA_PAGE_MASK  0x02000000
+#define EXT_DATA_PAGE_MASK   0x02000000
 \end_layout
 
 \begin_layout Plain Layout
 
-#define PDU1_PGN_MASK       0x03FF0000
+#define PDU1_PGN_MASK        0x03FF0000
 \end_layout
 
 \begin_layout Plain Layout
 
-#define PDU2_PGN_MASK       0x03FFFF00
+#define PDU2_PGN_MASK        0x03FFFF00
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PRIORITY_BIT_SHIFT   26
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PDU_FORMAT_BIT_SHIFT 16
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PDU2_THRESHOLD       240
+\end_layout
+
+\begin_layout Plain Layout
+
+#define PGN_BIT_SHIFT        8
+\end_layout
+
+\begin_layout Plain Layout
+
+#define DEST_BIT_SHIFT       8
+\end_layout
+
+\begin_layout Plain Layout
+
+#define GLOBAL_SOURCE_ADDR   0xFF
 \end_layout
 
 \begin_layout Plain Layout
@@ -5194,31 +5287,11 @@ status open
 
 \begin_layout Plain Layout
 
-//define variables
 \end_layout
 
 \begin_layout Plain Layout
 
-uint32_t pgn; // Parameter Group Number
-\end_layout
-
-\begin_layout Plain Layout
-
-int8_t da;  // Destination Address
-\end_layout
-
-\begin_layout Plain Layout
-
-uint8_t sa;  // Source Address
-\end_layout
-
-\begin_layout Plain Layout
-
-uint8_t priority;
-\end_layout
-
-\begin_layout Plain Layout
-
+//Create a function to parse J1939 CAN IDs
 \end_layout
 
 \begin_layout Plain Layout
@@ -5234,27 +5307,27 @@ void parse_j1939_id(uint32_t id, uint32_t &pgn, uint8_t &da, uint8_t &sa,
 
 \begin_layout Plain Layout
 
-	priority = (id & PRIORITY_MASK) >> 26;  
+	priority = (id & PRIORITY_MASK) >> PRIORITY_BIT_SHIFT;  
 \end_layout
 
 \begin_layout Plain Layout
 
-	uint8_t pf = (id & PDU_FORMAT_MASK) >> 16;
+	uint8_t pf = (id & PDU_FORMAT_MASK) >> PDU_FORMAT_BIT_SHIFT;
 \end_layout
 
 \begin_layout Plain Layout
 
-	if (pf < 0xF0) { // PDU 1 format uses values lower than 240 
+	if (pf < PDU2_THRESHOLD) { // PDU 1 format uses values lower than 240 
 \end_layout
 
 \begin_layout Plain Layout
 
-		da = (id & PDU_SPECIFIC_MASK) >> 8;
+		da = (id & PDU_SPECIFIC_MASK) >> DEST_BIT_SHIFT;
 \end_layout
 
 \begin_layout Plain Layout
 
-		pgn = (id & PDU2_PGN_MASK) >> 8;
+		pgn = (id & PDU2_PGN_MASK) >> PGN_BIT_SHIFT;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5269,12 +5342,12 @@ void parse_j1939_id(uint32_t id, uint32_t &pgn, uint8_t &da, uint8_t &sa,
 
 \begin_layout Plain Layout
 
-		da = 0xFF;
+		da = GLOBAL_SOURCE_ADDR;
 \end_layout
 
 \begin_layout Plain Layout
 
-		pgn = (id & PDU1_PGN_MASK) >> 8;
+		pgn = (id & PDU1_PGN_MASK) >> PGN_BIT_SHIFT;
 \end_layout
 
 \begin_layout Plain Layout
@@ -5332,11 +5405,17 @@ void loop(){
 
 \begin_layout Plain Layout
 
-	uint32_t user_input_id = 0x18FEF131;
+	
 \end_layout
 
 \begin_layout Plain Layout
 
+	//Normally this would come from CAN
+\end_layout
+
+\begin_layout Plain Layout
+
+	uint32_t user_input_id = 0x18FEF131; 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5390,7 +5469,32 @@ n
 
 \begin_layout Plain Layout
 
+	delay(1000);
+\end_layout
+
+\begin_layout Plain Layout
+
 }
+\end_layout
+
+\begin_layout Plain Layout
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Arduino-C++-codeparsePDU"
+
+\end_inset
+
+Arduino C++ code to demonstrate parsing two types of J1939 Protocol Data
+ Units.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5399,7 +5503,7 @@ n
 \end_layout
 
 \begin_layout Standard
-The serial monitor output for this sketch is
+The serial monitor output for this sketch is repeating every second.
 \begin_inset listings
 inline false
 status open
@@ -5425,10 +5529,323 @@ Priority, PGN, DA, SA
 \end_layout
 
 \begin_layout Standard
-This example computes the results from parsing the CAN identifier according
+This example computed the results from parsing the CAN identifier according
  to J1939.
- We went from one 29-bit word to 4 data parameters.
- The next step is to figure out what those four numbers mean.
+ We went from one 29-bit word to four data parameters.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Parsing a J1939 message in Python
+\end_layout
+
+\begin_layout Standard
+Often a data file with CAN is available to parse that came from a J1939
+ enabled network.
+ Let's build a function that can parse the CAN ID based on J1939.
+ The output will be a Python dictionary, which is useful to be used in many
+ other contexts.
+ The Python listing is shown in Listing 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "lis:Python-program-toParseID"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The program starts with a comment statement known in the unix world as a
+ 
+\begin_inset Quotes eld
+\end_inset
+
+she-bang.
+\begin_inset Quotes erd
+\end_inset
+
+ This symbol enables a shell to open the correct interpreter to run the
+ file.
+ In this case, we want to use the python3 interpreter.
+ This line has no effect when running on Windows.
+ The next lines setup defined constants.
+ Python is an interpreted language, so it doesn't have compiler primitves
+ like #define.
+ Instead, each contant is assigned to a variable name at the top level (i.e.
+ a global constant) and it can be used in all the functions.
+ The first function is called main().
+ This function is called by the last line.
+ Notice the second to last line tests to see if the name assigned to the
+ module is called __main__.
+ This only happens when the script is run as the top level script (i.e.
+ it is called directly).
+ We can use this feature for testing testing the script, but don't have
+ to worry about main() executing if we import the module to use the intended
+ function, which is parseJ1939id().
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,float"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/usr/bin/env python3
+\end_layout
+
+\begin_layout Plain Layout
+
+PRIORITY_MASK       = 0x1C000000
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_FORMAT_MASK     = 0x00FF0000
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_SPECIFIC_MASK   = 0x0000FF00 
+\end_layout
+
+\begin_layout Plain Layout
+
+SOURCE_ADDRESS_MASK = 0x000000FF 
+\end_layout
+
+\begin_layout Plain Layout
+
+DATA_PAGE_MASK      = 0x01000000 
+\end_layout
+
+\begin_layout Plain Layout
+
+EXT_DATA_PAGE_MASK  = 0x02000000 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU1_PGN_MASK       = 0x03FF0000 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU2_PGN_MASK       = 0x03FFFF00
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PRIORITY_OFFSET    = 26 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_FORMAT_OFFSET  = 16 
+\end_layout
+
+\begin_layout Plain Layout
+
+DA_OFFSET          = 8 
+\end_layout
+
+\begin_layout Plain Layout
+
+PGN_OFFSET         = 8
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU2_THRESHOLD     = 240
+\end_layout
+
+\begin_layout Plain Layout
+
+GLOBAL_SOURCE_ADDR = 0xFF
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def main():
+\end_layout
+
+\begin_layout Plain Layout
+
+	print(parseJ1939id(0x18FEF131))
+\end_layout
+
+\begin_layout Plain Layout
+
+	print(parseJ1939id(0x1CEC030B))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def parseJ1939id(id):
+\end_layout
+
+\begin_layout Plain Layout
+
+    sa = id & SOURCE_ADDRESS_MASK
+\end_layout
+
+\begin_layout Plain Layout
+
+    priority = (id & PRIORITY_MASK) >> PRIORITY_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    pf = (id & PDU_FORMAT_MASK) >> PDU_FORMAT_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (pf < PDU2_THRESHOLD):  # See SAE J1939-21
+\end_layout
+
+\begin_layout Plain Layout
+
+        # PDU 1 format uses values lower than 240
+\end_layout
+
+\begin_layout Plain Layout
+
+        da = (id & PDU_SPECIFIC_MASK) >> DA_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+        pgn = (id & PDU2_PGN_MASK) >> PGN_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:         # PDU 2 format
+\end_layout
+
+\begin_layout Plain Layout
+
+        da = GLOBAL_SOURCE_ADDR
+\end_layout
+
+\begin_layout Plain Layout
+
+        pgn = (id & PDU1_PGN_MASK) >> PGN_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    return {'sourceAddress': sa,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'priority': priority,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'destinationAddress': da,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'PGN': pgn}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if __name__ == '__main__':
+\end_layout
+
+\begin_layout Plain Layout
+
+	main()
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Python-program-toParseID"
+
+\end_inset
+
+Python program to demonstrate parsing a 29-bit CAN ID based on J1939.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The printed results from the Python script in Listing 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "lis:Python-program-toParseID"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+{'sourceAddress': 49, 'priority': 6, 'destinationAddress': 255, 'PGN': 65024}
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+{'sourceAddress': 11, 'priority': 7, 'destinationAddress': 3, 'PGN': 60419}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next step is to figure out what how to derive meaning for those four
+ numbers.
+ Specifically, we will label the addresses and PGNs with English names.
 \end_layout
 
 \begin_layout Subsection
@@ -5437,7 +5854,7 @@ Source and Destination Addresses
 
 \begin_layout Standard
 The source addresses for J1939 are standarized by SAE.
- An abreviated list in a Javascript Object Notation (JSON)
+ The Javascript Object Notation (JSON)
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "JSON"
@@ -5446,15 +5863,563 @@ literal "false"
 
 \end_inset
 
- is availble to map the numerical values of the source or destination address
- to a description in English.
+ in Listing 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "lis:J1939-Source-andJSON1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and Listing 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "lis:J1939-Source-andJSON2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ creates a dictionary lookup map the numerical values of the source or destinati
+on address to a description in English.
+ The keys of the dictionary are the decimal values of the source address.
+ These are the same for the destination address as well.
 \end_layout
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "float,firstline=0,lastline=50,basicstyle={\footnotesize\ttfamily},showstringspaces=false,tabsize=4"
+lstparams "language=Java,float,firstline=0,lastline=50,basicstyle={\footnotesize\ttfamily},showstringspaces=false,tabsize=4"
 inline false
 status open
+
+\begin_layout Plain Layout
+
+{     
+\end_layout
+
+\begin_layout Plain Layout
+
+	"0": "Engine #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "1": "Engine #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "2": "Turbocharger",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "3": "Transmission #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "4": "Transmission #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "5": "Shift Console - Primary",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "6": "Shift Console - Secondary",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "7": "Power TakeOff - (Main or Rear)",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "8": "Axle - Steering",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "9": "Axle - Drive #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "10": "Axle - Drive #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "11": "Brakes - System Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "12": "Brakes - Steer Axle",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "13": "Brakes - Drive axle #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "14": "Brakes - Drive Axle #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "15": "Retarder - Engine",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "16": "Retarder - Driveline",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "17": "Cruise Control",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "18": "Fuel System",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "19": "Steering Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "20": "Suspension - Steer Axle",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "21": "Suspension - Drive Axle #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "22": "Suspension - Drive Axle #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "23": "Instrument Cluster #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "24": "Trip Recorder",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "25": "Passenger-Operator Climate Control #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "26": "Alternator/Electrical Charging System",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "27": "Aerodynamic Control",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "28": "Vehicle Navigation",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "29": "Vehicle Security",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "30": "Electrical System",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "31": "Starter System",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "32": "Tractor-Trailer Bridge #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "33": "Body Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "34": "Auxiliary Valve Control or Engine Air System Valve Control",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "35": "Hitch Control",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "36": "Power TakeOff (Front or Secondary)",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "37": "Off Vehicle Gateway",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "38": "Virtual Terminal (in cab)",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "39": "Management Computer #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "40": "Cab Display #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "41": "Retarder, Exhaust, Engine #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "42": "Headway Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "43": "On-Board Diagnostic Unit",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "44": "Retarder, Exhaust, Engine #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "45": "Endurance Braking System",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "46": "Hydraulic Pump Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "47": "Suspension - System Controller #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "48": "Pneumatic - System Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "49": "Cab Controller - Primary",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "50": "Cab Controller - Secondary",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "51": "Tire Pressure Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "52": "Ignition Control Module #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "53": "Ignition Control Module #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "54": "Seat Control #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "55": "Lighting - Operator Controls",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "56": "Rear Axle Steering Controller #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "57": "Water Pump Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "58": "Passenger-Operator Climate Control #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "59": "Transmission Display - Primary",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "60": "Transmission Display - Secondary",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "61": "Exhaust Emission Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "62": "Vehicle Dynamic Stability Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "63": "Oil Sensor",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "64": "Suspension - System Controller #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "65": "Information System Controller #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "66": "Ramp Control",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "67": "Clutch/Converter Unit", 
+\end_layout
+
+\begin_layout Plain Layout
+
+    "68": "Auxiliary Heater #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "69": "Auxiliary Heater #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "70": "Engine Valve Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "71": "Chassis Controller #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "72": "Chassis Controller #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "73": "Propulsion Battery Charger",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "74": "Communications Unit, Cellular",
+\end_layout
+
+\begin_layout Plain Layout
+
+	"75": "Communications Unit, Satellite",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "76": "Communications Unit, Radio",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "77": "Steering Column Unit",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "78": "Fan Drive Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "79": "Seat Control #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "80": "Parking brake controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "81": "Aftertreatment #1 system gas intake",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "82": "Aftertreatment #1 system gas outlet",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "83": "Safety Restraint System",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "84": "Cab Display #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "85": "Diesel Particulate Filter Controller",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "86": "Aftertreatment #2 system gas intake",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "87": "Aftertreatment #2 system gas outlet",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "88": "Safety Restraint System",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "89": "Atmospheric Sensor",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "248": "File Server / Printer",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "249": "Off Board Diagnostic-Service Tool #1",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "250": "Off Board Diagnostic-Service Tool #2",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "251": "On-Board Data Logger",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "252": "Reserved for Experimental Use",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "253": "Reserved for OEM",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "254": "Null Address",
+\end_layout
+
+\begin_layout Plain Layout
+
+    "255": "GLOBAL (All-Any Node)" 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:J1939-Source-andJSON1"
+
+\end_inset
+
+J1939 Source and Destination Addresses
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "float,firstline=51,basicstyle={\footnotesize\ttfamily},showstringspaces=false,tabsize=4"
+inline false
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -5957,8 +6922,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:J1939-Source-andJSON2"
 
-J1939 Source and Destination Addresses
+\end_inset
+
+J1939 Source and Destination Addresses (continued)
 \end_layout
 
 \end_inset
@@ -5971,17 +6941,17 @@ J1939 Source and Destination Addresses
 
 \end_layout
 
-\begin_layout Exercise
-[Evaluate] Deconstruct the voltage trace of a CAN frame recorded with an
- ocilloscope.
- Decode the signal into J1939 SPNs with values and units.
+\begin_layout Subsection
+Using a Parameter Group Number (PGN) 
 \end_layout
 
 \begin_layout Standard
-\begin_inset space ~
-\end_inset
+Once the PGN known based on the CAN ID, we can look up what the message
+ data contains based on Suspect Parameter Numbers (SPNs).
+\end_layout
 
-
+\begin_layout Section
+Examples and Exercises
 \end_layout
 
 \begin_layout Exercise
@@ -6020,6 +6990,19 @@ Interpret the raw CAN frames and extract information for Engine RPM, or
  Plot 20 seconds of changing RPM with matplotlib.
  Print the properly labeled plot to PDF and show it to your instructor.
  
+\end_layout
+
+\begin_layout Exercise
+[Evaluate] Deconstruct the voltage trace of a CAN frame recorded with an
+ ocilloscope.
+ Decode the signal into J1939 SPNs with values and units.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Exercise

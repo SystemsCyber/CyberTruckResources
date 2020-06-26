@@ -242,14 +242,6 @@ noprefix "false"
  two different PDUs is 17,344.
  (Hint: if the Data Page and Extended Data Page bits are omitted, then there
  are only 4336 PGNs.)
-\begin_inset Formula 
-\[
-(16*256+240)*4=
-\]
-
-\end_inset
-
-1630
 \end_layout
 
 \begin_layout Standard
@@ -320,7 +312,7 @@ tabcolsep}{0.1em}
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -329,7 +321,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -338,7 +330,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -347,7 +339,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -356,7 +348,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -365,7 +357,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -374,7 +366,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -383,7 +375,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -392,7 +384,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -401,7 +393,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -410,7 +402,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -419,7 +411,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -428,7 +420,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -437,7 +429,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -446,7 +438,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -455,7 +447,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -464,7 +456,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -473,7 +465,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -482,7 +474,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -491,7 +483,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -500,7 +492,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -509,7 +501,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -518,7 +510,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -527,7 +519,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -536,7 +528,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -545,7 +537,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -554,7 +546,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -563,7 +555,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -572,7 +564,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -581,7 +573,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -592,7 +584,7 @@ Bit
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -601,7 +593,7 @@ Byte
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -628,7 +620,7 @@ Priority
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -637,7 +629,7 @@ EDP
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -646,7 +638,7 @@ DP
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -718,7 +710,7 @@ PDU Format
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -790,7 +782,7 @@ PDU Specific
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1408,7 +1400,7 @@ Binary
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1417,7 +1409,7 @@ Hex
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1426,7 +1418,7 @@ Hex
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1462,7 +1454,7 @@ C
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1498,7 +1490,7 @@ E
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1534,7 +1526,7 @@ C
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1570,7 +1562,7 @@ C
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1606,7 +1598,7 @@ C
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1642,7 +1634,7 @@ C
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2707,7 +2699,7 @@ tabcolsep}{0.1em}
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2716,7 +2708,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2725,7 +2717,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2734,7 +2726,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2743,7 +2735,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2752,7 +2744,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2761,7 +2753,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2770,7 +2762,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2779,7 +2771,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2788,7 +2780,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2797,7 +2789,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2806,7 +2798,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2815,7 +2807,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2824,7 +2816,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2833,7 +2825,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2842,7 +2834,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2851,7 +2843,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2860,7 +2852,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2869,7 +2861,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2878,7 +2870,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2887,7 +2879,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2896,7 +2888,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2905,7 +2897,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2914,7 +2906,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2923,7 +2915,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2932,7 +2924,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2941,7 +2933,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2950,7 +2942,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2959,7 +2951,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2968,7 +2960,7 @@ Bit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2979,7 +2971,7 @@ Bit
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2988,7 +2980,7 @@ Byte
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3015,7 +3007,7 @@ Priority
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3024,7 +3016,7 @@ EDP
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3033,7 +3025,7 @@ DP
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3105,7 +3097,7 @@ PDU Format
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3177,7 +3169,7 @@ PDU Specific
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4979,7 +4971,7 @@ Implementing a mask followed by a bit shift in a Python computer program
 \begin_layout Standard
 \begin_inset listings
 lstparams "language=Python,numbers=left,basicstyle={\small\ttfamily},showstringspaces=false,tabsize=4"
-inline true
+inline false
 status open
 
 \begin_layout Plain Layout
@@ -5020,7 +5012,7 @@ Implementing the same process in a complete Arduino sketch would be the
 \begin_layout Standard
 \begin_inset listings
 lstparams "language={C++},numbers=left,showstringspaces=false,tabsize=4"
-inline true
+inline false
 status open
 
 \begin_layout Plain Layout
@@ -5202,7 +5194,7 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language={[ANSI]C++},float"
+lstparams "language={[ANSI]C++},float,basicstyle={\footnotesize},tabsize=4"
 inline false
 status open
 
@@ -5287,17 +5279,32 @@ status open
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 //Create a function to parse J1939 CAN IDs
 \end_layout
 
 \begin_layout Plain Layout
 
-void parse_j1939_id(uint32_t id, uint32_t &pgn, uint8_t &da, uint8_t &sa,
- uint8_t &priority){
+void parse_j1939_id(uint32_t id, 
+\end_layout
+
+\begin_layout Plain Layout
+
+                    uint32_t &pgn, 
+\end_layout
+
+\begin_layout Plain Layout
+
+                    uint8_t &da, 
+\end_layout
+
+\begin_layout Plain Layout
+
+                    uint8_t &sa, 
+\end_layout
+
+\begin_layout Plain Layout
+
+                    uint8_t &priority){
 \end_layout
 
 \begin_layout Plain Layout
@@ -5591,7 +5598,7 @@ she-bang.
 
 \begin_layout Standard
 \begin_inset listings
-lstparams "language=Python,float"
+lstparams "language=Python,float,tabsize=4"
 inline false
 status open
 
@@ -5734,7 +5741,7 @@ def parseJ1939id(id):
 
 \begin_layout Plain Layout
 
-        pgn = (id & PDU2_PGN_MASK) >> PGN_OFFSET
+        pgn = (id & PDU1_PGN_MASK) >> PGN_OFFSET
 \end_layout
 
 \begin_layout Plain Layout
@@ -5749,7 +5756,7 @@ def parseJ1939id(id):
 
 \begin_layout Plain Layout
 
-        pgn = (id & PDU1_PGN_MASK) >> PGN_OFFSET
+        pgn = (id & PDU2_PGN_MASK) >> PGN_OFFSET
 \end_layout
 
 \begin_layout Plain Layout
@@ -5787,7 +5794,6 @@ if __name__ == '__main__':
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
 \begin_inset CommandInset label
 LatexCommand label
 name "lis:Python-program-toParseID"
@@ -5823,18 +5829,19 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "basicstyle={\footnotesize}"
 inline false
 status open
 
 \begin_layout Plain Layout
 
-{'sourceAddress': 49, 'priority': 6, 'destinationAddress': 255, 'PGN': 65024}
- 
+{'source_address': 49, 'priority': 6, 'destination_address': 255, 'PGN':
+ 65024} 
 \end_layout
 
 \begin_layout Plain Layout
 
-{'sourceAddress': 11, 'priority': 7, 'destinationAddress': 3, 'PGN': 60419}
+{'source_address': 11, 'priority': 7, 'destination_address': 3, 'PGN': 60419}
 \end_layout
 
 \end_inset
@@ -5853,7 +5860,7 @@ Source and Destination Addresses
 \end_layout
 
 \begin_layout Standard
-The source addresses for J1939 are standarized by SAE.
+The source addresses for J1939 are standardized by SAE.
  The Javascript Object Notation (JSON)
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -5893,7 +5900,7 @@ on address to a description in English.
 \begin_inset listings
 lstparams "language=Java,float,firstline=0,lastline=50,basicstyle={\footnotesize\ttfamily},showstringspaces=false,tabsize=4"
 inline false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -6946,8 +6953,1455 @@ Using a Parameter Group Number (PGN)
 \end_layout
 
 \begin_layout Standard
-Once the PGN known based on the CAN ID, we can look up what the message
+Once the PGN is known based on the CAN ID, we can look up what the message
  data contains based on Suspect Parameter Numbers (SPNs).
+ The SAE J1939-71 document contains many maps from PGN to SPN.
+ Let's see how this works with an example.
+ A log of CAN data was collected from a truck that went through a startup
+ sequence, then the driver depressed the accelerator pedal and sped up the
+ engine.
+ Finally the engine was turned off.
+ The data was collected using an embedded Linux device called the BeagleBone
+ Black with a Truck Cape.
+ The data is in a raw text form with the following format:
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+(unix timestamp) channel CAN_ID [N] B0 B1 ...
+ BN
+\end_layout
+
+\begin_layout Standard
+In this entry the unix timestamp is the number of seconds from the unix
+ epoch, which is midnight on January 1, 1970 UTC.
+ The channel is based on the device settings in Linux.
+ The CAN ID is in hexadecimal is 8 characters for 29-bit ids.
+ The data length code (DLC) is denoted as N with N bytes of data following.
+ There can be at most 8 bytes of data per CAN frame.
+ An example from the text file is as follows:
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.802193) can1 0CF00331 [8] FF FF FF FF FF FF FF FF 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.822872) can1 18EEFF03 [8] 64 00 40 00 00 03 03 10 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.840437) can1 18EAFF00 [3] EB FE 00 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.842907) can1 18FE4A03 [8] 03 5F 4F FF FF F3 FF FF 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.849202) can1 0CF00331 [8] FF FF FF FF FF FF FF FF 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.852511) can1 18EEFF00 [8] F4 B8 4E 01 00 00 00 00 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.853073) can1 18EEFF29 [8] F4 B8 4E 01 00 0C 00 00 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.861682) can1 18F0010B [8] CF FF F0 FF FF DC FF FF 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.871828) can1 18FEBF0B [8] 00 00 7D 7D 7D 7D FF FF 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.877482) can1 18FEDF00 [8] 7D A0 28 7D 7D FF FF FC 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.879632) can1 1CECFF31 [8] 20 17 00 04 FF EB FE 00 
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+(011.888282) can1 0CF00400 [8] 0E 7D 7D 00 00 FE 00 7D
+\end_layout
+
+\begin_layout Standard
+PGN 61444 (0xF004) is for the Electronic Engine Control 1 that contains
+ the engine speed, which is shown as the bottom entry in the short section
+ of the log above.
+ This is a frequent message and is ubiquitus.
+ It is responsible for displaying the engine speed on the instrument cluster.
+ However, how do we translate the CAN message into some engineering value
+ that is readable on an instrument or able to be plotted.
+ Information from the SAE J1939-71 document as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Data-entry-inEEC1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Data-entry-inSPN190"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ can help us decode the message.
+ The complete J1939 database can be obtained from SAE.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/J1939-71-EEC1.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-entry-inEEC1"
+
+\end_inset
+
+Data entry in SAE J1939 for the Electronic Engine Controller 1 message.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In J1939, all positions are indexed from 1, whereas in C/C++ and Python,
+ the starting index is zero.
+ This is important when setting up constants for bit and byte positions
+ in the different measurements.
+ Our interest is in the engine speed, which is shown as SPN 190 in positions
+ 4 and 5.
+ The numbers in J1939 that are multiple bytes in length are represented
+ in the big endian format, or reverse byte order.
+ This means the least significant byte in the engine speed is in position
+ 4 and the most significant byte is in postion 5.
+ This is also known as the Intel format.
+ This is opposite they way humans normally read numbers, which is from left
+ to right.
+ In Python, we can make use of the struct library.
+ There is a format string for structs that enable multibyte numbers to be
+ interpreted in the correct endianness.
+ The listing of the format structures is available in the 
+\begin_inset CommandInset href
+LatexCommand href
+name "Python documentation"
+target "https://docs.python.org/3/library/struct.html#byte-order-size-and-alignment"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename graphics/J1939-71-SPN190.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Data-entry-inSPN190"
+
+\end_inset
+
+Data entry in SAE J1939-71 for Engine Speed (SPN 190).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Armed with the standard decoding strategy, we can now write a program to
+ examine the log file for engine speeds.
+ Listing 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "lis:Python-code-toParseEngineSpeed"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is a complete example for creating the resulting plot of the engine speed
+ shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Engine-speed-graphfromListing"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ When we look at Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:Python-code-toParseEngineSpeed"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, you'll notice a carry over of the code in Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:Python-program-toParseID"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ to parse CAN IDs into J1939 fields.
+ We also had to add a function to parse the candump file format we used
+ for our log file.
+ This function relies on the structure of each line to produce all the parts
+ of the CAN message.
+ The data is returned as a dictionary and has the ability to handle data
+ length entries less than 8.
+ The main function is called when this program is run as itself.
+ If the python file is imported into another program, then the main function
+ would not be called, but the functions would be available in memory.
+ 
+\end_layout
+
+\begin_layout Standard
+The main function starts with setting up empty lists to keep track of the
+ data from the file.
+ To run this script successfully, you will need access to the log file called
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "KWTruck.txt"
+target "https://www.engr.colostate.edu/~jdaily/cyber/KWTruck.txt"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,float,numbers=left,firstline=1,lastline=59,basicstyle={\footnotesize\ttfamily},showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/usr/bin/env python3 
+\end_layout
+
+\begin_layout Plain Layout
+
+import struct 
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PRIORITY_MASK       = 0x1C000000 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_FORMAT_MASK     = 0x00FF0000 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_SPECIFIC_MASK   = 0x0000FF00  
+\end_layout
+
+\begin_layout Plain Layout
+
+SOURCE_ADDRESS_MASK = 0x000000FF  
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU1_PGN_MASK       = 0x03FF0000  
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU2_PGN_MASK       = 0x03FFFF00
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PRIORITY_OFFSET    = 26  
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_FORMAT_OFFSET  = 16  
+\end_layout
+
+\begin_layout Plain Layout
+
+DA_OFFSET          = 8  
+\end_layout
+
+\begin_layout Plain Layout
+
+PGN_OFFSET         = 8 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU2_THRESHOLD     = 240
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+GLOBAL_SOURCE_ADDR = 0xFF 
+\end_layout
+
+\begin_layout Plain Layout
+
+ENGINE_SA          = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CANDUMP_TIMESTAMP_ADDR = 0 
+\end_layout
+
+\begin_layout Plain Layout
+
+CANDUMP_CHANNEL_ADDR   = 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+CANDUMP_ID_ADDR        = 2 
+\end_layout
+
+\begin_layout Plain Layout
+
+CANDUMP_DLC_ADDR       = 3 
+\end_layout
+
+\begin_layout Plain Layout
+
+DATA_START_ADDR        = 4
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PGN_EEC1 = 61444
+\end_layout
+
+\begin_layout Plain Layout
+
+SPN190_SCALE = 0.125 #RPM/bit 
+\end_layout
+
+\begin_layout Plain Layout
+
+SPN190_OFFSET = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def main():
+\end_layout
+
+\begin_layout Plain Layout
+
+    spn190_times = []
+\end_layout
+
+\begin_layout Plain Layout
+
+    spn190_values = []
+\end_layout
+
+\begin_layout Plain Layout
+
+    filename = 'KWTruck.txt'
+\end_layout
+
+\begin_layout Plain Layout
+
+    with open(filename,'r') as f:
+\end_layout
+
+\begin_layout Plain Layout
+
+        for line in f:
+\end_layout
+
+\begin_layout Plain Layout
+
+            # We knew this data file was from Linux using candump.
+\end_layout
+
+\begin_layout Plain Layout
+
+            j1939_frame = parse_candump_line(line)
+\end_layout
+
+\begin_layout Plain Layout
+
+            # Add the additional results from parsing the id
+\end_layout
+
+\begin_layout Plain Layout
+
+            j1939_frame.update(parseJ1939id(j1939_frame['id']))
+\end_layout
+
+\begin_layout Plain Layout
+
+            # PGN for electronic engine control 1 messsage
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (j1939_frame['pgn'] == PGN_EEC1 and
+\end_layout
+
+\begin_layout Plain Layout
+
+                j1939_frame["source_address"] == ENGINE_SA):
+\end_layout
+
+\begin_layout Plain Layout
+
+                # Unpack the engine speed data in big endian format and
+\end_layout
+
+\begin_layout Plain Layout
+
+                # convert to engineering values
+\end_layout
+
+\begin_layout Plain Layout
+
+                rpm = (struct.unpack('<H',j1939_frame['data'][3:5])[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+                         * SPN190_SCALE + SPN190_OFFSET)
+\end_layout
+
+\begin_layout Plain Layout
+
+                spn190_values.append(rpm)
+\end_layout
+
+\begin_layout Plain Layout
+
+                # Include the timestamp for time series data
+\end_layout
+
+\begin_layout Plain Layout
+
+                spn190_times.append(j1939_frame['timestamp'])
+\end_layout
+
+\begin_layout Plain Layout
+
+    #Plot the engine speed
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.plot(spn190_times,spn190_values,'-',label="Engine RPM")
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.xlabel("Time (sec.)")     plt.ylabel("Engine Speed (RPM)")
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.title("Engine Speed for {}".format(filename))
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.grid()
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.savefig('EngineSpeedGraphFrom{}.pdf'.format(filename))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def parseJ1939id(id):
+\end_layout
+
+\begin_layout Plain Layout
+
+    sa = id & SOURCE_ADDRESS_MASK
+\end_layout
+
+\begin_layout Plain Layout
+
+    priority = (id & PRIORITY_MASK) >> PRIORITY_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    pf = (id & PDU_FORMAT_MASK) >> PDU_FORMAT_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (pf < PDU2_THRESHOLD):  # See SAE J1939-21
+\end_layout
+
+\begin_layout Plain Layout
+
+        # PDU 1 format uses values lower than 240
+\end_layout
+
+\begin_layout Plain Layout
+
+        da = (id & PDU_SPECIFIC_MASK) >> DA_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+        pgn = (id & PDU1_PGN_MASK) >> PGN_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    else: 
+\end_layout
+
+\begin_layout Plain Layout
+
+        # PDU 2 format
+\end_layout
+
+\begin_layout Plain Layout
+
+        da = GLOBAL_SOURCE_ADDR
+\end_layout
+
+\begin_layout Plain Layout
+
+        pgn = (id & PDU2_PGN_MASK) >> PGN_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    return {'source_address': sa,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'priority': priority,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'destination_address': da,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'pgn': pgn}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def parse_candump_line(line):
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Strip the newline characters and white space off the ends
+\end_layout
+
+\begin_layout Plain Layout
+
+    # then split the string into a list based on whitespace.
+\end_layout
+
+\begin_layout Plain Layout
+
+    data = line.strip().split()              
+\end_layout
+
+\begin_layout Plain Layout
+
+    # can_dump formats use parentheses to wrap the floating
+\end_layout
+
+\begin_layout Plain Layout
+
+    # point timestamp.
+ We just want the numbers so use [1:-1] to slice
+\end_layout
+
+\begin_layout Plain Layout
+
+    time_stamp = float(data[CANDUMP_TIMESTAMP_ADDR][1:-1])
+\end_layout
+
+\begin_layout Plain Layout
+
+    # physical CAN channel
+\end_layout
+
+\begin_layout Plain Layout
+
+    channel = data[CANDUMP_CHANNEL_ADDR]
+\end_layout
+
+\begin_layout Plain Layout
+
+    # determine the can arbitration identifier as an integer
+\end_layout
+
+\begin_layout Plain Layout
+
+    can_id = int(data[CANDUMP_ID_ADDR],16)
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Data length code is a single byte wrapped in []
+\end_layout
+
+\begin_layout Plain Layout
+
+    dlc = int(data[CANDUMP_DLC_ADDR][1])
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Build the data field as a byte array
+\end_layout
+
+\begin_layout Plain Layout
+
+    data_bytes = b''
+\end_layout
+
+\begin_layout Plain Layout
+
+    for byte_string in data[DATA_START_ADDR:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Convert text into a single byte
+\end_layout
+
+\begin_layout Plain Layout
+
+        data_bytes += struct.pack('B',int(byte_string,16))
+\end_layout
+
+\begin_layout Plain Layout
+
+    #assert dlc == len(data_bytes)
+\end_layout
+
+\begin_layout Plain Layout
+
+    can_frame = {'id':can_id,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 'dlc':dlc,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 'data':data_bytes,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 'timestamp':time_stamp,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 'channel':channel}
+\end_layout
+
+\begin_layout Plain Layout
+
+    return can_frame
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if __name__ == '__main__':
+\end_layout
+
+\begin_layout Plain Layout
+
+    main()
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Python-code-toParseEngineSpeed"
+
+\end_inset
+
+Python code to plot engine speed vs time for a CAN log.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python,float,numbers=left,firstline=59,basicstyle={\footnotesize\ttfamily},showstringspaces=false,tabsize=4,firstnumber=59"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/usr/bin/env python3 
+\end_layout
+
+\begin_layout Plain Layout
+
+import struct 
+\end_layout
+
+\begin_layout Plain Layout
+
+import matplotlib.pyplot as plt
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PRIORITY_MASK       = 0x1C000000 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_FORMAT_MASK     = 0x00FF0000 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_SPECIFIC_MASK   = 0x0000FF00  
+\end_layout
+
+\begin_layout Plain Layout
+
+SOURCE_ADDRESS_MASK = 0x000000FF  
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU1_PGN_MASK       = 0x03FF0000  
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU2_PGN_MASK       = 0x03FFFF00
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PRIORITY_OFFSET    = 26  
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU_FORMAT_OFFSET  = 16  
+\end_layout
+
+\begin_layout Plain Layout
+
+DA_OFFSET          = 8  
+\end_layout
+
+\begin_layout Plain Layout
+
+PGN_OFFSET         = 8 
+\end_layout
+
+\begin_layout Plain Layout
+
+PDU2_THRESHOLD     = 240
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+GLOBAL_SOURCE_ADDR = 0xFF 
+\end_layout
+
+\begin_layout Plain Layout
+
+ENGINE_SA          = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+CANDUMP_TIMESTAMP_ADDR = 0 
+\end_layout
+
+\begin_layout Plain Layout
+
+CANDUMP_CHANNEL_ADDR   = 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+CANDUMP_ID_ADDR        = 2 
+\end_layout
+
+\begin_layout Plain Layout
+
+CANDUMP_DLC_ADDR       = 3 
+\end_layout
+
+\begin_layout Plain Layout
+
+DATA_START_ADDR        = 4
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+PGN_EEC1 = 61444
+\end_layout
+
+\begin_layout Plain Layout
+
+SPN190_SCALE = 0.125 #RPM/bit 
+\end_layout
+
+\begin_layout Plain Layout
+
+SPN190_OFFSET = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def main():
+\end_layout
+
+\begin_layout Plain Layout
+
+    spn190_times = []
+\end_layout
+
+\begin_layout Plain Layout
+
+    spn190_values = []
+\end_layout
+
+\begin_layout Plain Layout
+
+    filename = 'KWTruck.txt'
+\end_layout
+
+\begin_layout Plain Layout
+
+    with open(filename,'r') as f:
+\end_layout
+
+\begin_layout Plain Layout
+
+        for line in f:
+\end_layout
+
+\begin_layout Plain Layout
+
+            # We knew this data file was from Linux using candump.
+\end_layout
+
+\begin_layout Plain Layout
+
+            j1939_frame = parse_candump_line(line)
+\end_layout
+
+\begin_layout Plain Layout
+
+            # Add the additional results from parsing the id
+\end_layout
+
+\begin_layout Plain Layout
+
+            j1939_frame.update(parseJ1939id(j1939_frame['id']))
+\end_layout
+
+\begin_layout Plain Layout
+
+            # PGN for electronic engine control 1 messsage
+\end_layout
+
+\begin_layout Plain Layout
+
+            if (j1939_frame['pgn'] == PGN_EEC1 and
+\end_layout
+
+\begin_layout Plain Layout
+
+                j1939_frame["source_address"] == ENGINE_SA):
+\end_layout
+
+\begin_layout Plain Layout
+
+                # Unpack the engine speed data in big endian format and
+\end_layout
+
+\begin_layout Plain Layout
+
+                # convert to engineering values
+\end_layout
+
+\begin_layout Plain Layout
+
+                rpm = (struct.unpack('<H',j1939_frame['data'][3:5])[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+                         * SPN190_SCALE + SPN190_OFFSET)
+\end_layout
+
+\begin_layout Plain Layout
+
+                spn190_values.append(rpm)
+\end_layout
+
+\begin_layout Plain Layout
+
+                # Include the timestamp for time series data
+\end_layout
+
+\begin_layout Plain Layout
+
+                spn190_times.append(j1939_frame['timestamp'])
+\end_layout
+
+\begin_layout Plain Layout
+
+    #Plot the engine speed
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.plot(spn190_times,spn190_values,'-',label="Engine RPM")
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.xlabel("Time (sec.)")     plt.ylabel("Engine Speed (RPM)")
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.title("Engine Speed for {}".format(filename))
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.grid()
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.legend()
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.show()
+\end_layout
+
+\begin_layout Plain Layout
+
+    plt.savefig('EngineSpeedGraphFrom{}.pdf'.format(filename))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def parseJ1939id(id):
+\end_layout
+
+\begin_layout Plain Layout
+
+    sa = id & SOURCE_ADDRESS_MASK
+\end_layout
+
+\begin_layout Plain Layout
+
+    priority = (id & PRIORITY_MASK) >> PRIORITY_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    pf = (id & PDU_FORMAT_MASK) >> PDU_FORMAT_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (pf < PDU2_THRESHOLD):  # See SAE J1939-21
+\end_layout
+
+\begin_layout Plain Layout
+
+        # PDU 1 format uses values lower than 240
+\end_layout
+
+\begin_layout Plain Layout
+
+        da = (id & PDU_SPECIFIC_MASK) >> DA_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+        pgn = (id & PDU1_PGN_MASK) >> PGN_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    else: 
+\end_layout
+
+\begin_layout Plain Layout
+
+        # PDU 2 format
+\end_layout
+
+\begin_layout Plain Layout
+
+        da = GLOBAL_SOURCE_ADDR
+\end_layout
+
+\begin_layout Plain Layout
+
+        pgn = (id & PDU2_PGN_MASK) >> PGN_OFFSET
+\end_layout
+
+\begin_layout Plain Layout
+
+    return {'source_address': sa,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'priority': priority,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'destination_address': da,
+\end_layout
+
+\begin_layout Plain Layout
+
+            'pgn': pgn}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+def parse_candump_line(line):
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Strip the newline characters and white space off the ends
+\end_layout
+
+\begin_layout Plain Layout
+
+    # then split the string into a list based on whitespace.
+\end_layout
+
+\begin_layout Plain Layout
+
+    data = line.strip().split()              
+\end_layout
+
+\begin_layout Plain Layout
+
+    # can_dump formats use parentheses to wrap the floating
+\end_layout
+
+\begin_layout Plain Layout
+
+    # point timestamp.
+ We just want the numbers so use [1:-1] to slice
+\end_layout
+
+\begin_layout Plain Layout
+
+    time_stamp = float(data[CANDUMP_TIMESTAMP_ADDR][1:-1])
+\end_layout
+
+\begin_layout Plain Layout
+
+    # physical CAN channel
+\end_layout
+
+\begin_layout Plain Layout
+
+    channel = data[CANDUMP_CHANNEL_ADDR]
+\end_layout
+
+\begin_layout Plain Layout
+
+    # determine the can arbitration identifier as an integer
+\end_layout
+
+\begin_layout Plain Layout
+
+    can_id = int(data[CANDUMP_ID_ADDR],16)
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Data length code is a single byte wrapped in []
+\end_layout
+
+\begin_layout Plain Layout
+
+    dlc = int(data[CANDUMP_DLC_ADDR][1])
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Build the data field as a byte array
+\end_layout
+
+\begin_layout Plain Layout
+
+    data_bytes = b''
+\end_layout
+
+\begin_layout Plain Layout
+
+    for byte_string in data[DATA_START_ADDR:]:
+\end_layout
+
+\begin_layout Plain Layout
+
+        # Convert text into a single byte
+\end_layout
+
+\begin_layout Plain Layout
+
+        data_bytes += struct.pack('B',int(byte_string,16))
+\end_layout
+
+\begin_layout Plain Layout
+
+    #assert dlc == len(data_bytes)
+\end_layout
+
+\begin_layout Plain Layout
+
+    can_frame = {'id':can_id,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 'dlc':dlc,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 'data':data_bytes,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 'timestamp':time_stamp,
+\end_layout
+
+\begin_layout Plain Layout
+
+                 'channel':channel}
+\end_layout
+
+\begin_layout Plain Layout
+
+    return can_frame
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if __name__ == '__main__':
+\end_layout
+
+\begin_layout Plain Layout
+
+    main()
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:Python-code-toParseEngineSpeed-1"
+
+\end_inset
+
+Python code to plot engine speed vs time for a CAN log (cont).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename examples/EngineSpeedGraphFromKWTruck.txt.pdf
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Engine-speed-graphfromListing"
+
+\end_inset
+
+Engine speed graph produced by the Python source code in Listing 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "lis:Python-code-toParseEngineSpeed"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

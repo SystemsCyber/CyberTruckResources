@@ -18,7 +18,7 @@ for i in range(transitions[0],transitions[-1]):
 		values.append(1)
 	else:
 		values.append(0)
-plt.plot(micro_seconds,values,'.-')
+plt.plot(transitions,values,'.-')
 plt.xlabel('Microseconds')
 plt.ylabel("CAN Signal Value")
 plt.show()

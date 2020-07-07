@@ -7791,7 +7791,6 @@ if __name__ == '__main__':
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
 \begin_inset CommandInset label
 LatexCommand label
 name "lis:Python-code-toParseEngineSpeed"
@@ -8330,7 +8329,6 @@ if __name__ == '__main__':
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
 \begin_inset CommandInset label
 LatexCommand label
 name "lis:Python-code-toParseEngineSpeed-1"
@@ -8402,6 +8400,89 @@ noprefix "false"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+J1939 Transport Protocol Messages
+\end_layout
+
+\begin_layout Standard
+Some messages are too large to fit within the 8-byte confines of a traditional
+ CAN message.
+ In this case, a transport layer is needed to take large messages (i.e.
+ greater than 8 bytes) and break them up into packets to send them through
+ the CAN system.
+ Let's see how this is done by examining a record of CAN traffic when a
+ transport message is being sent.
+ Consider the selected messages in the following log:
+\end_layout
+
+\begin_layout Quotation
+(019.473921) can1 18EAFF31 [3] EC FE 00 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $\qquad\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(019.478233) can1 1CECFF00 [8] 20 12 00 03 FF EC FE 00 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $\qquad\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(019.530282) can1 1CEBFF00 [8] 01 32 4E 4B 48 48 4D 36 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $\qquad\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(019.585782) can1 1CEBFF00 [8] 02 58 32 45 4D 34 30 36 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $\qquad\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(019.640963) can1 1CEBFF00 [8] 03 34 31 32 2A FF FF FF
+\end_layout
+
+\begin_layout Standard
+While not required, the transaction starts with a request message that has
+ a PGN of 0xEA00.
+ The destination address of the request message is the global address and
+ it is eminating from the source address of 0x31 or 49.
+ This tells us the source of the reques is the instrument cluster.
+ The message is only 3 bytes long and it is requesting the PGN of 0x00FEEC,
+ which is encoded in the CAN message in reverse byte order (Intel format).
+ This PGN corresponds to Vehicle Identification Number (VIN).
+ 
+\end_layout
+
+\begin_layout Standard
+On the next line, Engine #1 (source address 0x00) responds to the request
+ by setting up a Transport Protocol session.
+ The PGN for Transport Layer - Connection Management (TM.CM) is 0xEC00.
+ The engine controller is sending this message out to everyone on the network.
+ 
 \end_layout
 
 \begin_layout Section

@@ -35,6 +35,7 @@ def main():
     spn190_times = []
     spn190_values = []
     filename = 'KWTruck.txt'
+    sa_count={}
     with open(filename,'r') as f:
         for line in f:
             # We knew this data file was from Linux SocketCAN using candump.
@@ -42,6 +43,10 @@ def main():
             # Add the additional results from parsing the id
             j1939_frame.update(parseJ1939id(j1939_frame['id']))
             # PGN for electronic engine control 1 messsage
+            try:
+                sa_count[j1939_frame["source_address"]]+=1
+            except KeyError:    
+                sa_count[j1939_frame["source_address"]]=1
             if (j1939_frame['pgn'] == PGN_EEC1 and 
                 j1939_frame["source_address"] == ENGINE_SA): 
                 # Unpack the engine speed data in big endian format and 
@@ -51,7 +56,7 @@ def main():
                 spn190_values.append(rpm)
                 # Include the timestamp for time series data
                 spn190_times.append(j1939_frame['timestamp'])
-            
+    print(sa_count)        
     #Plot the engine speed  
     plt.plot(spn190_times,spn190_values,'-',label="Engine RPM")
     plt.xlabel("Time (sec.)")

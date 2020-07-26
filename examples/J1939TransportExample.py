@@ -164,6 +164,9 @@ def parseJ1939(j1939_message):
             total_packets = j1939_data_frame[3]
             new_pgn = j1939_data_frame[5] | (j1939_data_frame[6] << 8) | (j1939_data_frame[7] << 16)
             ##da = 0xFF
+            if (sa,da) in TP_messages: #Session hasn't been completed yet
+                print("Found an TP.CM message before messages completed.")
+            #go with the latest TP.CM command.
             TP_messages[(sa,da)] = J1939TransportMessage(
                                             new_pgn,
                                             sa,
@@ -178,7 +181,9 @@ def parseJ1939(j1939_message):
             #returns True if all the messages have arrived
             (pgn, sa, da, return_message) = TP_messages[(sa,da)].get_message()
             print("Found Transport Layer Message from {:02X} to {:02X}\n{}".format(sa,da,return_message))
+            #Delete the entry for the complete message
             TP_messages.pop((sa,da))
+
             return {'source_address': sa,
                     'destination_address': da,
                     'pgn': pgn,

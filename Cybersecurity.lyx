@@ -86,20 +86,91 @@ theorems-chap
 Princples of Cybersecurity
 \end_layout
 
-\begin_layout Standard
-The Triads of Cybersecurity
+\begin_layout Section
+Fundamentals of Automotive Security
 \end_layout
 
 \begin_layout Standard
-Confidentiality, Integrity, and Availability
+We now step into the realms of cybersecurity in a more detailed manner.
+ Automotive security is a relatively nascent field whose academic origins
+ can be traced back to early days of the ESCAR (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.escar.info/history/escar-europe/escar-europe-2003-lectures-and-program
+-committee.html
 \end_layout
 
-\begin_layout Standard
-Or,
+\end_inset
+
+ ) security conference.
+ The thoeries proposed by the early academics were soon realized and the
+ first car hack papers were published back to back in the years 2010 (Koscher,
+ Karl, et al.
+ "Experimental security analysis of a modern automobile." 2010 IEEE Symposium
+ on Security and Privacy.
+ IEEE, 2010.) and 2011 (Checkoway, Stephen, et al.
+ "Comprehensive experimental analyses of automotive attack surfaces." USENIX
+ Security Symposium.
+ Vol.
+ 4.
+ 2011.).
+ The first of these papers demonstrated that a attacker with physical access
+ to a vehicle can easily observe and manipulate the vehicles states while
+ the second demonstrated more than technique via which a remote attacker
+ to gain physical access.
+ While these revelations were shocking, a wider and stronger impact was
+ made by three BlackHat/DEFCON presentations (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.youtube.com/watch?v=MAcHkASmXEc
 \end_layout
 
-\begin_layout Standard
-Authentication, Authorization, and Auditing
+\end_inset
+
+, 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.youtube.com/watch?v=OobLb1McxnI
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.youtube.com/watch?v=n70hIu9lcYo
+\end_layout
+
+\end_inset
+
+) and the corresponding Wired article ( 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/
+\end_layout
+
+\end_inset
+
+ ).
+ Anybody wondoer why Greenday sells more than The Clash in today's internet
+ era? Moving on, this section will use the content of the above mentioned
+ papers/presentations to lay a foundation for the upcoming chapters and
+ creating an understanding for the general principles of cyber-security.
 \end_layout
 
 \begin_layout Section

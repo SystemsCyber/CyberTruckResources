@@ -1187,6 +1187,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename graphics/Secure CPS Process V Diagram.svg
+	width 100text%
 
 \end_inset
 
@@ -1258,7 +1259,154 @@ noprefix "false"
 .
  This reflection should help you understand the different levels of effort
  and teamwork needed to bring secure solutions into fruition.
+\end_layout
+
+\begin_layout Section
+Anticipated Schedule
+\end_layout
+
+\begin_layout Standard
+The training for which this maual is designed is focused on a 16 week course,
+ which is typical of a college semester.
+ Many students will come into the training with sufficient background in
+ some topics, but others should be fruitful for exploration.
+ However, the schedule and contents are intended to develop the necessary
+ talent needed to succeed in heavy vehicle cybersecurity research.
  
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+1 Receive and build hardware kits with CAN, LEDs, and the potentiometer.
+ Setup software and the tool chain needed to perform the exersises.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+2 Perform some basic programming with Arduino by writing some short test
+ scripts to demonstrate hardware functionality.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+3 Gather CAN data from an running SAE J1939 network on a heavy vehicle.
+ Parse single frame data according to SAE J1939.
+ Plot the Engine Speed data.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+4 Understand and parse SAE J1939 Transport Protocol Data.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+5 SAE J1939 Address Claims, launch cyberattacks on a vehicle.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+6 Gather diagnostic data with a vehicle diagnostic adapter using RP1210.
+ 
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+7 Parse data from a Unified Diagnostic Session (UDS) using ISO-14229.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+8 Explore seed-key exchanges for diagnostic sessions.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+9 Legacy networks J1708 and J1587.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+10 Introduction to Ethernet and networking concepts.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+11 IP based networks, TCP, and UDP.
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+12 Build a CAN to Ethernet Bridge
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+13 Cryptography and Cybersecurity
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+14 Symmetric Algorithms (AES) and Message Authentication Codes
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+15 Asymmetric Algorithms, Certificates, Digital Signatures and Diffie-Hellman
+ Key Exchanges
+\end_layout
+
+\begin_layout Description
+Week
+\begin_inset space ~
+\end_inset
+
+16 Implementing Security with Hardware Security Modules
 \end_layout
 
 \end_body

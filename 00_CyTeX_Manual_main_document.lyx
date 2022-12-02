@@ -93,6 +93,7 @@ theorems-chap
 \papercolumns 1
 \papersides 1
 \paperpagestyle headings
+\listings_params "frame=single,numbers=left,numberstyle={\footnotesize},basicstyle=small,basicstyle={\ttfamily}"
 \tracking_changes false
 \output_changes false
 \html_math_output 0

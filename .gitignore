@@ -2,3 +2,6 @@
 *.lyx~
 *.ipynb_checkpoints/
 *.idea/
+00_Testing  Code/*.db
+*__pycache__/
+can_data.db

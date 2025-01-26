@@ -1,5 +1,6 @@
 import sqlite3
 import re
+import os
 
 # Define the database file name
 db_file = "can_data.db"
@@ -10,8 +11,11 @@ candump_file = "candump.log"
 # Define a regular expression to parse candump lines
 candump_pattern = re.compile(r"\((\d+\.\d+)\) ([0-9A-Fa-f]+)#([0-9A-Fa-f]*)")
 
+
 def create_database(db_file):
     """Creates the SQLite database and table."""
+    if os.path.exists(db_file):
+        os.remove(db_file)
     conn = sqlite3.connect(db_file)
     cursor = conn.cursor()
     
@@ -31,7 +35,7 @@ def create_database(db_file):
     conn.close()
 
 
-def parse_and_store_candump(db_file):
+def parse_and_store_candump(db_file,candump_file):
     """Parses the candump file and stores data in the SQLite database."""
     conn = sqlite3.connect(db_file)
     cursor = conn.cursor()
@@ -54,7 +58,7 @@ def parse_and_store_candump(db_file):
 
 def main():
     create_database(db_file)
-    parse_and_store_candump(db_file)
+    parse_and_store_candump(db_file, candump_file)
     print("Candump data has been successfully stored in the database.")
 
 if __name__ == "__main__":

@@ -5,3 +5,13 @@
 00_Testing  Code/*.db
 *__pycache__/
 can_data.db
+02_CAN Logging/2014_KW_T270_cross_country_can_log.txt
+02_CAN Logging/J1939DA JUN2024.xlsx
+02_CAN Logging/J1939-71.pdf
+02_CAN Logging/J1939DA.sqlite
+02_CAN Logging/*.sqlite
+02_CAN Logging/*.features.json
+02_CAN Logging/*.gps.csv
+02_CAN Logging/*.signals.csv
+02_CAN Logging/*.busload.csv
+02_CAN Logging/*_map.html

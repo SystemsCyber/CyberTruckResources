@@ -1,0 +1,12 @@
+# build products
+pcan_logger
+pcan_logger_sim
+*.exe
+*.obj
+*.o
+*.so
+*.dll
+*.lib
+*.exp
+rust/target/
+__pycache__/

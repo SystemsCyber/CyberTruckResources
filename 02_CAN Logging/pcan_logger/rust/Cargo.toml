@@ -1,0 +1,18 @@
+[package]
+name = "pcan_logger_rs"
+version = "0.1.0"
+edition = "2021"
+description = "Log a PEAK PCAN adapter to candump format (ENGR 580A2 CAN Logging module)"
+
+[[bin]]
+name = "pcan_logger_rs"
+path = "src/main.rs"
+
+# No external crates: the PCAN-Basic functions are declared by hand in src/main.rs
+# so students can see exactly how a foreign function interface (FFI) works.
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

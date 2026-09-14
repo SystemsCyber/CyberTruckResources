@@ -1,29 +1,26 @@
 # PCAN logger comparison: C, Rust and Python
 
-Companion code for the *Is a Compiled Logger Faster?* section of
-`CAN Log File Analysis Part 2.ipynb`.
+A stand-alone side project for the CAN Logging module: is a logger written in a
+compiled language faster than one written in Python?
 
-The C and Rust programs here and the two Python loggers defined in the notebook
-all do the same job -- read frames from a PEAK PCAN adapter through the PCAN-Basic
-API and write them in `candump` format -- and report the same statistics so the
-notebook can compare them. The notebook builds these files itself (`build_loggers()`).
+All four programs do the same job -- read frames from a PEAK PCAN adapter
+through the PCAN-Basic API and write them in `candump` format -- and all
+print the same one-line JSON summary on exit so they can be compared.
 
 | File | What it is |
 |------|-----------|
 | `pcan_logger.c` | C logger. Event-driven receive, 1 MiB output buffer, hand-rolled hex formatting. |
 | `pcan_basic_min.h` | Our own declarations of the handful of PCAN-Basic functions used. `-DHAVE_PCANBASIC_H` uses PEAK's official `PCANBasic.h` instead. |
 | `rust/` | Rust logger (`cargo build --release`). Same functions, declared in an `extern "system"` block -- no crates. |
+| `pcan_logger.py` | Python logger with two back ends: `--backend ctypes` (same raw API) and `--backend python-can`. |
 | `pcan_sim/pcan_sim.c` | A **simulator** of `PCANBasic.dll` / `libpcanbasic.so` that replays a candump file. Lets every logger run and be timed on a machine with no adapter. |
-| `Makefile`, `build.bat` | Build recipes for Linux/MinGW and MSVC. |
+| `benchmark_loggers.py` | Builds everything and runs the loggers against the simulator (or `--hardware`) and prints a comparison table. |
+| `pcan_logger.mk`, `build.bat` | Build recipes for Linux/MinGW (`make -f pcan_logger.mk sim`) and MSVC. |
 
 ## Quick start (no hardware)
 
-Run the *Is a Compiled Logger Faster?* section of the Part 2 notebook, or by hand:
-
 ```
-make -f pcan_logger.mk sim                  # simulator library + C logger linked to it
-PCAN_LIB_DIR=$PWD/pcan_sim make -f pcan_logger.mk rust
-PCAN_SIM_FILE=../candump_kw_drive.txt LD_LIBRARY_PATH=pcan_sim ./pcan_logger_sim -n can1 -o test.log
+python benchmark_loggers.py                 # builds sim + C + Rust, runs all four loggers
 ```
 
 ## Against a real adapter
@@ -33,14 +30,13 @@ Install the PCAN-Basic package from PEAK (Windows: `PCANBasic.dll`, `PCANBasic.l
 kernel driver or the mainline `peak_usb` driver with the PCAN-Basic netdev build).
 
 ```
-make                                        # Linux: C logger against -lpcanbasic
+make -f pcan_logger.mk                      # Linux: C logger against -lpcanbasic
 build.bat                                   # Windows (MSVC), with PCANBasic.lib in this folder
 cd rust && cargo build --release            # Rust, library on the default search path
-pcan_logger -c PCAN_USBBUS1 -b 250000 -t 30 -o c.log
-rust/target/release/pcan_logger_rs -c PCAN_USBBUS1 -b 250000 -t 30 -o rust.log
+python benchmark_loggers.py --hardware -c PCAN_USBBUS1 -b 250000 --seconds 30
 ```
 
-Both compiled loggers accept the same flags:
+Every logger accepts the same flags:
 
 ```
 -c PCAN_USBBUS1   channel      -b 250000   bit rate     -t 30   seconds to run (0 = Ctrl-C)
